@@ -73,5 +73,5 @@ run_steps=client.beta.threads.runs.steps.list(
     run_id=run.id
 ) 
 
-print(f'Steps------> {run_steps.data[0]}')
+# print(f'Steps------> {run_steps.data[0]}')
 print(f'Steps------> {run_steps.data}')
