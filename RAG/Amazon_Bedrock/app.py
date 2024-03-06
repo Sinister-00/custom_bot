@@ -2,6 +2,7 @@ import json
 import os 
 import sys
 import boto3
+import streamlit as st
 
 
 # Using AWS Titan model to generate embeddings
@@ -89,3 +90,39 @@ def get_response_llm(llm,vectorstore_faiss,query):
     answer=qa({"query":query})
     return answer['result']
 
+def main():
+    st.set_page_config("Chat PDF")
+    
+    st.header("Chat with PDF using AWS Bedrock💁")
+
+    user_question = st.text_input("Ask a Question from the PDF Files")
+
+    with st.sidebar:
+        st.title("Update Or Create Vector Store:")
+        
+        if st.button("Vectors Update"):
+            with st.spinner("Processing..."):
+                docs = data_ingesion()
+                get_vector_store(docs)
+                st.success("Done")
+
+    if st.button("Claude Output"):
+        with st.spinner("Processing..."):
+            faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings)
+            llm=create_claude_llm()
+            
+            #faiss_index = get_vector_store(docs)
+            st.write(get_response_llm(llm,faiss_index,user_question))
+            st.success("Done")
+
+    if st.button("Llama2 Output"):
+        with st.spinner("Processing..."):
+            faiss_index = FAISS.load_local("faiss_index", bedrock_embeddings)
+            llm=create_claude_llm()
+            
+            #faiss_index = get_vector_store(docs)
+            st.write(get_response_llm(llm,faiss_index,user_question))
+            st.success("Done")
+
+if __name__ == "__main__":
+    main()
