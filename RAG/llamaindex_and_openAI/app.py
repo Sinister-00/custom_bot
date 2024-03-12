@@ -2,6 +2,8 @@ import openai
 import os
 import time
 import streamlit as st
+from datetime import datetime
+import bcrypt
 from dotenv import load_dotenv
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader
 from llama_index.core.retrievers import VectorIndexRetriever
@@ -14,8 +16,35 @@ from llama_index.core import (
     StorageContext,
     load_index_from_storage
 )
-
+from pymongo import MongoClient
 load_dotenv()
+
+uri = os.getenv('MONGO_URI')
+client = MongoClient(uri)
+db = client["VinAi"]
+
+rag_messages_collection = db["rag_messages"]
+assistant_messages_collection = db["assistantAPI_messages"]
+
+users_collection = db["users"]
+
+def check_credentials(email, password):
+    user = users_collection.find_one({"email": email})
+    if user:
+        hashed_password = user["password"]
+        if bcrypt.checkpw(password.encode('utf-8'), hashed_password):
+            return True
+    return False
+
+def retrieve_messages(user_email):
+    rag_messages = rag_messages_collection.find({"user_email": user_email})
+    assistant_messages = assistant_messages_collection.find({"user_email": user_email})
+    return rag_messages, assistant_messages
+
+def format_timestamp(timestamp):
+    return datetime.fromtimestamp(timestamp).strftime('%d-%b-%Y %H-%M-%S')
+
+
 st.set_page_config(
     page_title="VinAi Chatbot",
     page_icon="🤖",
@@ -75,7 +104,7 @@ def loadRAGIndex():
 users = {
     "swapnil@vinculumgroup.com": {"password": "user1password"},
     "demo": {"password": "admindemo"},
-    "user3@example.com": {"password": "user3password"}
+    "ed": {"password": "ed"}
 }
 placeholder = st.empty()
 
@@ -95,14 +124,15 @@ if not st.session_state.logged_in:
             with st.spinner("Wait for it..."):
                 time.sleep(3)
 
-    if submit and email in users and password == users[email]["password"]:
-        with st.spinner("Login Success..."):
-            time.sleep(2)
-            st.session_state.logged_in = True
-        placeholder.empty()
+            if  check_credentials(email, password):
+                with st.spinner("Login Success..."):
+                    time.sleep(2)
+                    st.session_state.logged_in = True
+                    st.session_state.user_mail = email
+                placeholder.empty()
 
-    elif submit and (email not in users or password != users[email]["password"]):
-        st.error("Login failed")
+            elif not check_credentials(email, password):
+                st.error("Login failed")
 
 if st.session_state.logged_in:
 
@@ -142,7 +172,16 @@ if st.session_state.logged_in:
     if st.session_state.query_engine == "Not yet loaded":
         st.error("Please load or update the vector store first.")
     elif st.session_state.assistant == "RAG" and st.session_state.query_engine != "Not yet loaded":
+        rag_messages, assistant_messages = retrieve_messages(st.session_state.user_mail)
+
+        # messages = st.session_state.messages["RAG"]
+        for message in rag_messages:
+            st.session_state.messages["RAG"].append({"role": "user", "content": message["message_content"]})
+            st.session_state.messages["RAG"].append({"role": "assistant", "content": message["response_content"]})
         
+        
+        messages = st.session_state.messages["RAG"]
+
         messages = st.session_state.messages["RAG"]
 
         if "RAG" not in st.session_state.messages:
@@ -153,7 +192,7 @@ if st.session_state.logged_in:
                 st.markdown(message["content"])
 
         if prompt:=st.chat_input("Ask you query here"):
-            st.session_state.messages["RAG"].append({"role":"user","content":prompt})
+            # st.session_state.messages["RAG"].append({"role":"user","content":prompt})
             with st.chat_message("user"):
                 st.markdown(prompt)
             with st.spinner("Wait... Generating response..."):
@@ -161,10 +200,23 @@ if st.session_state.logged_in:
             st.session_state.messages["RAG"].append({"role":"assistant","content":response.response})
             with st.chat_message("assistant"):
                 st.markdown(response.response, unsafe_allow_html=True)
+                
+            rag_messages_collection.insert_one({
+
+                "user_email": st.session_state.user_mail,
+                "message_content": prompt,
+                "response_content": response.response,
+                "timestamp": format_timestamp(time.time())  # Add a timestamp if needed
+            })
 
     elif st.session_state.assistant == "OpenAI Assistant" and st.session_state.query_engine != "Not yet loaded":
 
-        messages = st.session_state.messages["OpenAI"]
+        rag_messages, assistant_messages = retrieve_messages(st.session_state.user_mail)
+
+        for message in assistant_messages:
+            st.session_state.messages["OpenAI"].append({"role": "user", "content": message["message_content"]})
+            st.session_state.messages["OpenAI"].append({"role": "assistant", "content": message["response_content"]})
+
 
         if "OpenAI" not in st.session_state.messages:
             st.session_state.messages["OpenAI"] = []
@@ -182,7 +234,7 @@ if st.session_state.logged_in:
 
 
         if prompt:=st.chat_input("Ask you query here"):
-            st.session_state.messages["OpenAI"].append({"role":"user","content":prompt})
+            # st.session_state.messages["OpenAI"].append({"role":"user","content":prompt})
             with st.chat_message("user"):
                 st.markdown(prompt)
             client.beta.threads.messages.create(
@@ -213,4 +265,11 @@ if st.session_state.logged_in:
                     )
                     with st.chat_message("assistant"):
                         st.markdown(full_response, unsafe_allow_html=True)
+
+            assistant_messages_collection.insert_one({
+                "user_email": st.session_state.user_mail,
+                "message_content": prompt,
+                "response_content": full_response,
+                "timestamp": format_timestamp(time.time())  # Add a timestamp if needed
+            })
 
