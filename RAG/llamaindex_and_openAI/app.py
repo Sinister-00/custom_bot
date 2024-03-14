@@ -121,8 +121,8 @@ if not st.session_state.logged_in:
         password = st.text_input("Password", type="password")
         submit = st.form_submit_button("Login")
         if submit:
-            with st.spinner("Wait for it..."):
-                time.sleep(3)
+            with st.spinner("Authenticating..."): 
+                time.sleep(2)
 
             if  check_credentials(email, password):
                 with st.spinner("Login Success..."):
