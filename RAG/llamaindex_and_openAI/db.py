@@ -45,4 +45,4 @@ def insert_user(email, password):
         result = users_collection.insert_one(user_data)
         return result.inserted_id
 
-insert_user("swapnil@vinculumgroup.com", "root",)
+insert_user("sachin.gupta1@vinculumgroup.com", "sachin@1",)

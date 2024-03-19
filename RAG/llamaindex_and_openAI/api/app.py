@@ -9,7 +9,9 @@ from llama_index.core import (
 import boto3
 import pandas as pd
 import json
+import time
 import os
+import openai
 from dotenv import load_dotenv
 import requests
 
@@ -20,9 +22,8 @@ S3_BUCKET_NAME = os.getenv('S3_BUCKET_NAME')
 
 PERSIST_DIR = "./storage"
 index = None
-signed_url=None
+index_loaded=False
 
-# Initialize Flask app
 app = Flask(__name__)
 
 def download_s3_folder(bucket_name, s3_folder, local_folder):
@@ -58,6 +59,8 @@ def initialize_index():
     global index
     if not os.path.exists(PERSIST_DIR):
         download_s3_folder_with_signed_url(S3_BUCKET_NAME, "storage", "storage")
+        storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
+        index = load_index_from_storage(storage_context)
         print("Created and stored index")
     else:
         storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
@@ -82,15 +85,20 @@ def convert_to_serializable(response):
 
 @app.route('/load_storage', methods=['GET'])
 def load_storage():
+    global index_loaded
     global index
     index = initialize_index()
     print("Index loaded",index)
-    return jsonify({'status': 'success'})
+    index_loaded=True
+    return jsonify({'status': 'success'}), 200
 
 
 @app.route('/query_rag', methods=['POST'])
 def query_rag():
+    global index_loaded
     global index
+    if not index_loaded:
+        return jsonify({'error': 'Index not loaded', 'status': 'failed'}), 400
     print(index)
     data = request.get_json()
     query_text = data.get('query')
@@ -111,7 +119,42 @@ def query_rag():
 def query_openai():
     data = request.get_json()
     query_text = data.get('query')
-    print(query_text)
+    thread_id = data.get('thread_id')
+    assistant_id = data.get('assistant_id')
+    # print(f"Thread ID: {thread_id} \n Query: {query_text} \n Assistant ID: {assistant_id}")
+    if not query_text:
+        return jsonify({'error': 'Query not provided'}), 400
+    if not thread_id:
+        return jsonify({'error': 'Thread ID not provided'}), 400
+    if not assistant_id:
+        return jsonify({'error': 'Assistant ID not provided'}), 400
+    client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+    # model="gpt-3.5-turbo-1106"
+    client.beta.threads.messages.create(
+                thread_id=thread_id,
+                role="user",
+                content=query_text
+            )
+    run=client.beta.threads.runs.create(
+        model="gpt-3.5-turbo-1106",
+        thread_id=thread_id,
+        assistant_id=assistant_id,
+        instructions="""
+        Please address the user as "Vinner" and ask the user if he/she has any queries related to vinculum solutions. only respond if you know the context do not try to generate on your own.
+        """
+    )
+    while run.status != "completed":
+        time.sleep(1)
+        run=client.beta.threads.runs.retrieve(thread_id=thread_id,run_id=run.id)
+        messages=client.beta.threads.messages.list(thread_id=thread_id)
+        assistant_message_for_run=[
+            message for message in messages if message.run_id==run.id and message.role == "assistant"
+        ]
+
+    for message in assistant_message_for_run:
+        full_response=message.content[0].text.value
+    return jsonify({'response': full_response,'status': 'success'}), 200
+
 
 
 if __name__ == '__main__':
