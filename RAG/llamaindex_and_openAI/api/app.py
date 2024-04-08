@@ -111,7 +111,7 @@ def query_rag():
 
     serializable_response = convert_to_serializable(response)
 
-    return jsonify({'response': serializable_response["response"]})
+    return jsonify({'response': serializable_response["response"]}), 200
 
 
 
@@ -155,7 +155,3 @@ def query_openai():
         full_response=message.content[0].text.value
     return jsonify({'response': full_response,'status': 'success'}), 200
 
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
