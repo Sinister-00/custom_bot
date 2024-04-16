@@ -87,7 +87,12 @@ def convert_to_serializable(response):
 def load_storage():
     global index_loaded
     global index
-    index = initialize_index()
+    # index = initialize_index()
+    try:
+        index=initialize_index()
+    except Exception as e:
+        print("Error loading index",e)
+        return jsonify({'error': 'Error loading index', 'status': 'failed'}), 400
     print("Index loaded",index)
     index_loaded=True
     return jsonify({'status': 'success'}), 200
@@ -155,3 +160,6 @@ def query_openai():
         full_response=message.content[0].text.value
     return jsonify({'response': full_response,'status': 'success'}), 200
 
+
+if __name__ == '__main__':
+    app.run(port=6969, debug=True)

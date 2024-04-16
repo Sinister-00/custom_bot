@@ -2,6 +2,8 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
+# api_key = os.getenv("OPENAI_API_KEY")
+# print(os.getenv("OPENAI_API_KEY"))
 import os.path
 from llama_index.core import (
     VectorStoreIndex,
@@ -9,6 +11,10 @@ from llama_index.core import (
     StorageContext,
     load_index_from_storage
 )
+
+
+# 1-> 3.5 1106 langchain prompt 
+# 2-> 
 
 PERSIST_DIR = "./storage"
 if not os.path.exists(PERSIST_DIR):
@@ -27,6 +33,5 @@ query_engine = index.as_query_engine()
 print("Query engine ready")
 print("Testing query engine...")
 print("Querying...")
-# response = query_engine.query("Why do we need to do SKU Channel Mapping")
-response=query_engine.query("can i change pku?")
+response = query_engine.query("Why do we need to do SKU Channel Mapping")
 print(response)

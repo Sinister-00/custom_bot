@@ -47,7 +47,7 @@ def format_timestamp(timestamp):
 
 st.set_page_config(
     page_title="VinAi Chatbot",
-    page_icon="🤖",
+    page_icon="🤖",  
 )
 if "thread_id" not in st.session_state:
     st.session_state.thread_id=None
@@ -101,11 +101,7 @@ def loadRAGIndex():
     print("Successfully loaded the RAG index")
     return query_engine
 
-users = {
-    "swapnil@vinculumgroup.com": {"password": "user1password"},
-    "demo": {"password": "admindemo"},
-    "ed": {"password": "ed"}
-}
+
 placeholder = st.empty()
 
 
@@ -142,27 +138,29 @@ if st.session_state.logged_in:
     st.header("Chat with VinAi using RAG & Open AI Assistant 💁")
 
 
-    with st.sidebar:
-        st.title("Update Or Create Vector Store:")
-        update_vector_store = st.radio("Update Vector Store", ("Yes", "No"),)
-        if update_vector_store == "Yes":
-            st.write("You chose to update the vector store")
-            directory=st.text_input("Enter the directory path") 
-            if directory and os.path.exists(directory):
-                st.success("Directory exists")
-                if st.button("Update Vector Store"):
-                    with st.spinner("Processing..."):
-                        st.session_state.query_engine = createRAGIndex(directory)
-                        st.success("Done updating the vector store")
-            elif directory and not os.path.exists(directory):
-                st.error("Please enter the directory path")
+    # with st.sidebar:
+        # st.title("Update Or Create Vector Store:")
+        # update_vector_store = st.radio("Update Vector Store", ("Yes", "No"),)
+        # if update_vector_store == "Yes":
+        #     st.write("You chose to update the vector store")
+        #     directory=st.text_input("Enter the directory path") 
+        #     if directory and os.path.exists(directory):
+        #         st.success("Directory exists")
+        #         if st.button("Update Vector Store"):
+        #             with st.spinner("Processing..."):
+        #                 st.session_state.query_engine = createRAGIndex(directory)
+        #                 st.success("Done updating the vector store")
+        #     elif directory and not os.path.exists(directory):
+        #         st.error("Please enter the directory path")
             
 
-        else:
-            if st.button("Load Vector Store"):
-                with st.spinner("Processing..."):
-                    st.session_state.query_engine = loadRAGIndex()
-                    st.success("Done loading the vector store")
+        # else:
+        #     if st.button("Load Vector Store"):
+        #         with st.spinner("Processing..."):
+        #             st.session_state.query_engine = loadRAGIndex()
+        #             st.success("Done loading the vector store")
+
+    st.session_state.query_engine = loadRAGIndex()
 
 
     st.sidebar.title("Choose the Assistant:")
