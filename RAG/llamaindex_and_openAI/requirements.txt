@@ -8,4 +8,6 @@ bcrypt
 boto3
 s3fs
 flask
+streamlit_oauth
 streamlit
+pytz

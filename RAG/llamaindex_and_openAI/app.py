@@ -1,5 +1,6 @@
 import openai 
 import os
+import pytz
 import time
 import streamlit as st
 from datetime import datetime
@@ -29,7 +30,7 @@ REDIRECT_URI = os.environ.get("REDIRECT_URI")
 AUTHORIZE_ENDPOINT = "https://accounts.google.com/o/oauth2/auth"
 TOKEN_ENDPOINT = "https://oauth2.googleapis.com/token"
 REVOKE_ENDPOINT = "https://oauth2.googleapis.com/revoke"
-
+ist = pytz.timezone('Asia/Kolkata')
 uri = os.getenv('MONGO_URI')
 client = MongoClient(uri)
 db = client["VinAi"]
@@ -53,7 +54,11 @@ def retrieve_messages(user_email):
     return rag_messages, assistant_messages
 
 def format_timestamp(timestamp):
-    return datetime.fromtimestamp(timestamp).strftime('%d-%b-%Y %H-%M-%S')
+    dt_object = datetime.fromtimestamp(timestamp)
+    ist = pytz.timezone('Asia/Kolkata')
+    dt_ist = dt_object.astimezone(ist)
+    formatted_timestamp = dt_ist.strftime('%d-%b-%Y %H-%M-%S') 
+    return formatted_timestamp
 
 
 st.set_page_config(
@@ -170,12 +175,34 @@ if not st.session_state.logged_in:
             payload = id_token.split(".")[1]
             payload += "=" * (-len(payload) % 4)
             payload = json.loads(base64.b64decode(payload))
+            # print("Payload: ", payload)
+            name= payload["name"]
+            isVerified = payload["email_verified"]
+            pfp = payload["picture"]
             email = payload["email"]
             st.session_state["auth"] = email
+
             st.session_state["token"] = result["token"]
-            st.session_state.user_mail = email
-            st.session_state.logged_in = True
-            st.rerun()
+            if email.split("@")[1] == "vinculumgroup.com": 
+                google_oauth_login_collection = db["google-oauth-login"]
+                google_oauth_login_collection.insert_one({
+                    "name": name,
+                    "email": email,
+                    "isVerified": isVerified,
+                    "pfp": pfp,
+                    "timestamp": format_timestamp(time.time())
+                })  
+                st.session_state.user_mail = email
+                st.session_state.logged_in = True
+                st.rerun()
+            else:
+                with st.spinner("Access Denied - Unauthorized Domain"):
+                    # print(st.session_state["auth"])
+                    del st.session_state["auth"]
+                    time.sleep(2)
+                    
+
+
     else:
         st.empty()
             
