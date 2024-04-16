@@ -17,7 +17,18 @@ from llama_index.core import (
     load_index_from_storage
 )
 from pymongo import MongoClient
+import base64
+import json
+from streamlit_oauth import OAuth2Component
+
 load_dotenv()
+
+CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
+CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
+REDIRECT_URI = os.environ.get("REDIRECT_URI")
+AUTHORIZE_ENDPOINT = "https://accounts.google.com/o/oauth2/auth"
+TOKEN_ENDPOINT = "https://oauth2.googleapis.com/token"
+REVOKE_ENDPOINT = "https://oauth2.googleapis.com/revoke"
 
 uri = os.getenv('MONGO_URI')
 client = MongoClient(uri)
@@ -110,12 +121,15 @@ if "messages" not in st.session_state:
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 
+
 if not st.session_state.logged_in:
     with placeholder.form("login"):
         st.markdown("#### Enter your credentials")
         email = st.text_input("Username")
         password = st.text_input("Password", type="password")
         submit = st.form_submit_button("Login")
+
+
         if submit:
             with st.spinner("Authenticating..."): 
                 time.sleep(2)
@@ -129,11 +143,49 @@ if not st.session_state.logged_in:
 
             elif not check_credentials(email, password):
                 st.error("Login failed")
+    
+    
+    
+    if "auth" not in st.session_state and not st.session_state.logged_in:
+        oauth2 = OAuth2Component(CLIENT_ID, CLIENT_SECRET,
+                              AUTHORIZE_ENDPOINT,
+                                TOKEN_ENDPOINT,
+                                  TOKEN_ENDPOINT,
+                                    REVOKE_ENDPOINT)
+        result = oauth2.authorize_button(
+            name="Continue with Google",
+            icon="https://www.google.com.tw/favicon.ico",
+            redirect_uri=REDIRECT_URI,
+            scope="openid email profile",
+            key="google",
+            extras_params={"prompt": "consent", "access_type": "offline"},
+            use_container_width=True,
+            pkce='S256',
+            )
+        # print(result)
+        if result:
+            st.empty()
+
+            id_token = result["token"]["id_token"]
+            payload = id_token.split(".")[1]
+            payload += "=" * (-len(payload) % 4)
+            payload = json.loads(base64.b64decode(payload))
+            email = payload["email"]
+            st.session_state["auth"] = email
+            st.session_state["token"] = result["token"]
+            st.session_state.user_mail = email
+            st.session_state.logged_in = True
+            st.rerun()
+    else:
+        st.empty()
+            
+
 
 if st.session_state.logged_in:
-
+    
     if 'query_engine' not in st.session_state:
         st.session_state.query_engine = "Not yet loaded"
+    st.session_state.query_engine = loadRAGIndex()
 
     st.header("Chat with VinAi using RAG & Open AI Assistant 💁")
 
@@ -160,7 +212,7 @@ if st.session_state.logged_in:
         #             st.session_state.query_engine = loadRAGIndex()
         #             st.success("Done loading the vector store")
 
-    st.session_state.query_engine = loadRAGIndex()
+    
 
 
     st.sidebar.title("Choose the Assistant:")
