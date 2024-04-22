@@ -1,0 +1,39 @@
+**Question:** Not able to upload BINMASTER Template through Bulk Upload. It stuck in WIP status in download, after that it stuck in the same status no status is changing after that.
+
+**Answer:** Need to check and fill the HierarchyCode.
+
+**Question:** User is unable to import the bulk order file and getting error while uploading in the upload screen as (Error in uploading)
+
+**Answer:** Please check If location name is having space before or after the warehouse name.
+
+**Question:** User is unable to import the UserCreateUpdate file
+
+**Answer:** Need to check the phone no column and change the phone column to text field and then import the template.
+
+**Question:** Not able to upload the Transporter Preference Import file, it goes in Unprocessed Status.
+
+**Answer:** We need to check lastHierarcyCode in the location table for the respective warehouses.
+
+**Question:** User getting error while importing the file
+
+**Answer:** This must be because the updated template is not deployed, please raise a ticket to helpdesk for this.
+
+**Question:** Issue while Importing a File And After When Trying To Download the Error File Getting like (Can not find a java.io.InputStream with the name)
+
+**Answer:** Avoid spaces in filename keep import file name without spaces.
+
+**Question:** Order import file not able to import getting this error: Error in uploading filecom.vin.eretail.common.exception.BusinessExcep
+
+**Answer:** Need to check and mention the correct state name in while importing.
+
+**Question:** We are getting errors while importing the SKU in Bulk: "Invalid Size imported."
+
+**Answer:** Need to check and mention the correct size as mentioned in SKU master.
+
+**Question:** Error: "Error in uploading filecom.vin.eretail.common.exception.BusinessException"
+
+**Answer:** Need to check Customer code has a special character.
+
+**Question:** Error: "Error in uploading filecom.vin.eretail.common.exception.BusinessException"
+
+**Answer:** Need to check Order date format, and site code.

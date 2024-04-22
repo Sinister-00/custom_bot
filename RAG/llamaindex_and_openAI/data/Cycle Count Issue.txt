@@ -1,0 +1,28 @@
+**Question:** What should be done if an error "Server Encounter error" occurs while confirming the cycle count?
+
+**Answer:** To resolve this issue:
+1. Check the cycle count ID in the cycle count screen.
+2. Refill the JSON refill cache.
+3. If the issue persists, ask the Monitoring team to restart the cycle count interface service.
+
+**Question:** How to handle the error "This BIN already has an ongoing Cycle Count, cannot initiate another"?
+
+**Answer:** This issue arises when a client is unable to create a cycle count for a specific SKU. The workaround is:
+1. Check if the SKU is already in wip in another cycle count.
+2. Verify the SKU associated with the cycle ID in the cycle count enquiry screen.
+3. Inform the client that the bin code is already initiated with another cycle count, preventing the initiation of another cycle count for that SKU.
+
+**Question:** How to address the error "Sku not found" while scanning the SKU through the mobile app in cycle count?
+
+**Answer:** If a client encounters this issue, advise them to update the Vin eRetail app to the latest version.
+
+**Question:** What steps should be taken if cycle count is not showing in the cycle count screen?
+
+**Answer:** To resolve this issue: Please check after reloading the frame as sometimes it happens as some query stuck at backend. If the problem persists, please raise a ticket to helpdesk.
+
+
+**Question:** How to handle the issue when an export is already in a pending state?
+
+**Answer:** If a client encounters this issue:
+1. Check the status of the previous export by clicking on the "Export Report Status" button.
+2. Advise the client to wait for the previous export to succeed before attempting to download another export for the next cycle count.

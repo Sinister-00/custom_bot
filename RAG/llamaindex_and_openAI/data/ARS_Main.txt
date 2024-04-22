@@ -1,0 +1,35 @@
+Auto Replenishment System (ARS)
+
+**Introduction:**
+ARS (Auto Replenishment System) in Vin eRetail is designed to automate the process of generating purchase orders (POs) or stock transfer orders (STOs) based on predefined criteria, thus reducing manual intervention and ensuring efficient inventory management. This document outlines the functionalities and configurations of the ARS module.
+
+**Configuration:**
+ARS can be enabled at different levels within the system:
+1. Company level: Enable ARS at the company level through Admin > Settings > ARS Enable.
+2. Location level: Enable ARS for a specific location while creating it in the system by checking the checkbox "is ARS req."
+3. SKU level: Enable ARS for individual SKUs by checking the checkbox "is ARS Applicable?" under the ARS details tab of the SKU Create/Edit screen.
+4. SKU-Location level: Enable ARS for specific SKU-location combinations defined by the user.
+
+**Setting Rules:**
+To configure ARS rules:
+1. Navigate to Procurement > ARS > ARS Rules.
+2. Add new rules by providing rule description, method (Min-Max or Sales History), SKU set, start/end dates, etc.
+3. Save the rule to the system.
+
+**ARS Module Sections:**
+A. SKU-Location Link: Link SKUs to locations and enable ARS rules for SKU-Location combinations.
+B. ARS Rules: Add and manage ARS rules, filter existing rules based on various parameters, and execute or view logs of executed rules.
+C. ARS Execution Log: View logs of executed ARS rules, filter results based on parameters like location, execution time, etc.
+
+**Action Buttons:**
+- Run Now: Execute the rule in real-time.
+- View Log: View execution log for the rule.
+- Save: Save parameters for the rule.
+- Confirm: Confirm and finalize the rule.
+- Add New: Add a new rule to the system.
+
+For detailed instructions and screenshots, refer to the [ARS documentation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213661).
+
+[Last Modified: Mon, 22 Apr, 2024 at 11:27 AM]
+
+[ARS Documentation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213661)
