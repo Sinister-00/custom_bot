@@ -31,6 +31,8 @@ To deploy the app on an AWS EC2 instance, follow these steps:
     ```bash
     make build
     ```
+    > **Info**  
+    > If you encounter any error while running the make commands. Repeat the step-1 again.
 
 5. Run all setup commands and setup `.env` using the Makefile:
     ```bash
