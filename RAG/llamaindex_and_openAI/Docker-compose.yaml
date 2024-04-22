@@ -1,0 +1,14 @@
+version: "3"
+services:
+  vinai-chatbot:
+    image: python:3.12.0
+    container_name: vinai-chatbot
+    restart: always
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - 8501:8501
+
+    command: >
+      bash -c "pip install -r requirements.txt && python3 -m streamlit run app.py"
