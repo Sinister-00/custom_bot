@@ -36,7 +36,7 @@ To deploy the app on an AWS EC2 instance, follow these steps:
 
 5. Run all setup commands and setup `.env` using the Makefile:
     ```bash
-    make setup
+    make config
     ```
 
 6. Configure Nginx: Follow the instructions in the [Nginx README](./nginx/readme.md) to set up Nginx as
