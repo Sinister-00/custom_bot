@@ -1,3 +1,5 @@
+Certainly! Here's the revised README with the steps adjusted to clone the repository first and then run all necessary commands using the Makefile:
+
 # OmniBot  
 
 ## Project Overview
@@ -6,63 +8,46 @@ OmniBot is a chatbot developed using the RAG and Assistant API from OpenAI. It i
 ## Deploying on AWS EC2 Instance
 To deploy the app on an AWS EC2 instance, follow these steps:
 
-1. Update package repositories:
+
+1. Install Make if not already installed:
     ```bash
     sudo apt update
-    sudo apt-get update
+    sudo apt install make
     ```
 
-2. Upgrade installed packages:
-    ```bash
-    sudo apt upgrade -y
-    ```
-
-3. Install necessary tools:
-    ```bash
-    sudo apt install git curl unzip tar make sudo vim wget -y
-    sudo apt install python3-pip
-    ```
-
-4. Clone the project repository:
+2. Clone the project repository:
     ```bash
     git clone https://github.com/Sinister-00/custom_bot.git
     ```
 
-5. Navigate to the working directory:
+3. Navigate to the working directory:
     ```bash
     cd custom_bot
     cd RAG
     cd llamaindex_and_openAI
     ```
 
-6. Install Python dependencies:
+4. Install dependencies and build the project using the Makefile:
     ```bash
-    pip3 install -r requirements.txt
+    make build
     ```
 
-7. Create `.env` file for loading environment variables:
-
-    ```
-    touch .env
-    ```
-
-8. Using nano enter the environment variables into `.env`:
-    ```
-    nano .env
-    ```
-    > **Note**  
-    > Refer `.example.env` for environment variables.
-
-9. Run the Streamlit app:
-
+5. Run all setup commands and setup `.env` using the Makefile:
     ```bash
-    python3 -m streamlit run app.py --server.port 6969
+    make setup
     ```
-    > **Info**  
-    > Edit inbound rules and allow custom TCP port `6969` to everyone. 
 
+6. Configure Nginx: Follow the instructions in the [Nginx README](./nginx/readme.md) to set up Nginx as
+    a reverse proxy for your Streamlit application.
 
-10. Optionally, run the Streamlit app in the background using `nohup`:
+7. Run the Streamlit app:
     ```bash
-    nohup python3 -m streamlit run app.py --server.port 6969 
+    make run
     ```
+
+8. *Optionally*, run the Streamlit app in the background using `nohup`:
+    ```bash
+    nohup python3 -m streamlit run app.py --server.port 8501 
+    ```
+
+This sequence of steps will clone the repository, navigate to the appropriate directory, run all necessary setup commands using the Makefile, configure Nginx, and finally run the Streamlit app. Adjustments can be made as needed for your specific setup.

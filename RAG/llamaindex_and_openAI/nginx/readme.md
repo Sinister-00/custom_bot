@@ -1,5 +1,3 @@
-
-
 ## Setting up Nginx for Streamlit App on EC2
 
 This guide will walk you through the steps to set up Nginx as a reverse proxy for your Streamlit application on an EC2 instance.
@@ -17,10 +15,10 @@ Before you begin, ensure you have the following:
 
 Before proceeding with Nginx setup, make sure to configure the following DNS records in your DNS provider's control panel:
 
-| Type  | Name        | Content       |
-|-------|-------------|---------------|
-| A     | sswapnil.me | 76.76.21.21   |
-| CNAME | www         | sswapnil.me   |
+| Type  | Name        | Content     |
+| ----- | ----------- | ----------- |
+| A     | sswapnil.me | 76.76.21.21 |
+| CNAME | www         | sswapnil.me |
 
 Replace `sswapnil.me` with your domain name and `76.76.21.21` with your EC2 instance's public IP address.
 
@@ -46,10 +44,10 @@ sudo nano /etc/nginx/sites-available/streamlit
 ```nginx
 server {
     listen 80;
-    server_name <External_ip> www.example.com example.com;
+    server_name <external-ip> www.sswapnil.me sswapnil.me;
 
     location / {
-        proxy_pass http://<internal_ip>:8501; # Forward requests to your Streamlit app running on port 8501
+        proxy_pass http://<internal-ip>:8501; # Forward requests to your Streamlit app running on port 8501
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
@@ -57,13 +55,12 @@ server {
         proxy_cache_bypass $http_upgrade;
     }
 }
-
 server {
     listen 443;
-    server_name www.example.com example.com <External_ip>;
+    server_name www.sswapnil.me sswapnil.me <external-ip>;
 
     location / {
-        proxy_pass http://<internal_ip>:8501; # Forward HTTPS requests to your Streamlit app running on port 8501
+        proxy_pass http://<internal-ip>:8501; # Forward HTTPS requests to your Streamlit app running on port 8501
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";
