@@ -1,5 +1,3 @@
-Certainly! Here's the revised README with the steps adjusted to clone the repository first and then run all necessary commands using the Makefile:
-
 # OmniBot  
 
 ## Project Overview
