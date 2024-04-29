@@ -28,7 +28,7 @@ First, SSH into your EC2 instance and update the package index and install Nginx
 
 ```bash
 sudo apt update
-sudo apt install nginx
+sudo apt install nginx -y
 ```
 
 ### Configuration
@@ -39,7 +39,7 @@ sudo apt install nginx
 sudo nano /etc/nginx/sites-available/streamlit
 ```
 
-2. Add the following configuration to the file, replacing `<External_ip>` with your EC2 instance's public IP and `<internal_ip>` with the private IP of your EC2 instance:
+2. Add the following configuration to the file, replacing `<External_ip>` with your EC2 instance's public IP and `<internal_ip>` with the private IP of your EC2 instance along with `sswapnil.me` with your domain name:
 
 ```nginx
 server {
@@ -48,19 +48,6 @@ server {
 
     location / {
         proxy_pass http://<internal-ip>:8501; # Forward requests to your Streamlit app running on port 8501
-        proxy_http_version 1.1;
-        proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection "upgrade";
-        proxy_set_header Host $host;
-        proxy_cache_bypass $http_upgrade;
-    }
-}
-server {
-    listen 443;
-    server_name www.sswapnil.me sswapnil.me <external-ip>;
-
-    location / {
-        proxy_pass http://<internal-ip>:8501; # Forward HTTPS requests to your Streamlit app running on port 8501
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
         proxy_set_header Connection "upgrade";

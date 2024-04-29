@@ -1,5 +1,5 @@
 UPDATE_CMD=sudo apt update && sudo apt-get update && sudo apt upgrade -y && sudo apt install git curl unzip tar make sudo vim wget python3-pip -y
-PIP_INSTALL_CMD=pip3 install -r requirements.txt
+PIP_INSTALL_CMD=pip3 install -r requirements.txt --break-system-packages
 PYTHON_CMD=python3
 STREAMLIT_CMD=python3 -m streamlit
 
