@@ -1,0 +1,46 @@
+Title: OMS Overview
+
+Modified on: Mon, 17 May, 2021 at 6:00 PM
+
+# what is OMS ?
+
+An Order Management System (OMS) is a critical tool that facilitates and manages the entire order lifecycle, from order placement to order delivery. It enables brands to efficiently manage orders from multiple channels, ensuring seamless operations. for more details refer this article [OMS](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202285-oms-overview).
+
+## Core Features of Vin eRetail OMS:
+
+1. **Managing Global Inventory**: Provides a comprehensive view of inventory across internal and external locations, ensuring real-time allocation and availability confirmation.
+   
+2. **Order Capture and Validation**: Involves order creation and validation, ensuring accurate and automated processing of orders placed through various channels.
+
+3. **Order Routing**: Routes orders to optimal warehouses based on factors like location, inventory availability, delivery cost, and priority.
+
+4. **Order Hopping**: Allows orders to be redirected to the next priority fulfillment center if rejected by the current one.
+
+5. **Order Splitting**: Divides large orders into smaller ones according to predefined rules.
+
+6. **Dropshipping**: Facilitates order fulfillment without the need to maintain physical inventory, allowing sellers to list and sell products on behalf of brands.
+
+7. **Order Shipment and Tracking**: Manages the shipping process and provides tracking information to buyers for transparency and visibility.
+
+8. **Omnichannel**: Offers a seamless customer experience across various sales channels, including online and brick-and-mortar stores.
+
+9. **Communication**: Sends notifications to customers via email and SMS based on order status and return updates.
+
+10. **Return Management**: Handles the return process, including refunding, exchanging, or issuing store credits, and integrates with sales channels for return requests.
+
+11. **Forward Logistics**: Integrates with leading logistics partners for pickup and tracking of orders until the last mile delivery.
+
+12. **Reverse Logistics**: Manages returned products from customer locations to warehouses/stores for refurbishment, recycling, or servicing.
+
+## Order Orchestration Strategies:
+
+Brands generally have various order orchestration strategies that they want to automate. For example, when order comes for a particular SKU/quantity, the seller may want to prioritize it as “High priority order” OR if the order comes from South India Region, seller may want to fulfill the order from his Chennai warehouse or may be if seller wants to decide on the Transporter partner based on customer pin code.
+
+In such cases, user can define the order validation rule, order routing rule and shipping rule in the system respectively using ’OMS Rules’ module. Once the rules are defined, system would process the orders following the logic placed by the seller.
+
+
+---
+
+This overview highlights the core features and functionalities of the Vin eRetail OMS, emphasizing its role in efficient order management across the entire order lifecycle.
+
+For more detailed information, please refer to the [OMS Overview](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202285-oms-overview).

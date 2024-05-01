@@ -1,0 +1,61 @@
+Title: Click & Collect
+
+Modified on: Mon, 25 Oct, 2021 at 9:07 PM
+
+# Click & Collect
+
+Click & Collect is a convenient trading method that allows consumers to purchase items online and then collect them from a designated store at their convenience. It offers customers the flexibility to choose a local store for collection and schedule a suitable time and date for pickup. for more details refer to this article [Click & Collect](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203680-click-collect).
+
+## Modes of Click & Collect:
+
+1. **Through vin eRetail screen**
+2. **Through vin Mobile app**
+
+Orders are created using the "Order Create API," which can be accessed [here](https://erp.vineretail.com/swagger/#/Orders/post_RestWS_api_eretail_v1_order_create).
+
+### Key Elements of a Click & Collect Order:
+
+- **Pickup Location**: Store location
+- **Source WH**: Location Code or Store
+- **Handover Value Code**: Optional
+
+### Click & Collect Modes in eRetail:
+
+#### Setting 1:
+- Automatically initiates Click & Collect after packing, with handover marking the order as shipped.
+- No need to receive the package in eRetail.
+
+#### Setting 2:
+- Involves the sequence: Pick > Pack > Ship > Receive > Handover
+
+### Order Processing Steps:
+
+1. **Generate Picklist**: Once the order reflects, generate a picklist.
+2. **Pack Order**: Click "Pack Order" after picking the items.
+3. **Select Transporter**: Choose "By hand Delivery" for Click & Collect orders.
+4. **Ship Order**: Applicable if Setting 1 is off.
+5. **Receive and Deliver**: 
+
+#### Click & Collect through the Mobile App:
+
+1. **Shipment Handover**: Select "Receive" after picking, packing, and shipping.
+2. **Receive Shipment**: Scan tracking number and confirm receipt.
+3. **Deliver Shipment**: Confirm delivery and capture customer signature.
+
+#### Click & Collect through eRetail Screen:
+
+1. **Shipment Handover**: Access the Shipment Handover screen in eRetail.
+2. **Receive Order**: Scan shipment and mark as received.
+3. **Handover Verification**: Validate handover value code.
+4. **Mark Delivery**: Confirm delivery in the Received tab.
+
+### Notification:
+
+- Users receive notifications for successful delivery.
+- All delivered or shipped orders can be searched in the All tab.
+
+---
+
+This document provides a comprehensive overview of Click & Collect, covering its modes, order processing steps, and verification processes.
+
+For detailed information, please refer to the [Click & Collect](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203680-click-collect).

@@ -1,0 +1,55 @@
+**Title: Location Enquiry**
+
+**Modified on:** Tue, 26 Apr, 2022 at 6:16 PM
+
+# Location Enquiry
+
+## what is Location Enquiry?
+
+The Location Enquiry feature in Vin eRetail empowers users to search and retrieve information about existing locations and their details. Users can enhance their search by applying various filters such as 'Location Code', 'Location Name', 'Location Type', and more. Additionally, users have the option to download/export all data available on the Location Enquiry screen. Furthermore, users can add new locations or edit existing ones within the system. for more details you can refer this article [Location Enquiry](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214576-location-enquiry).
+
+### Navigation:
+```
+Master >> Organization Management >> Location Enquiry
+```
+
+## Location Enquiry Screen
+
+Upon accessing Location Enquiry, users are presented with the following screen:
+![Location Enquiry Screen](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9157328609/original/JvzYCSIa6TlhcSCSbwTTCgI01y8H2xLKrA.png?1650977066)
+
+
+### Fields for Search:
+- **Location Code**: User-defined code to identify the location.
+- **Location Name**: User-defined name given to the location.
+- **Short Name**: Abbreviation for easy communication.
+- **Location Type**: Indicates the type of location (e.g., Franchise, Head Office, Store, Warehouse).
+- **Source Warehouse**: Name of the warehouse from which orders will be fulfilled for the selected location.
+- **Hierarchy Code**: Code of the organization associated with the location.
+- **Hierarchy Type**: Hierarchy of the location (e.g., Company, Region, Zone, SubZone).
+- **Status**: Current status of the location (e.g., Active, Deleted, Inactive).
+
+### Action Buttons:
+- **Search**: Retrieves a list of all locations based on default filter settings; further filter options are available.
+- **Reset**: Refreshes filter fields to default settings for a fresh search.
+- **Advance Search**: Allows for simplified search using a 'Location Tag' filter added during location creation.
+- **Export**: Enables users to export location details in an Excel template.
+- **Add New**: Used to create a new location in the system.
+
+## Export
+
+The Export button facilitates downloading location details in Excel format.
+
+## Add New Location
+
+Clicking the 'Add New' button navigates users to the Location Create/Edit screen, accessible directly from "Master >> Organization Management >> Location Create/Edit."
+
+## Edit Existing Location
+
+To edit an existing location, users navigate to the Location Enquiry screen and click on the blue-colored Location code. This action opens the Location Create/Edit screen, where users can modify location details.
+
+---
+
+This comprehensive overview provides insights into the Location Enquiry feature, its functionalities, and navigation options.
+
+For further details, refer to the [Location Enquiry](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214576-location-enquiry).

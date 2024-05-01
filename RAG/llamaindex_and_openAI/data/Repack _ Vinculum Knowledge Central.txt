@@ -1,0 +1,77 @@
+Title: Repack - Overview and Process
+
+Modified on: Wed, 23 Mar, 2022 at 6:43 PM
+
+# Repack - Overview and Process
+
+Repack is a feature used to convert one SKU into one or more SKUs with different quantities or unit measurements (UOM). It's commonly employed to repack bulk items like fresh fruits and vegetables into smaller packets for retail distribution. For instance, a 1kg onion SKU can be repacked into 500g packets. This process involves two SKUs: the "Pack From" SKU (e.g., 1kg onion) and the "Pack To" SKU (e.g., 500g onion). Both SKUs need to be defined in the system beforehand through SKU master. for more details please refer to the [Repack - Overview and Process](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000212586-repack).
+
+## Key Features of Repack:
+
+- **SKU Conversion**: Allows conversion from one SKU to another with different quantities or UOM.
+- **Weighted Average Cost Calculation**: Calculates the Weighted Average Cost (WAC) of the new SKU based on the inventory and WAC of the "Pack To" SKU and the total converted quantity of the "Pack From" SKU.
+- **Enhanced Inventory Management**: Facilitates efficient management of inventory by repacking items as needed.
+
+## Repack Enquiry Screen:
+
+To access Repack tasks and information, navigate to: `WMS > Manage Repack`.
+
+### Fields in Repack Enquiry:
+
+- **Repack No**: Unique number assigned to a Repack task.
+- **Location**: Warehouse location where Repack was performed.
+- **Status**: Indicates the status of the Repack task (Pending, Confirmed, or Cancelled).
+- **Transfer Date**: Date and time of creating the Repack task.
+
+### Audit Information:
+
+The Audit button provides details such as who created or modified the Repack task and when.
+
+### Action Buttons:
+
+- **Search**: Allows filtering and searching for specific Repack tasks.
+- **Reset**: Resets all text fields on the screen.
+- **Export**: Downloads the Repack report in Excel format.
+- **Add New**: Adds a new Repack task.
+
+## Repack Screen:
+
+This screen is used to enter details of the SKUs involved in the Repack process.
+
+### Pack From Screen:
+
+- **Pack From**: SKU from which items are repacked.
+- **Location**: Warehouse location where Repack is performed.
+- **Repack No**: Assigned number to the Repack task.
+- **Status**: Current status of the Repack task.
+- **SKU Code**: Select or type the SKU code for repacking.
+- **From SKU Desc**: Description of the selected SKU.
+- **LPN**: License Plate Number of the Pack From SKU.
+- **From Bin**: Bin location auto-populated based on the SKU.
+- **Lot**: Lot information auto-populated based on the SKU and bin.
+- **Available Qty**: Total available inventory of the SKU for repacking.
+- **Transfer Qty**: Desired quantity of Pack To SKUs to be formed.
+- **Wastage Qty**: Quantity of "From SKU" that couldn't be repacked.
+- **MRP**: Maximum Retail Price auto-populated based on the SKU details.
+- **WAC**: Weighted Average Cost auto-populated based on available quantity of the SKU.
+
+### Pack To Screen:
+
+- Items can be repacked into one or more SKUs.
+- Details of all Pack To SKUs are added one by one.
+- Each SKU's details are entered, and the "Add" button is clicked to add the SKU.
+
+#### Example:
+| Transfer Qty (kg) | Pcs | Wastage | WAC (previous) | Inventory Cost Ratio (%) | WAC (New) |
+|--------------------|-----|---------|-----------------|--------------------------|-----------|
+| Pack To 1: Rice 1kg | 50 | 50 | 30 | 10 | 45 | 23.75 |
+| Pack To 2: Rice 500g | 50 | 100 | 40 | 20 | 55 | 31.07 |
+
+- WAC (Rice 1kg): ((30*10) + (50+0) * 50 * 0.45)/ (10+50) = 23.75
+- WAC (Rice 500g): ((40*20) + (50+0) * 50 * 0.55)/ (20+50) = 31.07
+
+---
+
+This document provides an in-depth overview of the Repack feature, covering its purpose, key features, and the process involved in executing a Repack task.
+
+For further assistance, please refer to the [Repack - Overview and Process](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000212586-repack).

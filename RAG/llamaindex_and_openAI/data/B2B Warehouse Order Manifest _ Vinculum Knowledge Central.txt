@@ -1,0 +1,66 @@
+
+**B2B Warehouse Order Manifest**
+
+**what is B2B Warehouse Order Manifest**
+
+A manifest serves as a comprehensive list of items either delivered to or shipped from a warehouse or location. In the B2B warehouse context, manifests are essential for ensuring accurate and organized transportation of goods. This guide outlines the process of enquiring about, searching, creating, and confirming manifests in the B2B Warehouse system. for more information please refer this [B2B Warehouse Order Manifest](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203303-b2b-warehouse-order-manifest)
+
+**1. Enquiring About Existing Manifest**
+
+**Navigation:** WMS > Order Processing > Manage Manifest
+
+From the Manage Manifest section, users can:
+- Search for existing manifests.
+- Create new manifests.
+- Download manifests.
+- Scan delivery numbers/tracking numbers.
+- Print invoices.
+
+**Manage Manifest Screen:**
+
+Users can search for manifests based on the following criteria:
+- Manifest Number
+- Manifest Date
+- Transporter
+- Status
+- Location
+- User
+- Order Count & Print
+- Order Processing
+
+**Action Buttons:**
+- Search: Retrieve manifests based on specified criteria.
+- Reset: Refresh filter fields to default settings.
+- Advance Search: Perform advanced search based on additional parameters.
+- Export: Download filtered/searched results in CSV format.
+- Detail Export: Download all manifest details in CSV format.
+- Add New: Add a new manifest to the system.
+
+**2. Creating Manifest from Screen**
+
+To create a manifest from the screen:
+- Click on the "Add New" button.
+- Select the business type (B2B).
+- Input transporter details and other optional information.
+- Save the manifest. The system generates a unique manifest number automatically.
+- Scan box/pallet numbers and save the details.
+
+**3. Searching/Creating Manifest through Mobile App**
+
+- Log in to the Mobile app.
+- Select the "Manifest" option.
+- Choose "B2B Manifest" and perform actions such as searching, creating, or modifying manifests.
+- Scan LPNs (License Plate Numbers) to add to manifests.
+
+**4. Generating Invoice and Confirming Manifest**
+
+After scanning LPNs, users can generate invoices and confirm manifests:
+- Generate the invoice from the eRetail screen.
+- Once the details are correct, the system shows "invoice generated."
+- After generating the invoice, the status of the manifest changes from pending to "Invoiced."
+- Click on "Confirm Manifest" and print the manifest document for the transporter.
+- Once confirmed, the manifest status is updated accordingly.
+
+**Conclusion**
+
+Efficient management of order manifests is crucial for smooth logistics operations in the B2B Warehouse system. By following this guide, users can effectively create, track, and confirm manifests to ensure accurate shipment of goods. please refer this [B2B Warehouse Order Manifest](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203303-b2b-warehouse-order-manifest)

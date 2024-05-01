@@ -1,0 +1,62 @@
+Title: External Apps Configuration in Vinculum eRetail
+
+Modified on: Tue, 26 Apr, 2022 at 7:56 PM
+
+# External Apps Configuration in Vinculum eRetail
+
+## what is External Apps Configuration?
+
+Vinculum’s eRetail application facilitates interactions with various third-party systems such as payment gateways, wallets, financial systems, and more. These integrations are crucial for exchanging information between eRetail and third-party systems. To enable this integration, configuration is required using the External Apps screen. This screen allows users to configure and enable integrations between eRetail and third-party systems. for more details refer to this article [External Apps Configuration](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214582-external-apps).
+
+## Examples of External Apps:
+
+1. **Tax Setting**
+   - Supertax
+   - Avalara
+   - Cleartax
+
+2. **Financial System (Accounting)**
+   - Xero
+   - ZohoBooks (upcoming)
+
+3. **Wallets**
+   - Paytm
+   - Mobikwik
+   - Freecharge, etc.
+
+4. **Point of Sale**
+   - Logic ERP
+   - Wondersoft
+
+5. **Payment Gateway**
+   - PayU
+
+## Workflow
+
+1. Navigate to Master > Miscellaneous > External Apps Enquiry.
+2. On the External Apps Enquiry screen, users can view, edit, delete existing external apps or add new ones.
+3. Search filters include:
+   - ExtAppsType: Primary type of external apps (e.g., Tax Setting, Accounting, Wallets, etc.).
+   - ExtAppsName: Filter by the name of external apps (e.g., PayU, Supertax, Xero, etc.).
+   - ExtAppsDesc: Text-based search using external app descriptions.
+
+4. Columns on the External Apps screen:
+   - Image: External app image.
+   - Ext Apps Sub Id: System-generated unique ID for each external app.
+   - ExtAppsDesc: Description of the external app.
+   - ExtAppsType: Primary type of the external app.
+   - Status: Active or inactive status.
+   - Registration Date: Date of external app creation.
+   - Action: Delete option for external apps (irreversible action).
+
+5. To add a new external app, click the "Add New" button.
+6. Select ExtAppsType and ExtAppsName from the dropdown options.
+7. Configuration parameters auto-populate based on the selected type and name.
+8. Fill in all required fields and set the status to "Active."
+9. Instruction section guides users through the configuration parameters.
+
+---
+
+This document provides a comprehensive overview of configuring external apps in Vinculum eRetail, covering the introduction, examples, workflow, and detailed steps for configuration.
+
+For more detailed information, please refer to the [External Apps Configuration in Vinculum eRetail](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214582-external-apps).

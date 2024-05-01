@@ -1,0 +1,47 @@
+Title: B2B Warehouse Order Processing Overview
+
+Modified on: Tue, 15 Jun, 2021 at 11:23 AM
+
+# B2B Warehouse Order Processing Overview
+
+## what is B2B Warehouse Order Processing Overview
+
+B2B (Business to Business) warehouse order processing involves delivering products to businesses or other retailers. Orders are generally large so that the receiving businesses will have enough inventory to sell from. Businesses place their B2B orders in advance and in bulk so that they do not have to purchase for more orders frequently.
+
+B2B order processing can be different for different customers considering whether they allow product or order mixing or not. Businesses may have different compliance requirements, tax rules, product restrictions, SKU mixing restrictions, box type, parcel labels, barcodes, packaging instructions or specific invoicing structure. for more information please refer to the [B2B Warehouse Order Processing Overview](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203304-b2b-warehouse-order-processing-overview).
+
+## How to Manage B2B Orders?
+
+The user can identify the B2B order from the Order Enquiry screen in the Order Processing module. Users can also set OMS rules for identifying B2B orders. By default, orders come as B2C orders in eRetail. Setting conditions in Order Validation OMS rules allows orders to flow as B2B orders in the system.
+
+Users can configure B2B order settings from the Admin settings under B2B Configuration. This includes enabling B2B operations and configuring case pack settings, multi-conversion rate, auto delink pallet options, transshipment settings, and picking LPN mixing configuration.
+
+## Steps in B2B Warehouse Order Processing
+
+B2B warehouse processing is divided into 5 steps:
+
+### Step 1: Generate Picklist
+
+A pick list is used to indicate which items should be taken from the warehouse to fulfill shipment orders. Picklists can be generated based on various criteria such as by customer, by order, by SKU, or by wave picking.
+
+### Step 2: Picking
+
+Picking is the process of collecting products from specified warehouse locations and quantities as instructed in the picklist. Different picking strategies such as order-wise picking, batch picking, zone-wise picking, and wave picking can be employed based on warehouse configuration and requirements.
+
+### Step 3: Picking & Box Close (without sorting)
+
+If picking is done directly into the final box for an order, the boxes can be closed directly. Once all items are scanned and packed into the box/LPN ID, the box can be closed, and labels can be printed for shipping.
+
+### Step 3.1: Picking & Sorting & Close
+
+If order mixing is allowed, mixed orders are sorted into fresh boxes/LPNs as per the order. This sorting method can improve efficiency as items are automatically sorted for each order.
+
+### Step 4: Generating Manifest
+
+Manifest documents are created per transporter to list the items shipped from the warehouse to the customer location. Once orders are packed and closed, they are moved to pallets and aligned to the outbound lane. Manifests are generated for B2B orders at the time of shipping, and invoices are generated at the same time. Once the transporter picks up the manifest, the order status is updated to "Shipped."
+
+---
+
+This document provides an overview of the B2B warehouse order processing, including steps involved in managing B2B orders and processing them efficiently.
+
+For more detailed information and configuration instructions, please refer to the [B2B Warehouse Order Processing Overview](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203304-b2b-warehouse-order-processing-overview).

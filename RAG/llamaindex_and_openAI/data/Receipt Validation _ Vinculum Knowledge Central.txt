@@ -1,0 +1,55 @@
+Title: Receipt Validation
+
+Modified on: Mon, 18 Oct, 2021 at 10:23 PM
+
+# Receipt Validation
+
+## What is receipt validation?
+
+The receipt validation section allows users to validate the receiving or inward conditions concerning the purchase order. Users create conditions for receipt validation here, which are then selected when creating purchase orders. for more details please refer to the [Receipt Validation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207110-receipt-validation).
+
+### Objective
+
+This document aims to provide details about the receipt validation component of the WMS module in our eRetail system. It explains what receipt validation is and its purpose within the system.
+
+## Receipt Validation
+
+This screen is used to create various options for receipt validation when creating purchase orders.
+
+**Navigation:** Vinculum eRetail screen > WMS > Setup > Receipt Validation
+
+Upon accessing the screen, users will find certain mandatory fields denoted by *, which must be filled to avoid errors.
+
+### Receipt Validation Window
+
+Let’s discuss the details of each tab:
+
+#### Fields Description
+
+1. **Receipt Validation Code**: A unique code assigned to each validation.
+2. **Description**: Name given to the validation.
+3. **Percentage**: Allows setting a percentage value for receiving stock when raising a purchase order.
+4. **Is Default**: Marks an option as default on the PO screen.
+5. **Copy Value/To**: Linked tabs where copying values from one tab to another is possible, visible on the lottable validation screen.
+
+#### Material Received Date
+
+- **Material Received Date**: Enables making the receiving date mandatory.
+- **Attachment Mandatory**: Allows setting attachments as mandatory.
+- **MRP Validation**: Sets a value for receiving stock.
+- **Allow Access Qty**: Makes an option visible as default on the PO screen.
+- **Invoice Amount Validation**: Linked to Copy Value/To, mapping to the lottable validation screen.
+
+#### Additional Fields
+
+- **Receiving more than PO**: Allows inventory more than requested in PO.
+- **Allow Other than PO SKUs**: Enables delivery of SKUs other than those in the PO.
+- **Header Level Invoice Info**: Checks for header-level info in the invoice.
+- **Allow VBOM**: Makes delivery mandatory for VBOM SKUs.
+- **Challan No**: Enables making the challan number mandatory.
+
+---
+
+This document provides a comprehensive overview of receipt validation, including its purpose, navigation, and detailed explanation of each field and tab in the receipt validation window.
+
+For further details, please refer to the [Receipt Validation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207110-receipt-validation).

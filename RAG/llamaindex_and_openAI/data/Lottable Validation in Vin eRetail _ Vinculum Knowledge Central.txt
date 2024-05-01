@@ -1,0 +1,53 @@
+Title: Lottable Validation in Vin eRetail
+
+Modified on: Mon, 18 Oct, 2021 at 10:15 PM
+
+# Lottable Validation in Vin eRetail
+
+## About Lottable Validation
+
+Efficient warehouse operations start with an organized receiving process. Lottable validation plays a crucial role in this process. It involves grouping or batch creation of SKUs/items based on specific criteria such as pricing, manufacturing date, expiry date, etc., which aids in inventory movement. Lottable validation ensures that these criteria are validated correctly. Common examples of lottable validations include FIFO (First In First Out), LIFO (Last In First Out), and FEFO (First Expiry First Out). for more details you can refer this article [Lottable Validation in Vin eRetail](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207109-lottable-validation-in-vin-eretail).
+
+**Navigation**: eRetail Home Screen > WMS > Setup > Lottable Validation
+
+### Lottable Validation Screen
+
+**Fields Description:**
+- **Lottable Validation Code**: User-generated code for identifying and searching lottable validations.
+- **isDefault**: Indicates if the validation code is default.
+- **Description**: Description of the lottable validation criteria.
+
+**Action Buttons:**
+- **Search**: Displays a list of all lottable validations based on default filter settings.
+- **Reset**: Resets filter fields to default settings for a fresh search.
+- **Add New**: Allows adding a new lottable validation criteria to the system.
+
+## Creating a New Lottable Validation
+
+**Navigation**: Lottable validation screen > Add new > Lottable create/edit screen
+
+**Fields Description:**
+- **Lottable Validation Code**: Alphanumeric code defining the validation criteria.
+- **Description**: Explanation of the criteria or parameter.
+- **isDefault**: Checkbox to identify if the validation is default.
+- **Lottable 1-7**: Fields for entering important criteria like batch number, dates, or any other relevant information.
+
+**Actions:**
+- **Save**: Saves the validation code.
+- **Cancel**: Cancels the operation and returns to the lottable validation screen.
+
+## Editing Existing Lottable Validation Criteria
+
+Existing lottable validation criteria can be edited by clicking on the code from the lottable validation screen. This opens the lottable validation create/edit screen, where changes can be made and saved.
+
+## Linking Lottable Validation to SKU
+
+**Navigation**: eRetail Home Screen > Master > SKU Management > SKU Create/Edit Screen > Other Details > Details 2
+
+Lottable validation codes can be linked to SKUs by defining the code and selecting the SKU rotation criteria (FIFO/LIFO).
+
+---
+
+This document provides a detailed overview of lottable validation in Vin eRetail, covering its definition, navigation steps, screen descriptions, actions, and linking to SKUs.
+
+For more information, please refer to the [Lottable Validation in Vin eRetail](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207109-lottable-validation-in-vin-eretail).

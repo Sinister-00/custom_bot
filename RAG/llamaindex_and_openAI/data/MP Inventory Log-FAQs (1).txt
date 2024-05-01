@@ -1,0 +1,59 @@
+Title: MP Inventory Log FAQs: Common Errors and Solutions
+
+# MP Inventory Log FAQs: Common Errors and Solutions
+
+**Introduction:**
+In MP Inventory Log, various errors may occur during inventory synchronization with marketplaces. Here are the different error types frequently encountered on the MP Inventory Log screen along with their solutions:
+
+## 1. Error Type: "You are not allowed to list under FBF_AND_NON_FBF fulfilment mode." (Error Code: 25025)
+
+**Solution:** 
+- The seller should review the listing for the SKU mentioned in the error, as it may be incorrect.
+- Ensure the SKU is listed correctly according to marketplace requirements.
+
+## 2. Error Type: "Invalid warehouse" 
+
+**Solution:**
+- Check channel mapping configurations for any errors or missing information.
+- Contact the marketplace support if the error persists.
+
+## 3. Error Type: "Item [SKU] is suppressed" (Error Code: ITEM_SUPPRESSED)
+
+**Solution:**
+- Review suppression reasons under "Items > Direct Fulfilment Inventory" in Amazon Seller Central.
+- Make the items live on DF Model with the assistance of Amazon Account Manager.
+
+## 4. Error Type: "Invalid input 'Holi-Pack' for parameter 'SkuId'" (Error Code: SC_00002)
+
+**Solution:**
+- Ensure the SKU is listed under the correct fulfilment type (Amazon) in Manage All Inventory on seller central.
+- Relist the SKU under the Fulfilment Type Amazon and attempt to repush the inventory.
+
+## 5. Error Type: "Blank DTO List Responded By Integration" 
+
+**Solution:**
+- Review channel mapping configurations for any inaccuracies.
+- Contact the marketplace API support for further investigation.
+
+## 6. Error Type: "Inventory stuck in in-process status" 
+
+**Solution:**
+- Clear old entries and attempt to repush the inventory.
+- Verify channel configuration credentials.
+- Investigate issues with the inventory calculation process with the DB team.
+
+## 7. Error Type: "SKU = [SKU] :: location not available" 
+
+**Solution:**
+- This error is received from the Marketplace API.
+- Contact Marketplace support for resolution.
+
+## 8. Error Type: "Invalid input '8903439853389' for parameter 'SkuId'" (Error Code: SC_00002)
+
+**Solution:**
+- In Amazon Seller Central, ensure the SKU is listed under the correct fulfilment type (Amazon).
+- Select the fulfilment type as Amazon in the Amazon panel.
+
+---
+
+This document provides an overview of common errors encountered during inventory sync with marketplaces and their respective solutions.

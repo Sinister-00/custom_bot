@@ -1,0 +1,43 @@
+Title: Bulk Update Lottables
+
+Modified on: Tue, 5 Jul, 2022 at 1:14 PM
+
+# Bulk Update Lottables
+
+**Bulk update Lottables** is a feature-rich screen that enables users to upload lottable information for multiple SKUs in bulk. This functionality streamlines the process of updating lottable details, such as quantity, MRP, lot number, expiry date, manufacturer date, and more, for various SKUs simultaneously. for more details refer to this article [Bulk Update Lottables](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216913-bulk-update-lottables).
+
+## Navigation:
+**WMS >> Inventory >> Bulk Update Lottables**
+
+Upon navigating to the specified path, users are presented with the bulk update lottables screen.
+
+### Key Components of the Screen:
+
+1. **Excel Template Snapshot**:
+   - Provides users with an Excel template to fill in the required lottable information.
+   - Highlights mandatory fields to ensure completeness.
+
+2. **Action Buttons Description**:
+   - **SKU**: Batch number of the imported file is visible here.
+   - **Lotno.**: Allows users to upload the filled template.
+   - **Update Lottable 1-6**: Displays information captured in respective lottable fields such as MRP, lot number, expiry date, manufacturer date, etc.
+   - **Remark**: Optional field for users to add remarks.
+
+3. **Screen-Level Tabs**:
+   - **Import Batch no.**: Displays the batch number of the imported file.
+   - **Upload Template**: Allows users to upload the filled template.
+   - **Download Template**: Enables users to download the template for filling lottable details.
+
+## Procedure:
+1. **Fill the Template**: Users populate the Excel template with the required lottable information.
+2. **Upload Template**: The filled template is uploaded from the same screen.
+3. **Review Details**: The uploaded details become visible on the screen for review and verification.
+
+## Alternative Method:
+If users prefer an alternate method or need to perform similar activities differently, they can utilize the **SKU Lot Transfer** window. For detailed instructions on this alternative method, please refer to the SKU Lot Transfer document.
+
+---
+
+This document provides a comprehensive overview of the bulk update lottables feature, including navigation, key components, procedure, and an alternative method for performing similar tasks.
+
+For more information, please refer to the [Bulk Update Lottables](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216913-bulk-update-lottables).

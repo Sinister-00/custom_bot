@@ -1,0 +1,49 @@
+Title: Zebra Printer Settings for Auto Printing
+
+Modified on: Mon, 10 Jan, 2022 at 2:52 PM
+
+# what is Zebra Printer Settings for Auto Printing
+
+Zebra level printers are commonly used for label printing purposes. To enable auto label printing, users need to follow specific steps, including installing the Zebra Printer Driver or a ZPL supported printer driver on their machine. Below are detailed instructions to set up auto label printing with a Zebra printer. for more information [Zebra Printer Settings for Auto Printing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000210122-zebra-printer-settings-for-auto-printing).
+
+## Steps for Auto Label Printing Setup:
+
+### Step 1: Hardware Setup
+
+1. **Plugin Zebra Printer USB Cable**: Connect the Zebra printer to your machine using a USB cable.
+
+### Step 2: Software Setup
+
+2. **Install Zebra Printer Driver**:
+   - Install the Zebra Printer Driver or a ZPL supported printer driver on your machine.
+   - After installation, navigate to Control Panel > Hardware and Sound > Devices and Printers.
+
+3. **Rename Printer**:
+   - Rename the Zebra printer as "VinLBL" in the Devices and Printers section.
+
+### Step 3: QZ Tray Installation
+
+4. **Download QZ Tray Software**:
+   - Visit the following link: [QZ Tray GitHub](https://github.com/qzind/tray/tags) or [QZ Tray Official Website](https://qz.io/download/).
+   - Download the file "QZ Tray 2.0.3" and save it on your machine.
+
+5. **Install QZ Tray**:
+   - Run the installation file downloaded in the previous step.
+   - Ensure that Java SE Development Kit is installed on your machine.
+
+6. **Start QZ Tray**:
+   - After successful installation, navigate to Start > All Programs > QZ Tray.
+
+7. **Automatic Startup**:
+   - Right-click on the QZ Tray icon and ensure that "Automatically Start" option is enabled.
+
+### Step 4: Label Printing
+
+8. **Test Print**:
+   - Once all setup steps are completed, attempt to print the label from the panel.
+
+---
+
+These detailed instructions cover the setup process for auto label printing using a Zebra printer. Following these steps ensures smooth and efficient label printing operations.
+
+For further assistance, refer to the [Zebra Printer Settings for Auto Printing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000210122-zebra-printer-settings-for-auto-printing).

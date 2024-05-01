@@ -1,0 +1,52 @@
+**B2B Warehouse – How to Manage and Generate Picklist**
+
+**Introduction**
+
+In vin-eRetail, managing picklists is a crucial aspect of warehouse operations. This guide provides detailed instructions on how to manage and generate picklists efficiently. for more information please refer to the [B2B Warehouse – How to Manage and Generate Picklist](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203461-b2b-warehouse-how-to-manage-generate-picklist-).
+
+**Navigation to Manage Picklist**
+
+To access picklist management functionalities, navigate to:  
+WMS > Order Processing > Manage Picklist
+
+**Manage Picklist Sections**
+
+1. **Enquiry Picklist:**  
+   - Enables users to search and take actions on existing picklists.
+   - Users can filter picklists based on various parameters such as Picklist No, Status, Picklist Created Date, etc.
+
+2. **Generate SKU-wise Picklist:**  
+   - Used to generate picklists either by assigning orders or by Zone/Bin.
+   - Users can choose between two methods: By Zone/Bin or Show Order List.
+
+3. **Manage Wave:**  
+   - Allows users to save and manage picklist criteria as waves for future use.
+
+**Action Buttons**
+
+- **Search:** Retrieve picklists/orders based on specified criteria.
+- **Reset:** Reset filter fields to default settings.
+- **Advance Search:** Perform advanced search based on additional parameters.
+- **Export:** Download filtered/searched results in CSV format.
+- **Detail export:** Download detailed picklist information in CSV format.
+- **Generate Picklist:** Create picklists based on selected orders or criteria.
+- **Save Wave Filter:** Save picklist criteria for future use.
+
+**How to Manage and Generate Picklist**
+
+1. **Generate Picklist Screen:**  
+   - Choose between generating picklists by Zone/Bin or by order details.
+   - Mandatory and optional sections allow users to specify picklist criteria.
+
+2. **Manage Wave Screen:**  
+   - Save picklist criteria as waves for future use.
+   - Edit, execute, or delete wave filters as needed.
+   - Customize wave execution mode as fixed or custom.
+
+
+
+For detailed instructions and screenshots,please refer to the [B2B Warehouse – How to Manage and Generate Picklist](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203461-b2b-warehouse-how-to-manage-generate-picklist-).
+
+**Conclusion**
+
+Efficient picklist management is essential for smooth warehouse operations. By following this guide, users can effectively manage and generate picklists to streamline order processing in the B2B Warehouse system.

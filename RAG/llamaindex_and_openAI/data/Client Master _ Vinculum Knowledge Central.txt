@@ -1,0 +1,54 @@
+Title: Client Master
+
+Modified on: Wed, 31 Jan, 2024 at 6:53 PM
+
+# Client Master
+
+## what is Client Master ?
+
+The Client Master functionality in eRetail allows users to create clients tailored to specific business requirements. It enables users to configure clients separately from the customers of the business. For instance, in Vin eRetail, users engaged in Warehouse Management Services can manage different clients and customers according to their business needs. Customers, typically end-users whose operations are fully managed by the user, are created in the Customer Master. However, for brands and sellers availing only warehousing services to stock inventory for a specific period, these entities are considered clients and can be created in the Client Master. for more details refer this article [Client Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213656-client-master).
+
+### Navigation for Client Master
+Master > Trading Partners > Client Master
+
+## Search and Filter Criteria
+
+Users can search and filter specific clients based on the following fields:
+
+- **Client ID**: Unique identifier for a client
+- **Client Name**: Registered name of a client
+- **Client Short Name**: Abbreviated name for easy identification
+- **Status**: Active or Inactive status of the client
+- **Country**: Registered country of the client
+- **State**: Registered state of the client
+- **City**: Registered city of the client
+
+### Action Buttons
+
+- **Search**: Displays results based on applied filters
+- **Reset**: Clears filter criteria
+- **Add New**: Enables creation of a new client
+- **Download**: Allows downloading of the list of clients displayed on the screen
+
+## Creating a New Client
+
+To add a new client, users can click on the "Add New" button, which opens a new tab named "Client Create/Edit." The following tabs capture details for the client:
+
+1. **Client Master**: Captures primary details of the client and corresponding address.
+   - **Mandatory Fields**: Client Name, Client ID, Client Short Name, Status, Client Currency
+   - **Optional Fields**: Is Billing required, Ext Client Code
+   - **Address Details**: Address1, Address2, Contact Person, Phone, Email, Country, State, City, Pin Code
+
+2. **User Defined Fields**: Captures custom fields created by the user for additional information if needed.
+
+3. **Client Location Link**: Enables linking of locations to the client. Users can add a list of locations for a specific client.
+
+4. **User Creation**: Allows users to add users specific to the locations created for the client.
+
+5. **Other Settings**: Enables configuration of additional default settings for the client, such as default Invoice Report and default label report.
+
+---
+
+This document provides a detailed overview of the Client Master functionality in eRetail, covering its introduction, navigation, search and filter criteria, action buttons, and steps for creating a new client.
+
+For more detailed information, please refer to the [Client Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213656-client-master).

@@ -1,0 +1,62 @@
+Title: Put-Away Enquiry
+
+Modified on: Tue, 9 Aug, 2022 at 7:08 PM
+
+# Put-Away Enquiry
+
+## what is Put-Away
+
+Put-Away is the process of moving items from a received shipment to the appropriate locations in a warehouse. The decisions regarding Put-Away are based on factors such as warehouse size, quantity of items received, physical weight, storage conditions, or the type of material present in the warehouse. It can be done manually by the user at the time of receiving shipment or through pre-defined Put-Away rules in eRetail. Using Put-Away rules facilitates easy access to goods and ensures organized inventory. for more details please refer to the [Put-Away Enquiry](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218292-put-away-enquiry).
+
+
+## Navigation to Put-Away Enquiry
+
+- **Location**: WMS >> Miscellaneous >> Put-Away Enquiry
+
+## Put-Away Enquiry Screen
+
+To create a new Put-Away, click **ADD New**. The Put-Away enquiry screen displays the following:
+
+- **Put-Away Type**: Select the type of Put-Away from the dropdown menu.
+- **Inbound No.**: Input the inbound number for which Put-Away needs to be performed.
+- **QC Status**: Indicates whether the quality check of the selected inbound has been completed.
+- **Remark**: Allows the user to add any remarks if necessary.
+
+## Put-Away Mode
+
+### User Defined Put-Away
+
+In this mode, the user selects the bin where they want to add the particular inventory or SKU inside the warehouse.
+
+### System Suggested Put-Away
+
+The system suggests the bin while allocating inventory inside the bin.
+
+## Generating Put-Away
+
+After filling the relevant details, click on **Generate Put-Away**. Then, follow these steps:
+
+1. **Scan SKU**: If scanning needs to be done through SKU, input the SKU code.
+2. **Apply Button**: The system suggests a bin based on defined steps and priorities under Put-Away Rule. Click on **Apply** to confirm.
+3. **Option to Scan SKUs**: Choose whether to scan SKUs in bulk or individually and save the setting.
+
+### Additional Tabs
+
+When selecting options in the dropdown menu, additional tabs appear, including:
+
+- **Put-Away Qty**: Indicates the quantity to be moved.
+- **Qty for Put-Away**: Shows the available quantity for Put-Away.
+- **Put-Away Qty same as Qty For Put-Away**: Allows copying both quantities if enabled.
+- **To Bin**: Used to put all quantities and SKUs in a single bin during inbound.
+
+After completing the setup, click on **Confirm**. The system will create the System Suggested Put-Away with relevant information like Put-Away No., Status, etc.
+
+## Put-Away Enquiry
+
+Users can search for Put-Away in the Put-Away enquiry screen.
+
+---
+
+This document provides detailed guidance on performing Put-Away in the system, covering Put-Away types, modes, and the generation process.
+
+For more information, please refer to the [Put-Away Enquiry](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218292-put-away-enquiry).

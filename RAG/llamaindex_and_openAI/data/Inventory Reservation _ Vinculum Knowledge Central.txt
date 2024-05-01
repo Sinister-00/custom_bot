@@ -1,0 +1,74 @@
+Title: Inventory Reservation
+
+Modified on: Wed, 5 Jan, 2022 at 8:12 PM
+
+# Inventory Reservation
+
+## what is Inventory Reservation
+
+Inventory reservation involves blocking certain inventory for channels, customers, stores, or customer groups from the common pool inventory. This process ensures that specific inventory remains reserved for designated purposes, preventing it from being used for other orders unless the reservation is canceled.  for more details you can refer this article [Inventory Reservation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000209784-inventory-reservation).
+
+
+### Reasons for Reserving Inventory:
+
+- Avoiding priority order delays due to stockouts.
+- Segregating inventory based on market demand.
+
+## Screens in Manage Inventory Reservation:
+
+1. **Manage Inventory Reservation**: Enquiry screen for viewing and managing existing inventory reservation keys.
+2. **Inventory Reserve**: Screen for creating or editing inventory reservation rules.
+3. **Snapshot Detail**: Displays SKU details, planned values, total quantity, and free quantity.
+
+### Screen 1: Manage Inventory Reservation
+
+- **Navigation**: eRetail Home Screen > WMS > Inventory > Manage Inventory Reservation > Inventory Reservation Enquiry screen.
+- **Fields Description**:
+  - IR Key: Generated upon saving inventory reservation details.
+  - IR Name: User-defined name.
+  - Status: Pending, Confirm, In Process, Active, Under Releasing, Inactive.
+  - Party Type: B2B Customer, Channel, Store, Customer Group.
+  - Party Code: Assigned code for each customer or group.
+  - Start Date/End Date: Scheduler run duration.
+  - Created Date/Created By: Details of when and by whom the IR key was created.
+- **Action Buttons**:
+  - Search: Find existing IR keys.
+  - Reset: Clear search results.
+  - Export: Export IR keys data.
+  - Add New: Create a new IR key.
+
+### Screen 2: Inventory Reservation Create/Edit
+
+- **Fields Description**:
+  - IR Key/IR Name: Generated upon saving inventory reservation details.
+  - Warehouse Location: Location for which reservation is created.
+  - Party Type/Party Code: Customer or group details.
+  - Start Date/End Date: Scheduler run duration.
+  - Planned Type: Percentage or Absolute Qty.
+  - Planned Type Details: Percentage - Reserve Type options; Absolute Qty - Priority options.
+  - Reserve Code: SKU or Category code.
+- **Action Buttons**:
+  - Save: Save details.
+  - Confirm: Confirm IR key details.
+  - Add New: Create a new IR key.
+  - Reset: Clear entered data.
+  - Audit: View creation and update details.
+
+### Screen 3: Snapshot Detail
+
+- Displays SKU details, planned values, total quantity, and free quantity.
+- **Action Buttons**: Save, Confirm, Add New, Reset, Audit.
+
+## Steps to Create IR Rule:
+
+1. Click on "Add New" button.
+2. Fill required details and click "Save".
+3. Click "Confirm" to finalize.
+4. Run the rule manually or wait for scheduler.
+5. Monitor status changes and inventory updates.
+
+---
+
+This document provides comprehensive information on managing inventory reservations, covering key screens, fields, actions, and steps to create IR rules.
+
+For more detailed information, refer to the [Inventory Reservation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000209784-inventory-reservation).

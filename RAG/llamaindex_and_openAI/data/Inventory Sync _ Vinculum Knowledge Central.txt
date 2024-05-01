@@ -1,0 +1,49 @@
+Title: Inventory Sync
+
+Modified on: Fri, 16 Apr, 2021 at 2:53 PM
+
+# Inventory Sync
+
+## what is Inventory Sync
+
+Omni Channel and Multi-channel selling have become integral parts of business expansion for sellers. The Inventory Sync feature in Vin-eRetail provides users with insights into inventory pushed to marketplaces, including timestamps and error notifications. for more details please refer to the [Inventory Sync](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000200949).
+
+## Accessing Inventory Sync in eRetail
+
+In Vin-eRetail, navigate to: **WMS > Inventory > MP Inventory (MP-Marketplace)**.
+
+For detailed information on attributes and inventory calculation, click [here](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000200949).
+
+## Inventory Sync Screen
+
+The Inventory Sync screen displays crucial information for managing inventory synchronization:
+
+1. **Client**: (Only if multi-client)
+2. **SKU**: Unique code assigned to the SKU in Vin-eRetail.
+3. **Channel SKU**: SKU Code of Marketplace linked as Channel SKU in SKU Channel Mapping.
+4. **Channel Product ID**: Product Code, listing ID, or FSN Code of Marketplace linked as Channel Product ID.
+5. **Channel**: Combination of channel name & channel code created by the seller on Vin-eRetail.
+6. **Inventory**: Calculated inventory pushed to Channels based on open orders, Buffer stock, Back Order Quantity.
+7. **Date**: Timestamp indicating the status of recent or backdated records.
+8. **Status**: Dropdown with options: In Process, Success, Submitted, Error.
+9. **Action Buttons**: 
+    - **Normal**: Displays "In process" inventory. Also shows data with "Submitted" status.
+    - **Archival**: Archives data after successful inventory push or displays inventory not pushed due to errors.
+
+## Managing Errors and Force Push
+
+- **Error Handling**: User can correct data based on error notifications or contact Vin-eRetail customer support.
+- **Force Push**: Moves inventory from "error" state for re-push to the marketplace.
+
+## Export and Benefits
+
+- **Export**: Allows exporting inventory log to Excel sheet.
+- **Benefits**:
+    - Record keeping of inventory pushed to different marketplaces.
+    - Quick resolution of discrepancies between inventory sync status and actual orders.
+
+---
+
+This document provides a detailed overview of the Inventory Sync feature in Vin-eRetail, covering access, screen layout, error handling, and benefits.
+
+For more detailed information, please refer to the [Inventory Sync](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000200949).

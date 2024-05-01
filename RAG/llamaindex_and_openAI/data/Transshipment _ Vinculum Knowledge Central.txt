@@ -1,0 +1,54 @@
+Title: Transshipment - Hub & Spoke Model
+
+Modified on: Fri, 4 Feb, 2022 at 4:30 PM
+
+# what is Transshipment - Hub & Spoke Model
+
+Transshipment involves the shipment of goods or containers to an intermediate destination before being sent to another destination. There are several reasons for transshipment, including changing the means of transport, consolidation, or deconsolidation of shipments. for more details please refer to the [Transshipment - Hub & Spoke Model](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000211164-transshipment).
+
+## Hub & Spoke Model:
+
+In the hub and spoke model, orders are processed through a central hub before reaching their final destination. Here's how it works:
+
+- **Order Flow**: Orders from small stores are raised to the mother warehouse, which acts as the central hub.
+- **Central Hub**: The central hub receives orders from the mother warehouse, local suppliers, or other hubs.
+- **Distribution**: Goods are then distributed from the central hub to smaller locations, dark stores, or pods owned by the company, known as spokes.
+
+### Benefits of Hub & Spoke Model:
+
+- **Fast Delivery**: Delivery can be planned from dark stores with provided route maps, enabling fast delivery.
+- **Simplified Shipping**: Pickup occurs at a designated central hub, simplifying the shipping process.
+- **Reduced Logistical Costs**: Centralized inventory management at the hub reduces logistical costs compared to managing inventories at dark stores within cities.
+
+## Process in eRetail:
+
+### Pre-requisite:
+
+Mother Warehouse shares import details either via mail or common import in eRetail.
+
+### Steps of Transshipment Processing in eRetail:
+
+1. **Import Data**: Import data in CSV format under the "Transshipment" import type via Admin > Imports > Common Import.
+   - The import includes details like LPN (Box ID), Invoice No., Invoice Amount, LBH, weight, address information, Doc Order No., expected received date, expected shipped date, etc.
+
+2. **Processing Steps**:
+
+   - **Step 1: Pending Screen**: View data expected to be received at the hub.
+   
+   - **Step 2: Box Scanning**: After receiving physical boxes, scan the boxes at the central hub using LPN and Doc. No.
+   
+   - **Step 3: Quality Check (QC)**: Mandatory step; the central hub can pass or reject LPNs after providing reasons for rejection.
+   
+   - **Step 4: Manifest Process**: Scan boxes with respect to the pods' location; generate the manifest, including transporter information.
+   
+   - **Step 5: Manifest Confirmation**: Confirm the manifest; LPNs are scanned before handover to the transporter.
+   
+   - **Step 6: Delivery Challan**: Once confirmed, a delivery challan is created; download in the required format.
+   
+   - **Step 7: Dispatched Data**: View dispatched data in the "Dispatched" screen; document numbers and LPN IDs with their status can be seen in the "All" screen.
+
+---
+
+This document provides a comprehensive overview of the transshipment process, particularly focusing on the hub and spoke model and its implementation in eRetail.
+
+For more detailed information, please refer to the [Transshipment - Hub & Spoke Model](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000211164-transshipment).

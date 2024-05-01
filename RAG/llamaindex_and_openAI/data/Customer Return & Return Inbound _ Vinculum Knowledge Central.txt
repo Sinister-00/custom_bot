@@ -1,0 +1,54 @@
+Title: Customer Return & Return Inbound
+
+Modified on: Tue, 28 Nov, 2023 at 6:46 PM
+
+# Customer Return & Return Inbound
+
+## what is Customer Return?
+
+Customer Return enables users to manage sales order returns efficiently, supporting two types: Delivered returns and Non-delivered returns. for more details you can refer this [Customer Return & Return Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218277-customer-return-return-inbound).
+
+### Customer Return Navigation to Return Enquiry:
+Returns & Transfers >> Return Enquiry
+
+### Return Enquiry Screen:
+
+- **Description**: Displays all sales order return requests.
+- **Search**: Narrow down results using various search fields and advanced search options.
+- **Fields Description**: Includes Return No., External Order No., Order No., Order Type, Order Channel, Status, Return Type, Return Category, Return Date, Created User, Confirmed Date, Return Close Date, Delivery No., External Invoice No., Order date, Amount, Reverse Tracking No., Transporter Name, Delivery Type, External Return No., External Return Status.
+- **Action Buttons**: Search, Reset, Advance Search, Export, Detail Export, Import, Add New.
+
+### Add New Return:
+
+- **Request Type**: Options include Request (Confirmed status) or Request & Inbound (Closed status).
+- **Fields Description**: Includes External Order No., Return Type, Category, Delivery Type, Reverse AWB No., Ext Reference No., Remarks, Reason, Ext Return No., Ext Invoice No., Reset Return Qty, Ext Return Status.
+
+## Return Inbound
+
+Return Inbound manages the inwarding of goods returned from marketplaces or web shops.
+
+### Navigation for Return Inbound create/edit:
+WMS >> Inbound >> Return Inbound create/edit
+
+### Return Inbound Screen:
+
+- **Selection**: Choose Customer Return number/Order No.
+- **Actions**: Manage Picking (for completed inbound), Create Inbound (for pending inbound).
+- **Fields Description**: Customer Return No., Transporter Code, Tracking No., Remarks, Vehicle No., Gross Weight, No. Of Boxes, Material Receive Date, Status, External Reference No., Inbound Location.
+- **Save & Confirm**: Mark inbound as Confirmed after setting return qty and bin location.
+
+### Section 2 - Inbound R TO (bulk):
+
+- **Action**: Create Inbound R TO bulk.
+- **Process**: Provide R TO Batch ID, select rows, and click Close tab.
+
+### Section 3 - Inbound Del Ret (Bulk):
+
+- **Action**: Select Inbound Del Ret (Bulk).
+- **Process**: Fill relevant details or select Batch ID, and click Close Batch.
+
+---
+
+This document provides detailed instructions for managing customer returns and return inbound processes in the warehouse management system.
+
+For more detailed information, please refer to the [Customer Return & Return Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218277-customer-return-return-inbound).

@@ -1,0 +1,91 @@
+**Title: Pricing Event**
+
+**Modified on: Wed, 23 Mar, 2022 at 7:00 PM**
+
+# Pricing Event
+
+## what is Pricing Event?
+
+For brands or multi-brand companies, managing promotions and discounts across various SKUs can be time-consuming. Pricing Event functionality facilitates the management of promotional offers and discounts for specific periods or regularly. These promotions are applicable to a range of SKUs and should reflect in orders for seamless business processing. for more details you can refer this article [Pricing Event](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213242-pricing-event).
+
+## Functionality Overview
+
+The Pricing Event module allows users to define promotional offers and discounts for a range of SKUs, customers, or product categories. Users can inquire about and edit these offers, which can be applied to specific SKUs, categories, subcategories, or brands.
+
+## Steps to Create a Pricing Event
+
+1. **Navigate to Pricing Event Module:**
+   - Click on the Master module and go to the Miscellaneous section.
+   - Select Pricing Event.
+
+2. **Add New Pricing Event:**
+   - Click on "Add New" to create a new pricing event.
+   - Fill in all the required details related to the pricing event and customer details.
+   - Click on "Next" to proceed.
+
+3. **Enter SKU Details:**
+   - Fill in the required details related to the pricing event, including SKU information.
+   - Add any User Defined Fields (UDFs) if necessary.
+   - Click on "Save" to add the event to the system.
+
+## Detailed Overview of Pricing Event Screen
+
+- **Pricing Event Code:** Unique identification code for each event.
+- **Pricing Event Name:** Name of the pricing event.
+- **Location Code:** Code for the location where the event is applicable.
+- **Customer:** Name of the customer for whom the event is created.
+- **Start Date & End Date:** Duration of the pricing event.
+- **Pricing Event Type:** Regular or temporary event.
+- **Status:** Current status of the event.
+- **isActive:** Indicates if the event is active or inactive.
+
+## Action Buttons
+
+- **Search:** Filter existing pricing events based on specific parameters.
+- **Reset:** Reset filter criteria.
+- **Export:** Export the list of pricing events.
+- **Detail Export:** Detailed export of pricing events.
+- **Add New:** Create a new pricing event.
+- **Advanced Search:** Improve search results with additional filters.
+
+## Pricing Event Details
+
+### 1. Pricing Events Section:
+
+- **Pricing Event Code:** Unique identifier.
+- **Pricing Event Description:** Description of the event.
+- **Status:** Scheme status.
+- **Pricing Event Type:** Regular or temporary.
+- **Effective Start Date & End Date:** Duration of the event.
+- **Active:** Indicates if the event is active.
+- **Customer Details:** Add customers to the event.
+
+### 2. Location Details Section:
+
+- Specify location details for the event.
+- Select price zone and specific locations.
+- Import location codes directly to the system.
+
+## SKU Details Section:
+
+- Define details for the SKUs included in the event.
+- Fill in information such as Merch. Hierarchy, Brand, SKU Code, Vendor, MRP Range, etc.
+- Specify discount type, operation, event criteria, and discount value.
+- Click on "Add" to save the event details.
+
+## Example Scenario:
+
+- Hypothetical example illustrating the creation of a pricing event for a specific SKU.
+- Parameters include SKU Name, Discount Type, Operation, Event Applicability, Discount Percentage, and Rounding Mode.
+
+## Action Buttons:
+
+- **Add New:** Create a new pricing event.
+- **Save:** Save the event details.
+- **Audit:** Audit existing events to view creation and modification details.
+
+---
+
+This document provides a comprehensive overview of the Pricing Event functionality, including steps to create an event, detailed screen descriptions, action buttons, and example scenarios.
+
+For more detailed information, please refer to the [Pricing Event](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213242-pricing-event).

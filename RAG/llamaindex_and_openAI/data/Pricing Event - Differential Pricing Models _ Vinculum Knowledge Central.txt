@@ -1,0 +1,65 @@
+Title: Pricing Event - Differential Pricing Models
+
+Modified on: Mon, 27 Mar, 2023 at 7:19 PM
+
+# Pricing Event - Differential Pricing Models
+
+## Introduction
+
+**Differential Pricing**: Differential pricing involves charging different prices for the same product based on various factors such as product form, payment terms, time of delivery, and customer segment. This method aims to maximize the organization's profit by tailoring prices to different customer segments. In Vin e-Retail, there are four differential pricing models available:
+1. Default model
+2. N.O.T model
+3. N.R.V model
+4. Outright model
+for more information please refer this article [Pricing Event](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000225890-pricing-event-differential-pricing-models).
+
+
+## Business Use Case
+
+Pricing Event is a B2B use case where users decide on the differential pricing for their customers. Users can set a margin in either Percentage or Absolute value for their B2B customers, either temporarily or permanently. The Pricing Event can be configured in the system from the Pricing Event screen in Vin e-Retail.
+
+### Pricing Event on System:
+
+To set up the Pricing Event, users navigate to:
+Vin e-Retail >> Masters >> Miscellaneous >> Pricing Event
+
+## Types of Pricing Models
+
+There are four different pricing models available in the Vin e-Retail system, each with distinct calculations to determine the final unit price.
+
+### Calculation Example:
+
+Consider an example with SKU = SKU1, B2B customer = Cust1, MRP = 1000, GST = 10%, and a margin of 10% (mark-down). The margin is picked from the customer master set by the user.
+
+#### For the Default Model:
+
+Net Amount = MRP - Margin = 1000 - 10% = 900/-
+Final Invoice Amount = 900/-
+
+#### For the N.O.T Model:
+
+Net Amount = [MRP / (100 + Tax) x 100] = [1000 / (100 + 10) x 100] = 909.09/-
+Taxable Amount = Net Amount - Margin = 909.09 - 100 = 808.09/-
+GST = 10% of Taxable Amount = 80.909/-
+Final Invoice Amount = Taxable Amount + GST = (808.09 + 80.909) = 890/-
+
+#### For the N.R.V Model:
+
+Net Amount = [MRP / (100 + Tax) x 100] = [1000 / (100 + 10) x 100] = 909.09/-
+Margin = 10% of Net Amount = 90.909/-
+Taxable Amount = Net Amount - Margin = (909.09 - 90.909) = 818.181/-
+GST = 10% of Taxable Amount = 81.8181/-
+Final Invoice Amount = Taxable Amount + GST = (818.181 + 81.8181) = 899.9991/-
+
+#### For the Outright Model:
+
+Margin = 10% of MRP/Net Amount = [(10 x 1000) / 100] = 100/-
+Taxable Amount = Net Amount - Margin = 1000 - 100 = 900/-
+GST = 10% of Taxable Amount = [(10 x 900) / 100] = 90/-
+Final Invoice Amount = Taxable Amount + GST = 900 + 90 = 990/-
+
+## Comparative Calculations of All 4 Models
+![Comparative Calculations](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/9183178680/original/8YBVtmLonAuY8M3GgkJdHQ3lkVipFwF3TA.png?1679924525)
+
+
+For more detailed information, please refer to the [Pricing Event](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000225890-pricing-event-differential-pricing-models).

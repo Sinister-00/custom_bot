@@ -1,0 +1,61 @@
+Title: Types of Zones & Zone Setup
+
+Modified on: Fri, 6 Aug, 2021 at 12:58 PM
+
+# what is Types of Zones & Zone Setup
+
+Zones in a warehouse are logical or physical groupings of locations used for stock keeping and inventory management. They help organize the warehouse and define constraints for tasks like put away, picking, and inventory movements. Here, we'll explore the types of zones commonly found in warehouses and how to set them up. for more details please refer to the [Types of Zones & Zone Setup](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000205130-types-of-zones-zone-setup).
+
+## Types of Zones:
+
+1. **Normal Zones**: Where standard warehouse processes like receiving and staging take place.
+2. **Sortation Zones**: Used for sorting SKUs order-wise or customer-wise after picking.
+3. **Physical Zones**: Similar to normal zones, where physical processes occur, such as saleable and returned zones.
+4. **Virtual Zones**: Created for specific actions like checking, sorting, or assembling, such as kitting and let down zones.
+
+These classifications are customizable based on warehouse needs. For example, a let down zone can be physical or virtual depending on whether the process happens physically at a location or virtually in the system.
+
+### Common Warehouse Zones:
+
+- **Saleable Zone**: Contains SKUs authorized for sale.
+- **Staging Zone**: Used for order fulfillment.
+- **Receiving Zone**: Where incoming SKUs are received.
+- **Damaged Zone**: For storing damaged SKUs.
+- **Returned Zone**: Houses returned items.
+- **QC Zone**: Quality check area.
+- **Packing Zone**: Where packing for shipment occurs.
+- **Kitting Zone**: Area for assembling kits.
+- **Let Down Zone**: Holds inventory before moving it to its respective zone.
+- **Storage Zone**: For bulk reserve storage.
+
+## Zone Setup in eRetail:
+
+### Navigation to Zone Setup in eRetail:
+WMS > Setup > Zone
+
+### Zone Detail Section:
+- **Zone Code**: User-defined code for the zone.
+- **Description**: Details about the zone.
+- **Pick to Bin**: Bin for picking products for the zone.
+- **Kit to Bin**: Bin for kitting products for the zone.
+- **QC Bin**: Bin for quality checking.
+- **Status**: Active or Inactive.
+- **Zone Type**: Normal or sortation zone.
+- **Sortation Zone**: For sorting SKUs after picking.
+- **Let down Bin**: Bin for auto-replenishment.
+
+### Action Buttons:
+- **Search**: Filters and displays zones based on criteria.
+- **Reset**: Resets filter fields to default settings.
+- **Add New**: Adds a new zone to the database.
+
+### FAQs on Zone Setup:
+- **Creating a New Zone**: Click "Add New" and fill in zone details.
+- **Editing a Zone**: Click the edit icon next to the zone.
+- **Audit Trail**: Click the audit icon to view creation and modification details.
+
+---
+
+This document provides a comprehensive overview of warehouse zones and how to set them up in eRetail.
+
+For more detailed instructions, please refer to the [Types of Zones & Zone Setup](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000205130-types-of-zones-zone-setup).
