@@ -1,0 +1,90 @@
+**Title: Order Routing, Splitting & Hopping - An Overview**
+
+**Modified on:** Tue, 8 Jun, 2021 at 5:27 PM
+
+## Order Routing, Splitting & Hopping - An Overview
+
+### what is Order Routing, Splitting & Hopping?
+
+Order Routing, Splitting, and Hopping are crucial functionalities in Vin-eRetail for efficient order management and fulfillment. These processes ensure orders are allocated to optimal warehouses, divided appropriately, and transferred if necessary. for more details you can refer this article  [Order Routing, Splitting & Hopping](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203007-order-routing-splitting-hopping).
+
+### Order Routing
+
+**Functionality**: Vin-eRetail routes orders to the optimal warehouse based on various criteria such as location, inventory availability, delivery cost, priority, etc.
+
+**OMS Rules**:
+1. **Order Routing Rules**: Determines the allocation of orders based on predefined criteria.
+   - **Navigation**: Sales > OMS Rule > Order Routing/Split rule
+   - **Components**: Rule name, status, priority, setting icon, delete icon, add new rules.
+
+**Automatic Actions**:
+- **Set Source WH**: Automatically sets the source warehouse at the SKU level.
+- **Not Set Source WH**: Does not assign a warehouse based on specified conditions.
+
+**Adding New Order Routing Rules**:
+- Navigate to the "Add new Rules" button.
+- Enter rule details including condition and action in the Add Rule dialog box.
+
+**Methods of Routing Orders**:
+- Max Inventory
+- Custom Pref
+- Same City
+- Same Region
+- Setting Specific Location
+- Nearest Location
+
+### Order Splitting
+
+**Definition**: Dividing a large order into smaller ones automatically based on split rules.
+
+**Automatic Splitting**: Occurs during order allocation as per defined split rules.
+
+### Order Hopping
+
+**Definition**: Transferring orders to the next priority fulfillment location if rejected by a previous one.
+
+**Process**: Continues until the order is fulfilled or rejected by all designated locations.
+
+**Benefits**: Increases fulfillment rate, reduces operating costs, provides seamless omnichannel experience.
+
+**Creating Order Hopping Rules**:
+- Set up hopping rules under eRetail OMS rules to determine order flow.
+- Add multiple rules with priority levels to handle order routing effectively.
+
+### Seller Panel Order
+
+**Definition**: Orders fulfilled by sellers in a marketplace environment.
+
+**Functionality**: Orders placed in a marketplace and fulfilled by sellers.
+
+**Process**:
+1. Orders pushed to eRetail via integration.
+2. Vendor type of line items determines if it's a Seller Panel Order.
+3. Mode parameter under the Create Order API should be Dropship.
+
+**Seller Panel OMS Rules**:
+- Based on nearest location, max inventory, primary seller, fixed seller name.
+- Flags for order splitting and inventory availability.
+
+### Order Hopping in Vinculum Desktop App
+
+**Requirements**:
+- API URL
+- API Owner
+- API Key
+- Organization Code
+- Location Code
+- Zip Code
+
+**Generating API Key**:
+- Create an API under Admin > Manage API.
+- Add API names and access rights.
+- Use generated API key to access the desktop app.
+
+### Conclusion
+
+Order Routing, Splitting, and Hopping are critical processes in Vin-eRetail for efficient order management. By utilizing OMS rules and automation, businesses can streamline operations and enhance customer satisfaction.
+
+For more detailed instructions, please refer to the [Order Routing, Splitting & Hopping](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203007-order-routing-splitting-hopping).
+
+---

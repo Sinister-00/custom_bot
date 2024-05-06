@@ -1,0 +1,40 @@
+Title: SKU Label Print
+
+Modified on: Thu, 28 Oct, 2021 at 12:18 PM
+
+# SKU Label Print
+
+The SKU label printing process allows for customization of label content and size, including SKU code, title, vendor, variants, price, and barcodes. for more details please refer to the [SKU Label Print](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207356-sku-label-print).
+
+## SKU Label Print Screen
+
+This section enables users to print SKU labels manually or automatically.
+
+**Navigation to SKU Label Print**: Vin eRetail screen > WMS > Setup > SKU Label Print
+
+**Fields in SKU Label Print**:
+- **Label Type**: The format of label printing, customizable based on customer requirements.                                           |
+- **Print**: Initiates the printing process for the selected label type.                                                            |
+- **Reset**: Resets the current selected value.                                                                                   |
+
+**Prerequisites for SKU Label Print**:
+- Printer must support ZPL (Zebra Programming Language).
+- QZ tray must be installed on the system before printing SKU labels.
+
+### Printing Methods
+
+**1. Manual Print**:
+   - Click on "Generate Labels" from the Inbound RealTime screen.
+   - Select the SKU and click on "Print".
+   - Click "Print" to print the SKU label.
+
+**2. Automated Print**:
+   - SKU labels are automatically printed while scanning the SKU in Inbound RealTime.
+   - Configuration must be enabled for automatic SKU label printing.
+   - Auto printing works for selected locations configured in the system.
+
+---
+
+This document provides detailed information on SKU label printing, including customization options, printing methods, and prerequisites.
+
+For more detailed instructions, please refer to the [SKU Label Print](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207356-sku-label-print).

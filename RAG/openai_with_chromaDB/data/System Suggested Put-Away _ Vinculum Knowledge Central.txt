@@ -1,0 +1,59 @@
+Title: System Suggested Put-Away
+
+Modified on: Tue, 9 Aug, 2022 at 7:03 PM
+
+# System Suggested Put-Away
+
+## About Putaway
+
+Putaway is the process of efficiently moving items from a received shipment to designated locations within a warehouse. Decisions regarding putaway are based on various factors such as warehouse size, item quantity, weight, storage conditions, and material type. Putaway can be done manually by users during shipment receiving or predefined putaway rules can be established in eRetail. Utilizing putaway rules ensures easy access to goods and organized inventory. for more information please refer to the [System Suggested Put-Away](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218294-system-suggested-put-away).
+
+## Navigation to Putaway Enquiry
+
+- **Location**: WMS >> Miscellaneous >> Putaway Enquiry
+
+### Creating a New Putaway
+
+1. **Select Putaway Type**: Choose an option from the dropdown menu. For example, "Select Realtime Inbound" for inbound real-time putaway.
+   
+2. **Fill Relevant Details**:
+   - **Inbound No.**: Enter the inbound number for which putaway is required.
+   - **QC Status**: Indicates whether quality control for the selected inbound has been completed.
+   - **Remark**: Optional field for adding remarks.
+
+3. **Putaway Mode**:
+   - **User Defined Putaway**: Users select the specific bin for inventory placement.
+   - **System Suggested Putaway**: The system suggests a bin based on predefined rules.
+
+4. **Generate Putaway**: Click the button after filling relevant details.
+
+### Putaway Window
+
+- **Scan SKU or LPN**: Choose between scanning via SKU code or LPN.
+- **System Suggested BIN**: The system suggests a bin based on putaway rules.
+- **Apply Button**: Click to confirm the suggested bin.
+
+### Manage Putaway Rule
+
+- **Navigation**: WMS >> Manage Putaway Rule
+- **Set Priorities**: Set priorities against putaway rules and bins.
+
+### Putaway Window
+
+- **Bulk or Each**: Choose whether to scan SKUs in bulk or individually.
+- **Putaway Quantity**: Quantity of items to be moved.
+- **Qty for Putaway**: Available quantity for putaway.
+- **Putaway Qty same as Qty for Putaway**: Option to copy both quantities.
+- **To Bin**: If all quantities and SKUs are to be inbounded into a single bin, select a bin.
+
+5. **Confirmation**: After setup, click the confirm tab to create the system suggested putaway with relevant information like putaway number and status.
+
+## Putaway Enquiry
+
+- Users can search for putaways in the putaway enquiry screen.
+
+---
+
+This document provides detailed steps for creating system suggested putaways in the warehouse management system, covering navigation, setup, and confirmation procedures.
+
+For more information, please refer to the [System Suggested Put-Away](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218294-system-suggested-put-away).

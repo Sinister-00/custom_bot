@@ -1,0 +1,53 @@
+**Bins Enquiry & Bin Setup in Vin eRetail**
+
+**Last Modified:** Mon, 18 Oct, 2021 at 9:44 PM
+
+** what is Bin and Bin Types**
+
+In Vin eRetail, a storage bin represents the smallest unit of space in a warehouse, defining where goods are stored. These bins can be shelves, pallet positions, or any designated storage area. Bin names can indicate their function, such as let-down bins or kit-to-bins, or follow a coordinate system like aisle-stack-level.  for more details refer to this artilce [B2C Bulk Order Processing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207107-bins-enquiry-bin-setup-in-vin-eretail)
+
+Bins can also be categorized based on inventory status and features, such as good, bad, or damaged. Vin eRetail offers comprehensive bin management, allowing users to tailor setups to their specific warehouse or store requirements.
+
+**Bin Enquiry Screen**
+
+Accessible through V in eRetail screen > WMS > Setup > Bin enquiry, this section allows users to search for and view existing bin details, with options to refine searches as needed.
+
+- **Location:** Warehouse location.
+- **Bin Code:** Unique identifier for the bin.
+- **Zone:** Selection from predefined zones.
+- **Bin Bucket:** Indicates the status or feature of the bin (e.g., good, bad, or damaged).
+- **Bin Location Type:** Specifies the type of storage (e.g., palette, case, or regular).
+- **Approx. No of Units:** Estimated number of units stored.
+- **Bin Qty:** Current quantity of items in the bin.
+- **Status:** Active or Inactive status.
+- **Commingle Lot:** Indicates if multiple lots of the same item are stored in the bin.
+- **Commingle Item:** Indicates if different items are stored in the same bin.
+
+**Action Buttons:**
+- **Search:** Displays all bins or filters based on criteria.
+- **Reset:** Restores filters to default settings.
+- **Advance Search:** Provides additional filter fields for a more refined search.
+- **Download:** Saves filtered results in CSV format.
+- **Print:** Prints filtered results.
+- **Add New:** Allows users to add a new bin to the system.
+
+**Bin Setup**
+
+The process of creating bins involves several mandatory and optional fields, accessible through V in eRetail screen > WMS > Setup > Bin Create/Edit. It requires:
+
+- **Site Location:** Warehouse where the bin is located.
+- **Bin Code:** Unique identifier for the bin.
+- **Bin Type:** Categorization based on functionality (e.g., normal, let down, or pick to).
+- **BIN Flag:** Indicates the status of the bin (e.g., active or inactive).
+- **Is Active:** Allows users to mark the bin as active or inactive.
+- **BIN Bucket:** Categorization based on criteria like saleability (e.g., good, bad, or damaged).
+- **Zone:** Associated zone for the bin.
+- **Aisle:** Passage between rows of bins.
+- **Bin Location Type:** Type of storage (e.g., palette, case, or regular).
+- **Bin Coordinates:** Dimensions of the bin (length, breadth, and height).
+- **Other Details:** Additional specifications such as capacity, thresholds, and defaults for various processes.
+
+Users can configure bins according to their specific needs, ensuring efficient warehouse management tailored to their operations.
+
+
+for more details refer to this artilce [B2C Bulk Order Processing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000207107-bins-enquiry-bin-setup-in-vin-eretail)

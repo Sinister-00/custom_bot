@@ -1,0 +1,74 @@
+Title: B2C Warehouse - How to Manage Order Picking and Packing
+
+Modified on: Thu, 10 Jun, 2021 at 10:07 AM
+
+# B2C Warehouse - How to Manage Order Picking and Packing?
+
+Order packing is the process of packing all items for an order into an appropriate container before shipping it to the customer. It occurs after picking in the order fulfillment process. for more details refer to this artilce [B2C Warehouse - How to Manage Order Picking and Packing?](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203116-b2c-warehouse-how-to-manage-order-picking-and-packing-).
+
+## Order Packing Process
+
+- **Location**: Order packing can be done from the Manage Picking section in vin-eRetail.
+- **Navigation**: WMS > Order Processing > Manage Picking
+
+## Picking Process
+
+### Picking from Mobile App
+
+1. **Dashboard**: Select the picking option for order picking.
+2. **Orderwise Picking**: Choose orderwise picking for order selection.
+3. **Picking Methods**:
+   - By Picklist No.: Enter picklist number and process it.
+   - By Order No./Delivery No.: Enter order or delivery number and process it.
+4. **Scanning**: Scan the bin and items in the picklist.
+5. **Completion**: Once done, move to the next picklist.
+
+### Picking from Desktop
+
+- **Options**: Picking can be done by SKU or by Order.
+- **Configuration**: Pick and pack orders can be configured.
+- **Navigation**: Admin > Miscellaneous > Settings > Pick Pack Configuration
+
+## Manage Picking By SKU
+
+- **Selection**: Choose pending picklist or scan picklist number.
+- **SKU Scanning**: Scan SKU and enter quantity.
+- **Packaging**: Align transporter and choose packaging type.
+- **Confirmation**: Click "Confirm Packing" to move the order to the pack stage.
+
+## Manage Picking By Order
+
+- **Selection**: Enter order number and scan SKU.
+- **Packaging**: Align transporter and choose packaging type.
+- **Confirmation**: Click "Confirm Packing/Pack it" to change status to packed.
+
+## Manage Picking Screen
+
+- **Fields**:
+  - Order
+  - Delivery No
+  - Transporter
+  - Tracking No.
+  - No of Boxes-Weight
+  - LBH
+  - Shipping Address-Image
+- **Action Buttons**:
+  - Short Pick
+  - Pick All
+  - Print Packing Slip
+  - Delivery Split
+
+## Processed Order History Buttons
+
+- **Options**:
+  - Processed Order History
+  - Scanned SKUs History
+  - Pending SKUs
+  - Pack Scanned SKUs
+  - Show PIP Orders Only
+
+---
+
+This document provides a detailed guide on managing order picking and packing in a B2C warehouse using vin-eRetail, covering both mobile and desktop methods.
+
+For more detailed information, please refer to the [B2C Warehouse - How to Manage Order Picking and Packing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203116-b2c-warehouse-how-to-manage-order-picking-and-packing-).

@@ -1,0 +1,75 @@
+**Title: Outbound Memo**
+
+**Modified on:** Fri, 18 Feb, 2022 at 5:00 PM
+
+# Outbound Memo
+
+**Navigation to Outbound Memo:** eRetail Home Screen > WMS > Manage Outbound Memo
+
+## what is Outbound Memo?
+The Outbound Memo is a crucial tool for sending items out of the warehouse for various purposes, such as PR, photoshoots, free samples, client gifting, or repairs, which are not associated with sales orders, returns, or stock transfers. Managing Outbound Memo involves two main screens: Outbound Memo Enquiry Screen and Outbound Memo Create/Edit. [Outbound Memo](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000211810-outbound-memo).
+
+## Outbound Memo Enquiry Screen
+
+This screen serves as the default interface for managing Outbound Memo. Users can utilize tabs and fields to search for existing Outbound Memo details. Clicking the "search" button without any filter retrieves details of all past Outbound Memos created.
+
+**Field Details:**
+
+- **Doc No.:** Unique identifier assigned by the eRetail system to the Outbound Memo document.
+- **Doc Type:** Indicates whether items are returnable or non-returnable.
+- **Doc Date:** Creation date of the Outbound Memo document.
+- **Status:** Current status of the Outbound Memo (Closed, Issued, Open, Partially received, Short Closed).
+- **Issue Date:** Date on which the items were sent out.
+- **Issued To:** Name of the recipient.
+- **Department:** Internal department requesting the inventory movement (e.g., Marketing, Production, Misc).
+- **Issued Quantity:** Quantity of items issued.
+- **Received Quantity:** Quantity of items received.
+- **Reason:** Purpose of the inventory movement (e.g., Gifting, PR, Repair, Sample).
+- **Remarks:** Additional comments or remarks.
+- **Location:** Warehouse location.
+
+**Action Buttons:**
+
+- **Search:** To search for existing Outbound Memo details.
+- **Reset:** To reset the search criteria.
+- **Advance Search:** Filter search by SKU code.
+- **Export:** Export Outbound Memos details to an Excel sheet.
+- **Add New:** Create a new Outbound Memo.
+
+## Outbound Memo Create Screen
+
+By clicking "Add New" on the Outbound Memo Enquiry Screen, users can create an Outbound Memo document. Here are the field-wise details for creating the Outbound Memo document:
+
+**Field Details:**
+
+- **Doc Type:** Select whether the items are returnable or non-returnable.
+- **Issued To:** Name of the recipient.
+- **Period (days):** Duration for which inventory is moving out.
+- **Department:** Internal department requesting the inventory movement.
+- **Reason:** Purpose of the inventory movement.
+- **Remarks:** Additional comments or remarks.
+- **Email Required:** Checkbox to indicate if an email is required.
+- **Email ID:** Email ID details (enabled upon clicking the checkbox).
+- **Add SKU:** Button to add SKU details.
+
+**SKU Details:**
+
+- **Scanning Mode:** Choose between Each Piece Scan or Bulk Scan.
+- **SKU Code, From Bin, Lot, Out LPN, Quantity:** Mandatory fields for SKU details.
+- **Import:** Button to import SKU details.
+
+## How to Create and Receive Outbound Memo?
+
+1. Select Doc Type, enter details (mandatory fields marked with *), and click "Add SKU."
+2. Enter SKU details or import them.
+3. Click "Save" to create the Outbound Memo (status becomes "Issued").
+4. Confirm or cancel the Outbound Memo.
+5. Upon receiving items back, scan and receive them.
+6. After confirmation, the status of the returnable Outbound Memo changes to "Closed."
+7. In case of quantity discrepancies, choose "Short Close" from the dropdown.
+
+---
+
+This document provides a comprehensive guide to managing Outbound Memo in the eRetail system, covering both the enquiry and creation screens in detail.
+
+For further assistance, please refer to the [Outbound Memo](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000211810-outbound-memo).

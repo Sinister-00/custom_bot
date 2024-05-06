@@ -1,0 +1,71 @@
+**Title: Order Processing Overview**
+
+**Modified on:** Fri, 28 May, 2021 at 3:54 PM
+
+# what is Order Processing?
+
+Order processing begins when an order is allocated to a fulfillment center, which could be a store, warehouse, or any designated location. It encompasses outbound operations, focusing on picking, packing, and shipping items from the fulfillment center. This document elucidates various order processing procedures, business scenarios, and eRetail screens facilitating order processing. [Order Processing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202736-order-processing-overview).
+
+## Types of Orders Handled:
+
+1. **B2C Warehouse Orders**
+2. **B2B Warehouse Orders**
+3. **Bulk/Store Order Processing**
+4. **B2C Store Order Quickship**
+5. **Drop Shipping**
+6. **POS Orders (Integration)**
+
+Order processing involves sequential stages:
+
+### Picking:
+- **Definition**: Selecting and collecting articles in specified quantities to fulfill customer orders.
+- **Importance**: Ensures accurate fulfillment of customer orders.
+
+### Sorting:
+- **Definition**: Separating items based on destination or logical categorization.
+- **Purpose**: Facilitates efficient packing and shipping processes.
+
+### Packing:
+- **Process**: Weighing, labeling, and packing items securely for shipment.
+- **Features**: Supports various packaging requirements such as gift wrapping.
+
+### Manifest:
+- **Definition**: A document listing cargo delivered to or shipped from a warehouse.
+- **Contents**: Includes transporter details, SKU names, and customer addresses.
+- **Importance**: Serves as proof of shipping and provides essential shipment information.
+
+### Shipping:
+- **Process**: Transport or delivery partner accepts the manifest and picks up order items for delivery to designated locations.
+- **Role**: Ensures timely and accurate delivery of orders to customers.
+
+## Order Types and Descriptions:
+
+1. **B2C Warehouse Orders (Business to Customer)**
+   - Direct shipment of orders from the warehouse to end customers.
+   - Characterized by smaller quantities and simpler delivery processes.
+
+2. **B2B Warehouse Orders (Business to Business)**
+   - Orders shipped directly to businesses or retailers from the warehouse.
+   - Involves complex processes due to larger order sizes and compliance requirements.
+
+3. **Bulk/Store Order Processing**
+   - Selling products directly to consumers in bulk.
+   - Orders picked, packed, and shipped from the store.
+
+4. **B2C Store Order Quickship (Business to Customer)**
+   - Simplified process compared to warehouse orders, involving only packing and shipping.
+   - Typically executed in smaller stores with streamlined operations.
+
+5. **Drop Shipping**
+   - Retail model where the seller transfers orders to another wholesaler or fulfillment house for direct shipment to customers.
+   - Minimal involvement in the order processing process.
+
+6. **POS Orders Integration (Point of Sales)**
+   - Completion of retail transactions at the point of sale.
+   - Integrated with eRetail systems via third-party service providers for seamless order processing.
+
+---
+
+This overview provides insights into the intricacies of order processing, covering various types of orders and their respective processing procedures.
+
+For further details, refer to the [Order Processing Overview](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202736-order-processing-overview).

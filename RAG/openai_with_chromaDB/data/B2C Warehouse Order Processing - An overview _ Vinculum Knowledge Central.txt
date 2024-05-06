@@ -1,0 +1,47 @@
+Title: B2C Warehouse Order Processing - An Overview
+
+Modified on: Tue, 22 Jun, 2021 at 3:17 PM
+
+# what is B2C Warehouse Order Processing - An Overview 
+
+B2C (Business to Consumer) warehouse order processing involves delivering products to customers rather than businesses. Due to the high number of orders with smaller quantities, B2C warehouses function differently than B2B warehouses. Accuracy and speed are crucial in B2C order fulfillment to meet customer demands promptly and avoid negative feedback or returns. for more details you can refer this article [B2C Warehouse Order Processing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202918-b2c-warehouse-order-processing-an-overview).
+
+## Key Features of B2C Order Processing:
+
+- **Speed and Accuracy**: B2C order processing requires swift and accurate operations to meet customer expectations.
+- **Technology**: Latest technology and efficient management systems are essential at every stage of order processing.
+- **Customer Experience**: B2C warehouses may offer special packaging features like tissue paper, gift wrapping, or personalized greeting cards to enhance customer experience.
+
+## Order Processing Cycle:
+
+### Step 1: Generate Picklist
+
+- **Definition**: A pick list indicates items to be taken from the warehouse to fulfill shipment orders.
+- **Types**: Picklists can be generated based on customer, order, SKU, or wave picking.
+- **Methods**: Picklists can be generated order-wise or SKU-wise using vin e-Retail.
+
+### Step 2: Picking
+
+- **Process**: Collecting products from specified warehouse locations and quantities as per the picklist.
+- **Methods**: Picking can be done using a mobile app or a screen.
+- **Efficiency**: Various picking strategies are supported to improve warehouse efficiency.
+
+### Step 3: Packing
+
+- **Process**: Packing the order from the manage picking screen.
+- **Input**: User inputs transporter and delivery details for packing.
+- **Optional**: Scanning items before packing is optional.
+- **Features**: Gift-wrapping and generating marketplace labels are available at this stage.
+- **Confirmation**: User confirms packing and prints the invoice.
+
+### Step 4: Manifest
+
+- **Process**: Creating a manifest document per transporter after packing.
+- **Definition**: Manifest is a list of items shipped from the warehouse to the customer location.
+- **Completion**: Once the transporter scans the AWB no., the order moves out of the warehouse, completing the order processing.
+
+---
+
+This document provides an overview of the order processing cycle in a B2C warehouse, covering key features and each step in detail.
+
+For more detailed information, please refer to the [B2C Warehouse Order Processing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202918-b2c-warehouse-order-processing-an-overview).

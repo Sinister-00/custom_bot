@@ -1,0 +1,64 @@
+Title: Warehouse Order Allocation Strategy
+
+Modified on: Fri, 16 Feb, 2024 at 12:00 PM
+
+# what is Warehouse Order Allocation Strategy
+
+Whenever an order is routed to a warehouse, the next step is to allocate inventory for the items of that order. Order allocation involves locating inventory for orders and creating the work to pick that inventory. Order allocation OMS rules are used to assign order allocation strategies based on various factors such as order type, customer type, channel, on hold status, and order tag. for more information please refer to the [Warehouse Order Allocation Strategy](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202735-warehouse-order-allocation-strategy).
+
+## Allocation Strategy
+
+### Navigation to Warehouse Order Allocation Strategy:
+
+- **For OMS Rules**: Sales > OMS Rules > Allocation Rules > Allocation Strategy (Top right-hand corner)
+- **For WMS Setup**: WMS > Setup > Manage Allocation Strategy (Last one)
+
+### Creation of Allocation Strategy:
+
+1. Navigate to the specified path and click on the “Add New” button to create a strategy.
+2. Fill in the details:
+   - Strategy ID
+   - Strategy Name
+   - Remarks (optional)
+   - Override SKU LIFO/FIFO (Last In, First Out; First In, Last Out)
+   - Override Shelf Life
+   - Status
+   - Location
+   - UOM (Unit of Measurement)
+   - Bin Location Type (Case, Piece, or Regular)
+   - Zone
+   - Inventory Bucket
+   - Sort Rule
+   - Priority
+
+### Demo Example and Creation Process:
+
+- An Allocation Strategy is assigned to an Allocation Rule.
+- Example: If the warehouse location is “JX Karawaci” and the UOM of the Order item is “Each,” then the inventory will be allocated based on specific criteria.
+
+### Management of Allocation Strategy:
+
+- Users can check existing allocation strategies, search by various criteria, and view status-wise allocation strategies.
+
+## Order Allocation Rule:
+
+### Navigation to Order Allocation Rule:
+
+- Sales > OMS Rules > Allocation Rules > Add New Rules
+
+### Creation of Order Allocation Rule:
+
+1. Specify Rule name and Warehouse location.
+2. Add conditions for executing the rule on orders.
+3. Select the Allocation Strategy saved earlier.
+4. Save the rule.
+
+### Demo Example:
+
+- Example: If the source warehouse of the item is “JX-Karawaci” and the Order Type is “Prepaid,” then a specific Allocation Strategy will be applied to the items ordered.
+
+---
+
+This document provides detailed instructions on creating and managing warehouse order allocation strategies and rules.
+
+For more detailed information, please refer to the [Warehouse Order Allocation Strategy](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202735-warehouse-order-allocation-strategy).

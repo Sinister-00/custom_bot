@@ -1,0 +1,70 @@
+Title: How to Create/Edit Location in eRetail?
+
+Modified on: Tue, 26 Apr, 2022 at 7:41 PM
+
+
+## How to Create/Edit Location in eRetail?
+
+Locations in e-commerce can encompass franchises, stores, warehouses, or head offices. These locations serve as points where customers make purchases or where online orders are fulfilled. In eRetail, locations are manually created or uploaded from the backend. Once set up, location codes are used for various purposes including order fulfillment, OMS rules setting, order processing, and inventory management. for more details refer to the following article [How to Create/Edit Location in eRetail?](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214581-how-to-create-edit-location-in-eretail-).
+
+## Location Create/Edit Module Overview
+
+### Navigation:
+- **Master >> Organization Management >> Location Create/Edit**
+
+### Location Create/Edit Screen
+
+Upon navigating to Location Create/Edit, users encounter the following tabs:
+
+1. **Location Create**
+2. **Location Contact**
+3. **User Defined Fields**
+4. **Location Tags**
+
+### Location Create Tab
+
+#### 1. Location Details:
+
+- **Fields and Descriptions**:
+  - **Location Code**: Alphanumeric code identifying the location.
+  - **Location Name**: Name of the location.
+  - **Location Short Name**: Abbreviated name for easy communication.
+  - **Location Type**: Selection of location type (Franchise, Store, HO, WH).
+  - **Source Warehouse**: Warehouse from which SKUs are procured for fulfillment.
+  - **Status**: Activation status of the location (Active, Inactive, Discontinued).
+  - **Vendor Name**: Vendor name (Enabled for 'Franchise' type only).
+  - **Customer Name**: Customer name (Enabled for 'Franchise' type only).
+  - **Create PO**: Option for mandatory PO creation (Enabled for 'Franchise' type only).
+  - **Hierarchy Description**: Description of the organization.
+  - **Hierarchy Type**: Type of organization hierarchy.
+  - **VAT Regi. No., CST Regi. No., TIN No., GST Tin No., Pan Number, License No.**: Tax and registration details.
+  - **Tax Zone**: State where the location operates.
+  - **Ext. Loc.**: Location code for identification outside the organization.
+  - **SKU link to location, Is ARS Required, Last Hierarchy Code, ARS Run Loc, Loc Live Date**: Additional configuration fields.
+  - **Digital Sign URL, Digital Sign Image, Invoice Report, Price Zone**: Digital signature and invoice details.
+  
+#### 2. Address Details:
+
+- **Fields**: Address lines, Latitude, Longitude, Country, State, City, Pincode, Phone no., Email Id.
+
+### Location Contact Tab
+
+- Details of the point of contact (POCs) for the location, including name, contact details, designation, and primary contact identification.
+
+### User Defined Fields Tab
+
+- Custom fields for additional location information.
+
+### Location Tags Tab
+
+- Assignment of location tags for OMS rules setup.
+
+### Action Buttons:
+
+- **Save**: Save the details to create a new location.
+- **Reset**: Refresh all fields to blank for initiating the addition of a new location.
+- **Audit**: Displays information related to the creation and modification of the location.
+
+This document provides comprehensive guidance on creating and editing locations in the eRetail system.
+
+For more detailed information, please refer to the [How to Create/Edit Location in eRetail?](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214581-how-to-create-edit-location-in-eretail-).

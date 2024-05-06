@@ -1,0 +1,52 @@
+Title: Let Down Process
+
+Modified on: Mon, 20 Jun, 2022 at 2:30 PM
+
+# Let Down Process
+
+**what is Let Down:**
+The Let Down feature facilitates the movement of inventory from bulk bins to the bins used for picking SKUs to fulfill orders. It involves transferring products purchased in bulk from vendors to bins used for order fulfillment. for more details you can refer this article [Let Down Process](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214527-let-down-process).
+
+
+## Overview of Let Down Process:
+
+- **Purpose**: To move inventory from bulk storage to picking bins.
+- **Manual and Auto Modes**: Let Down tasks can be created manually based on user judgment or automated to replenish bins when inventory reaches its minimum threshold.
+- **Workflow**: Products are moved from a bulk bin to a temporary Let Down bin and then to a saleable bin. Two tasks are created: Pick Task and Put Task, both executed from the eRetail WMS mobile application.
+
+## Let Down Bin Configuration:
+
+- **Definition**: A Let Down Bin is assigned against the zone where the "To Bin" is located.
+- **Zone Configuration**: Each zone can have only one Let Down bin assigned to it. Configuration is done from the Zone Details screen in WMS setup.
+
+## Processing Let Down:
+
+### Manual Mode:
+
+- **Initiation**: User judgment determines when a Let Down task is created.
+- **Creation**: Tasks are manually created to replenish bins as needed.
+- **Task Enquiry**: Managed through the Let Down Task Enquiry screen, allowing users to search and manage Let Down tasks based on various parameters.
+
+### Auto Mode:
+
+- **Automatic Generation**: Tasks are automatically generated when inventory reaches its threshold level.
+- **Configuration**: Auto tasks are configured for each location through the Task Configuration tab in Admin settings.
+
+## Let Down Task Creation:
+
+1. **Navigation**: WMS > Inventory > Manage Let Down.
+2. **Details**: Enter SKU, From Bin, To Bin, LPN, Quantity, etc.
+3. **Assignment**: Assign the task to a picker.
+4. **Execution**: Execute Pick and Put tasks using the eRetail mobile application.
+
+## Managing Let Down Waves:
+
+- **Configuration**: Let Down Waves are configured to automate task generation.
+- **Setup**: Configure wave settings such as Pick Zone, Frequency, Start and End Dates, etc.
+- **Execution**: Let Down tasks are generated automatically based on configured parameters.
+
+---
+
+This document provides a comprehensive overview of the Let Down process, covering manual and automatic modes, task creation, wave management, and execution details.
+
+For more detailed information, please refer to the [Let Down Process](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214527-let-down-process).

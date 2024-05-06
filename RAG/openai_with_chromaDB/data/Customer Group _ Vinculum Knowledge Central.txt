@@ -1,0 +1,63 @@
+Title: Customer Group
+
+Modified on: Fri, 1 Apr, 2022 at 3:09 PM
+
+# Customer Group
+
+## what is Customer Group ?
+
+The Customer Group section of the master module allows users to search for and create groups of existing customers in the system. This feature is useful for businesses dealing with specific groups of customers, allowing them to organize and manage customer relationships more effectively. for more details you can refer this article [Customer Group](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213658-customer-group).
+
+## Creating a New Customer Group
+
+To create a new group in the system, follow these steps:
+
+1. Navigate to the Trading Partners tab of the Master module and click on Customer Group.
+2. Click on the "Add New" button to create a new group.
+3. Enter the Customer Group name and select the customers to be grouped together.
+4. Click on "Save" to create the group with a unique group name.
+
+## Inventory Reservation Management
+
+Customer Groups are also utilized for managing Inventory Reservation, where users can reserve inventory for a particular set of customers in the system.
+
+## Navigation
+
+To access the Customer Group feature, navigate to: Master > Trading Partners > Customer Group
+
+## Search Criteria
+
+The following fields can be used to search for customer groups:
+
+- CustomerGroup Code: Unique code to identify the Customer Group.
+- CustomerGroup Name: Unique name for each Customer Group.
+- Status: Active or Inactive status of the Customer Group.
+- No. of Customer: Number of customers in the selected group.
+
+## Action Buttons
+
+- **Search**: Displays results based on the applied filters.
+- **Reset**: Resets the filter criteria.
+- **Download**: Downloads the list of customer groups.
+- **Add New**: Enables the creation of a new customer group.
+
+## Creating a New Customer Group
+
+- Click on the "Add New" button on the Customer Group screen.
+- Enter a unique CustomerGroup Name.
+- Click on the "Add Customer" button to select customers to be grouped together.
+- Select customers based on Customer Code, Customer Name, or Type.
+- Click "OK" to confirm the selection.
+- Optionally, bulk import customers by importing a list of customer codes.
+- Click "Save" to create the customer group with a unique CustomerGroup Code.
+
+## Modifying Existing Customer Groups
+
+- To modify an existing group, select the group from the Customer Group screen.
+- Mark the group as Inactive or add/remove customers from the group as needed.
+
+---
+
+This document provides a comprehensive overview of the Customer Group feature, including its purpose, creation process, navigation, search criteria, action buttons, and modification options.
+
+For more detailed information, please refer to the [Customer Group](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213658-customer-group).

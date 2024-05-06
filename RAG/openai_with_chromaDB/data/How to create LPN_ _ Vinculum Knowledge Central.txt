@@ -1,0 +1,46 @@
+Title: How to Create LPN
+
+Modified on: Mon, 20 Jun, 2022 at 2:56 PM
+
+# How to Create LPN?
+
+LPN, also known as License Pallet Number or Box IDs, is essential for B2B order processing. LPNs facilitate the scanning process and streamline order processing. This document explains how to generate LPNs in the system. for more details refer to this article [How to Create LPN](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216170-how-to-create-lpn).
+
+## Enabling LPN Settings:
+
+1. **Navigation**: Admin >> Miscellaneous >> Settings
+2. **Settings Configuration**:
+   - Navigate to Pick Pack Configurations.
+   - Enable settings like Scan LPN on Picking, LPN Reuse After Ship, and LPN Mandatory for LPN.
+   - Ensure B2B Configuration is also enabled for B2B order processing.
+
+## Generating LPN:
+
+1. **Navigation**: WMS >> Miscellaneous >> LPN Enquiry
+2. **Fields Description**:
+   - LPN: Displays LPN IDs.
+   - Status: Shows the status of the LPN.
+   - Pick Start Date: Indicates the pick start date of LPN.
+   - Pick End Date: Displays the pick end date of LPN.
+   - Pick User: Shows the user who performs the activity.
+   - Total Qty: Indicates the quantity scanned for picking.
+   - Pallet ID: Reflects the Pallet ID against LPN.
+   - Manifest No.: Displays the manifested LPN details.
+   - Outbound No.: Indicates the outbound delivery number.
+
+3. **Advanced Search**: Allows users to filter results based on additional criteria like Order Channel, Order No., Delivery No., and SKU.
+
+4. **Creating New LPN**:
+   - Click on "Generate LPN" to create a new LPN.
+   - Enter the following details:
+     - Prefix: Add prefix of LPN.
+     - Suffix: Add suffix of LPN.
+     - Sequence Length: Mention the length of LPN.
+     - Label Type: Set the size of the Label.
+     - Number of LPN: Specify the number of LPNs required.
+
+---
+
+This guide provides detailed steps on enabling LPN settings and generating LPNs in the system for efficient B2B order processing.
+
+For more detailed information, please refer to the [How to Create LPN](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216170-how-to-create-lpn).

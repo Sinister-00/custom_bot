@@ -1,0 +1,62 @@
+## Manage MP Inbound Plan
+
+**Modified on:** Mon, 20 Jun, 2022 at 2:59 PM
+
+### what is Manage MP Inbound Plan ?:
+
+Manage MP Inbound Plan facilitates the inbound process for stock transfers, typically from sellers' warehouses to MP (Marketplace) fulfillment centers. These MPs could be Amazon FBA or Flipkart assured. This guide provides detailed instructions on accessing and utilizing the Manage MP Inbound Plan feature. for more details you can refer this article [Manage MP Inbound Plan](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216451-manage-mp-inbound-plan).
+
+### Navigation to Manage MP Inbound Plan:
+
+- **Path**: WMS >> Inbound >> Manage MP Inbound Plan
+
+### Screen Overview:
+
+Upon navigating to Manage MP Inbound Plan, users encounter the following screen:
+
+**Fields Description:**
+
+- **Inbound Plan No.**: Unique identifier for the inbound plan.
+- **From Site**: Originating warehouse location.
+- **To Site**: Destination warehouse or fulfillment center.
+- **Status**:
+  - Cancelled: Plan has been canceled.
+  - Confirmed: All details have been confirmed.
+  - In Process: Plan and stock transfer are ongoing.
+  - Pending: Plan is yet to be confirmed.
+- **Confirmed Date**: Date when the stock transfer is confirmed.
+- **Reason**: User-provided reason for stock transfer.
+  
+**Action Buttons:**
+
+- **Search**: Retrieves search results.
+- **Download**: Downloads search results in Excel format.
+- **Reset**: Resets search criteria.
+- **ADD New**: Initiates the creation of a new inbound plan.
+
+### Creating a New Inbound Plan:
+
+1. Click on the **ADD New** button.
+2. Fill in the details in the provided fields:
+   - **First Tab**:
+     - Current warehouse details.
+     - Inbound Plan ID (system-generated).
+     - Status (system-generated).
+     - Confirmed Date.
+     - From Site and To Site locations.
+     - Label Preference.
+     - Remarks.
+   - **ADD SKU button**:
+     - Select SKU code.
+     - SKU Description.
+     - Transfer Quantity.
+     - Available Stock.
+3. Click on **ADD SKU** to add SKU details to the grid.
+4. Utilize the **Import** option to add multiple SKUs based on specified parameters.
+5. Click **OK** to confirm the details.
+6. If all details are accurate, click on the **Confirm** tab to send the request to MP for confirmation.
+7. Upon confirmation by MP, the inbound plan will be created.
+
+This guide ensures a comprehensive understanding of managing MP Inbound Plan, enabling seamless stock transfers from sellers' warehouses to MP fulfillment centers.
+
+For more detailed information, please refer to the [Manage MP Inbound Plan](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216451-manage-mp-inbound-plan).

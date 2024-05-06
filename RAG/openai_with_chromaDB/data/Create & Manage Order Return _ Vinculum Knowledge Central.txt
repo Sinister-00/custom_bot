@@ -1,0 +1,78 @@
+Title: Create & Manage Order Return
+
+Modified on: Thu, 1 Jul, 2021 at 2:49 PM
+
+# what is Create & Manage Order Return ?
+
+The returns management module enables users to efficiently handle returns, facilitating the return of items to vendors and managing user returns. A return involves customers returning purchased items to the retailer for a refund, exchange, or store credit. The Vinculum eRetail System integrates with sales channels to process return requests. for more details you can refer this article [Create & Manage Order Return](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203967-create-manage-order-return).
+
+## Key Functions:
+1. **Search Existing Order Returns**
+2. **Create & Manage Order Returns**
+
+### Searching Existing Order Returns
+
+Users can manage order returns through the Vinculum eRetail application. The system provides functionality to view all order return requests on a single screen.
+
+**Navigation:** Returns & Transfers > Return Enquiry
+
+#### Return Enquiry Screen
+The Return Enquiry Screen allows users to search for existing order return requests using various search fields and advanced search options. Users can also create new sales order return requests from this screen.
+
+#### Search Criteria:
+- **Return No.**: Narrow search results by entering the return number.
+- **External Order No.**: Filter records by external order number.
+- **Order No.**: Search by specific order number.
+- **Order Type**: Filter return requests by order type.
+- **Order Channel**: View orders specific to an order channel.
+- **Status**: Filter return requests by status.
+- **Return Type**: View orders based on return type.
+- **Return Category**: Filter for a specific return category.
+- **Return Date**: Narrow the search by return date.
+- **Created User**: Filter records based on the user who created them.
+- **Confirm Date**: Narrow the search by confirmation date.
+- **Return Close Date**: Narrow the search by return close date.
+- **Delivery No.**: Search by delivery number.
+- **Other Indicative Fields**: Includes order date, amount, reverse tracking no., transporter name, and delivery type.
+
+#### Action Buttons:
+- **Search**: Populate the list of all sales order return requests.
+- **Reset**: Refresh filter fields to default settings.
+- **Advance Search**: Narrow search results by adding more criteria.
+- **Export**: Download search results in .xslx format.
+- **Detail Export**: Download detailed records.
+- **Import**: Add SKUs for return via import.
+- **Add New**: Create a new customer return request.
+
+### Creating an Order Return
+
+Users can manually create return requests. Here's how:
+
+**Navigation:** Returns & Transfer > Return Create/Edit
+
+#### Customer Return Screen
+Users can create a new order return by clicking the "Add New" button. They can also download an excel sheet for bulk return details and import it for processing.
+
+#### Return Fields:
+- **Request Type**: Indicates the reason for the return.
+- **External Order No.**: Enter the external order number.
+- **Delivery Location**: Choose the return delivery location.
+- **Return Type**: Indicates the reason for return (e.g., Delivered Return, RTO).
+- **Category**: Choose from refund or replacement.
+- **Delivery Type**: Choose delivery type (pick up, delivery).
+- **Other Details**: Include external/invoice numbers.
+
+#### Action Buttons:
+- **Refund**: Create a refund for the order.
+- **Generate Move**: Move inventory.
+- **Reverse Return**: Reverse a return order.
+- **Additional Tabs**: Customer Detail, User-Defined Field, Comment History.
+
+### Note:
+Detailed instructions for creating delivered and non-delivered returns are available in separate documentation.
+
+---
+
+This document provides comprehensive guidance on creating and managing order returns within the Vinculum eRetail system.
+
+For detailed instructions, please refer to the [Create & Manage Order Return](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203967-create-manage-order-return).

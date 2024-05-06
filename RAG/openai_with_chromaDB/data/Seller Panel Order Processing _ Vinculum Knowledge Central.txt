@@ -1,0 +1,65 @@
+Title: Seller Panel Order Processing
+
+Modified on: Fri, 25 Jun, 2021 at 12:59 PM
+
+# what is Seller Panel Order Processing
+
+Vinculum's Seller Panel, known as Vin-Supplier, empowers marketplace sellers to efficiently manage orders, returns, and inventory within their catalog. This panel is particularly utilized by partners or clients who operate within a marketplace ecosystem, such as Nykaa sellers managing their orders through the Vin-Supplier portal. for more details please refer to the [Seller Panel Order Processing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203681-seller-panel-order-processing).
+
+## Key Features of Vin-Supplier Seller Panel:
+
+- **Quick Onboarding**: Enables swift onboarding of sellers onto the marketplace platform.
+- **Comprehensive Dashboard**: Provides a consolidated view of records and business key performance indicators (KPIs).
+- **Order Management**: Facilitates the management of orders, shipping labels, invoices, SKUs, and inventory.
+- **Order Status Updates**: Allows sellers to update order statuses directly to the marketplaces.
+- **Support for Multiple Fulfillment Modes**: Supports various fulfillment modes to cater to diverse seller needs.
+- **Returns Management**: Enables handling of returns (RTOs) and delivered returns efficiently.
+- **Seller Support**: Provides features like support tickets, notifications, reports, and message broadcasts to assist sellers effectively.
+
+## Managing Orders in Vin-Supplier Seller Panel:
+
+### Dashboard Overview:
+
+The seller panel dashboard consists of multiple tabs, including Manage Orders, Upload Invoice Series, SKU, Procurement, Manage ASN, Returns, Export Report Status, and Reports.
+
+### Managing Orders:
+
+Orders are managed primarily through the "Manage Orders" section, which allows users to handle confirmed, shipped, or pending orders. This section is divided into two tabs: Active Orders and Archived Order List.
+
+#### Active Orders:
+
+- **Navigation**: Manage Orders > Active Orders
+- **Functionality**: Provides details of confirmed and pending orders.
+- **Filtering Options**: Users can filter orders based on SLA (Service Level Agreement) status.
+- **Order Modes**: Orders are categorized under different modes such as Dropship, Fulfilled by 3PL, Ship via FC, and Vendor Self Delivery.
+
+##### Order Processing Tabs:
+
+1. **Confirmed**: Displays confirmed orders. Users can generate invoices and reject orders.
+2. **Ready For Ship**: Lists orders ready to be shipped. Users can schedule pickups, mark orders as shipped, and print invoices and shipping labels.
+3. **Shipped**: Shows shipped orders along with shipping-related details.
+
+#### Archived Order List:
+
+- **Functionality**: Contains a list of delivered and canceled orders.
+- **Actions**: Allows printing invoices, shipping labels, and updating seller information.
+
+### Demo Example:
+
+1. **Generate Invoice**: In the Active Orders window, select a confirmed order and click "Generate Invoice".
+2. **Invoice Confirmation**: Select transporter, add AWB no. and weight, then click "Confirm" to generate the invoice.
+3. **Order Status Update**: The order status changes to "Ready for Ship".
+4. **Mark Shipped**: Move to the "Ready for Ship" tab, select the order, and click "Mark Shipped".
+5. **Notification**: Receive a notification confirming successful shipment.
+6. **View Shipped Orders**: Access all shipped orders in the "Shipped" tab.
+
+#### Additional Functionality:
+
+- **Update Shipping Cost**: Enables updating the shipping cost of an order.
+- **Manifest Download**: Manifests can be downloaded from the "Reports > Manifest" option.
+
+---
+
+This document provides a comprehensive guide to managing orders in the Vin-Supplier Seller Panel, covering features, functionalities, and step-by-step procedures.
+
+For further assistance or detailed information, please refer to the [Seller Panel Order Processing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203681-seller-panel-order-processing).

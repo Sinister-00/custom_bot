@@ -1,0 +1,62 @@
+Title: Customer Master Overview
+
+Modified on: Wed, 31 Jan, 2024 at 6:03 PM
+
+# what is Customer Master ?
+
+In Vin eRetail, the Customer Master module is essential for systems dealing with orders and returns, placing customers at the forefront. Each customer is identified by a unique customer code in the system, facilitating transactions related to orders or returns. There are various methods to create customers in the system, either through the web portal or via APIs directly from external systems. for more details you can refer this article [Customer Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000212663-customer-master).
+
+## Creating a Customer in eRetail Web Portal:
+
+1. **Navigation**: Go to the Master module and click on Customer Master.
+2. **Add New**: Click on "Add New" to add a new customer to the screen.
+3. **Enter Details**: Input details related to the customer you wish to create in the system.
+4. **Save**: Click on "Save," and the entries will be reflected on the Customer Master screen.
+
+## Customer Master Fields Description:
+
+- **Customer Code**: System-generated unique code for each customer, uneditable once saved.
+- **Customer Name**: Name of the customer.
+- **Ext Customer Code**: External customer code from any other platform.
+- **Type**: Type of customer (e.g., B2B, B2C), configurable as per requirements.
+- **Status**: Customer status, either Active or Inactive.
+- **Primary Contact**: Primary contact number of the customer.
+- **Primary Email**: Primary email address for the customer.
+- **Created Date**: Date on which the customer is created in the system.
+
+## Tabs for Customer Details:
+
+1. **Customer Details**: Captures all details for a particular customer, including mandatory and non-mandatory fields.
+   - **Customer Code**: Unique code provided by the system.
+   - **Customer Name**: Name of the customer.
+   - **Is Active**: Check if the customer is active or inactive.
+   - **Parent Customer**: Primary customer with multiple linked customers.
+   - **Ext Customer Code**: External Customer Code.
+   - **Creation Source**: Source of customer creation.
+   - **Payment Terms**: Payment settlement days for the customer.
+   - **GSTIN/TIN**: GST Identification Number.
+   - **GL Code**: General Ledger code.
+   - **Tax Zone**: Applicable tax zone.
+   - **Type**: Type of customer.
+   - **Is Form C**: Check if Form C is applicable.
+   - **PAN No**: PAN Number.
+   - **Tax Ref No**: Tax reference number.
+   - **Credit Days**: Number of credit days.
+   - **Earned Points**: Points earned on different channels.
+   - **Expiry Date**: Expiry date for earned points.
+   - **Is Tax Exempt**: Check for tax-exempt customers.
+   - **Is TCS Applicable**: Check for Tax Collected at Source applicability.
+
+2. **Addresses**: Captures billing and shipping addresses.
+3. **Other Shipping Addresses**: Enables adding additional shipping addresses.
+4. **User Defined Fields**: Captures custom fields created by the user.
+5. **Other Settings**: Captures additional settings for the customer.
+   - **Invoice Report**: Choose the type of Invoice report.
+   - **Total Shelf Life**: Number of days of total shelf life for SKU(s).
+   - **Shelf Life on Picking**: Number of days of shelf life on picking for SKU(s).
+
+---
+
+This document provides a detailed overview of the Customer Master module in Vin eRetail, covering creation methods, fields description, tabs for customer details, and other settings.
+
+For more detailed information, please refer to the [Customer Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000212663-customer-master).

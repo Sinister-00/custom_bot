@@ -1,0 +1,88 @@
+**Title: Stock Adjustment**
+
+**Modified on:** Fri, 18 Feb, 2022 at 4:55 PM
+
+# Stock Adjustment - Comprehensive Guide
+
+## what is Stock Adjustment
+
+Stock Adjustment involves modifying the inventory of existing products in the system, either by increasing or decreasing the stock levels. It is utilized when there's a discrepancy between the stock as per eRetail and the physical stock present in the warehouse during cycle counting. for more details please refer to the [Stock Adjustment](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000210522-stock-adjustment).
+
+**Sections of Stock Adjustment:**
+
+1. **Stock Adjustment Enquiry:** This section allows users to search for previous adjustment records, confirm or cancel adjustments, and create new adjustments.
+
+2. **Stock Adjustment by Scan & Import:** In this section, users can save details of new adjustments either by scanning or importing.
+
+**Navigation:** eRetail Home Screen > WMS > Inventory > Manage Stock Adjustment
+
+## Manage Stock Adjustment Enquiry
+
+**Features:**
+
+- **Search and Download:** Users can search for and download previous adjustment records.
+- **Confirmation/Cancellation:** Users can confirm or cancel adjustments by checking the corresponding checkbox.
+- **Add New:** Allows users to create new adjustments.
+
+**Fields Description:**
+
+- **SKU Code:** Unique code generated for the SKU in eRetail.
+- **Date:** Timestamp of the stock adjustment creation.
+- **Adjusted Qty:** Quantity of SKU adjusted.
+- **Bin/LPN:** Warehouse location or LPN from where the adjustment is made.
+- **Reason:** Reason for adjustment.
+- **User:** Username of the user who performed the adjustment.
+- **Status:** Indicates the status of the adjustment.
+- **Remarks:** Additional comments provided by the user.
+- **Site Location:** Warehouse location of the adjustment.
+
+**Action Buttons:**
+
+- **Search:** Retrieve adjustment details based on specified criteria.
+- **Reset:** Clear search filters for a fresh search.
+- **Advanced Search:** Additional search criteria including Adjustment Mode and SKU Description.
+- **Download:** Download the last 20 adjustment reports.
+- **Confirm Adjustment:** Confirm selected adjustments.
+- **Cancel Adjustment:** Cancel selected adjustments.
+- **Add New:** Create a new adjustment.
+
+## Stock Adjustment by Scan & Import Screen
+
+**Fields Description:**
+
+- **Adjustment Mode:** Increase or decrease stock.
+- **SKU Code:** Unique code of the SKU.
+- **SKU Desc:** Description of the SKU.
+- **UOM:** Unit of measurement for the SKU.
+- **Adjusted Bin/LPN:** Location or LPN for the adjustment.
+- **Lot:** Lot number for the SKU.
+- **Adjusted Quantity:** Quantity being adjusted.
+- **Reason:** Reason for adjustment.
+- **Book Stock:** Total number of items for the SKU.
+- **Adjusted Stock:** Total number of items to be adjusted.
+- **Free Stock:** Total number of items available for allocation.
+- **Remarks:** Additional comments.
+
+**Steps to do Stock Adjustment:**
+
+1. Click "Add New" on Manage Stock Adjustment screen.
+2. Select adjustment mode.
+3. Enter/scan SKU code and other details.
+4. Click "Add" and then "Save" or "Confirm Adjustment."
+
+**Import Screen:**
+
+- Download and fill the template.
+- Upload the template file.
+- Click "Import" to complete the bulk adjustments.
+
+**Stock Adjustment Report:**
+
+- Downloadable from the enquiry screen.
+- Provides a snapshot of booked, adjusted quantity, adjusted stock, reason for adjustment, and user details.
+
+---
+
+This guide offers a detailed overview of Stock Adjustment, covering both enquiry and adjustment processes, along with step-by-step instructions for performing adjustments and importing data.
+
+For more detailed information, please refer to the [Stock Adjustment](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000210522-stock-adjustment).

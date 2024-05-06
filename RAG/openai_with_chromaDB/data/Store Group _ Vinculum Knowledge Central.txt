@@ -1,0 +1,67 @@
+**Title: Store Group - An Overview**
+
+**Modified on:** Wed, 23 Mar, 2022 at 2:09 PM
+
+# Store Group - An Overview
+
+**what is Store Group**
+
+Store Group is a functionality within eRetail that allows users to group multiple locations according to business needs. These groups can include various types of locations such as warehouses, franchises, or stores, and are identified by a unique system-generated group number. Store groups serve as a way to streamline business processing and can be utilized for various purposes as per user requirements. for more details please refer to the [Store Group - An Overview](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213243-store-group).
+
+**Functionality and Use**
+
+Store groups created in the system can be particularly useful in the Order Management System (OMS), where OMS rules can be applied based on specific groups. For instance, orders belonging to a particular geographical region can be grouped together, and specific routing rules can be applied to them accordingly.
+
+**Steps to Create a Store Group**
+
+1. **Navigation**: To create a store group, navigate to the Master module and select Store Group under Organization Management.
+   
+2. **Add New**: Click on the "Add New" button to create a new group.
+
+3. **Fill Details**: Enter a name for the store group and click on "Add Location."
+
+4. **Select Locations**: A dialogue box will appear, allowing the user to select required locations from a list. The corresponding location codes will be automatically populated.
+
+5. **Save**: After selecting all the locations, click on "Save" to add the store group to the system. The group will now be visible in the Manage Store Group screen.
+
+**Manage Store Group Screen**
+
+The Manage Store Group screen allows users to search and filter existing store groups based on various fields:
+
+- Store Group Code
+- Store Group Name
+- No. of Locations
+- Created by
+- Created Date
+- Updated by
+- Updated Date
+
+**Action Buttons:**
+
+- **Search**: Filter existing store groups based on specified criteria.
+- **Reset**: Reset filter criteria.
+- **Download**: Download the list of store groups displayed on the screen.
+- **Add New**: Create a new store group.
+
+**Creating a New Store Group**
+
+To create a new store group, fill in the following details:
+
+1. **Store Group Code**: System-generated unique serial number.
+2. **Store Group Name**: Name of the store group.
+3. **No. of Locations**: Number of locations in the group.
+4. **Status**: Active or Inactive status.
+
+**Adding and Removing Locations**
+
+- Click on "Add Location" to select locations from a dropdown list.
+- Corresponding location codes will be auto-filled.
+- To remove a location, select it from the grid and click on "Remove."
+
+**Conclusion**
+
+Store groups offer a convenient way to organize and manage locations within eRetail, providing flexibility and efficiency in business processing.
+
+---
+
+This document covers all aspects of the Store Group functionality in eRetail, including its purpose, creation process, management, and usage. For more detailed information, please refer to the [Store Group - An Overview](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213243-store-group).

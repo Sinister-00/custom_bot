@@ -1,0 +1,36 @@
+# FAQ on STO/STO Processing
+
+**Introduction:**
+STO (Stock Transfer Order) is utilized for transferring or maintaining stock globally during stock transfers between multiple locations.
+
+## Question 1: Not able to Create the STO.
+**Reason:** 
+You must be creating STO from the Head Office. Always create STO from the "from" location.
+
+## Question 2: SKU not Showing in STO.
+**Answer:**
+SKU not linked with the Store (warehouse location). Link the SKU to the Store from the SKU master screen using the "link to store" option.
+
+## Question 3: Not able to allocate the STO.
+**Resolution:**
+No inventory available for the order SKU. Allocate the STO from the Source warehouse/from location.
+
+## Question 4: STO not getting allocated with error "ERROR-Lot is not match with MRP."
+**Resolution:**
+The reason was SKU and USN status had a mismatch, causing the error. 
+
+## Question 5: Not able to unallocate the STO.
+**Resolution:**
+Unallocating the order from the Head Office. Always unallocate the order from the Source Warehouse (From Location).
+
+## Question 6: STO not getting unallocated with error "Error while we try to Un-Allocate the order [BWH886] on Batch Key No [0], Check Un-Allocation Procedure for this Client."
+**Resolution:**
+This could be due to an order quantity or status mismatch issue. Please raise a ticket to the helpdesk for assistance.
+
+## Question 7: Not able to cancel STO.
+**Resolution:**
+First, unallocate the STO, then cancel it from the Source Warehouse (From Location).
+
+---
+
+This FAQ provides answers to common issues encountered during STO processing, along with their resolutions.

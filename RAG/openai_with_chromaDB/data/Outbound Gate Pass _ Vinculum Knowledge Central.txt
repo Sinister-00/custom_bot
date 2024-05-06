@@ -1,0 +1,55 @@
+Title: Outbound Gate Pass
+
+Modified on: Fri, 18 Feb, 2022 at 4:45 PM
+
+# what is Outbound Gate Pass?
+
+An outbound gate pass is a crucial document used to track and manage product movement outside the warehouse. It provides detailed information about the items being transported and helps in securing outbound transactions. In our eRetail system, outbound gate passes are typically created for Return to Vendor (RTV) and Stock Transfer Orders (STO). for more details you can refer to this article [Outbound Gate Pass](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000211808-outbound-gate-pass).
+
+## Navigation to Outbound Gate Pass
+
+To access the Outbound Gate Pass functionality in the eRetail system, follow these steps:
+
+1. Navigate to: WMS > Inventory > Outbound Gate Pass
+
+## Return to Vendor (RTV)
+
+When creating an outbound gate pass for Return to Vendor (RTV), users encounter the following options:
+
+### Fields Description
+
+- **Vendor Code**: Select the vendor to whom the gate pass is being raised.
+- **RTV Type**: Specify the type of RTV, whether it's for damaged return or normal return.
+- **Vendor Name**: The name of the selected vendor appears here.
+- **Remark**: Users can add any relevant remarks here.
+
+After selecting the vendor, the following tabs will appear:
+
+### Additional Fields Description
+
+- **Bin Code**: Mention the Bin code where the quantity of the SKU is available.
+- **Scan SKU**: Enter the SKU code to scan the SKU.
+- **Qty**: Specify the quantity of the SKU being scanned.
+- **Reason**: Users can provide a reason for the RTV here.
+
+Once the necessary details are entered, clicking on the confirm button generates the outbound gate pass for RTV in the system.
+
+## Stock Transfer Order (STO)
+
+Similarly, when creating an outbound gate pass for Stock Transfer Order (STO), users will encounter the following options:
+
+### Fields Description
+
+- **To Site loc**: Select the site location where the gate pass is being raised.
+- **STO Type**: Specify the type of STO, whether it's normal or a return.
+- **Remark**: Users can add any relevant remarks here.
+
+After selecting the site location, the same tabs as in the RTV section will appear, allowing users to input the necessary details like Bin code, SKU, quantity, and reason.
+
+Once the details are provided, clicking on the confirm button generates the outbound gate pass for STO in the system.
+
+---
+
+This document provides a detailed overview of creating outbound gate passes for Return to Vendor (RTV) and Stock Transfer Orders (STO) in the eRetail system.
+
+For more information, please refer to the [Outbound Gate Pass](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000211808-outbound-gate-pass).

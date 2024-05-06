@@ -1,0 +1,59 @@
+Title: B2C Warehouse - How to Generate Manifest
+
+Modified on: Thu, 10 Jun, 2021 at 10:15 AM
+
+# what is B2C Warehouse - How to Generate Manifest?
+
+A manifest is a list of items that have been delivered to or shipped from a warehouse or location. After the order is created and picked, the user generates the manifest, which includes the transporter's information and other relevant details. for more details you can refer this article [B2C Warehouse - How to Generate Manifest](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203117-b2c-warehouse-how-to-generate-manifest-).
+
+## Manifest Generation Process
+
+- **Location**: Manifest generation can be done from the Manage Manifest section in vin-eRetail.
+- **Navigation**: WMS > Order Processing > Manage Manifest
+
+## Manifest Generation Options
+
+- **Search**: User can search for old manifest documents.
+- **Create**: User can create a new manifest.
+- **Download**: User can download the manifest.
+- **Scan**: User can scan the delivery number or tracking number.
+- **Print Invoice**: User can print the invoice.
+
+## Mobile App Manifest Generation
+
+1. **Dashboard**: Select the "Manifest" option.
+2. **Manifest Selection**: Choose between B2C Manifest and B2B Manifest.
+3. **Details Entry**: Enter transporter, scan delivery number/AWB, and press enter.
+4. **Confirmation**: After completion, the system redirects to scan the new delivery number.
+
+## Manage Manifest Screen
+
+- **Search Fields**:
+  - Manifest Number
+  - Manifest Date
+  - Transporter
+  - Status
+  - Location
+  - User
+- **Action Buttons**:
+  - Search
+  - Reset
+  - Advance Search
+  - Export
+  - Detail Export
+  - Add New
+
+## Manifest Creation Process
+
+1. **Add New**: Click the button to create a manifest.
+2. **Business Type Selection**: Choose between B2C or B2B.
+3. **Manifest Details Entry**:
+   - For Marketplace: Enter channel type, manifest number, channel code, vehicle number, scan delivery number/tracking number, LBH, weight, and remarks.
+   - For Self Ship: Enter transporter, LBH, weight, scan delivery number/tracking number, manifest number, vehicle number, channel type, channel code, and remarks.
+4. **Confirmation**: Click "Confirm Manifest" to generate the manifest. Users can print the manifest in PDF, Xls, and Doc formats.
+
+---
+
+This document provides a detailed guide on how to generate manifest in a B2C warehouse using vin-eRetail, covering both desktop and mobile methods.
+
+For more detailed information, please refer to the [B2C Warehouse - How to Generate Manifest](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203117-b2c-warehouse-how-to-generate-manifest-).

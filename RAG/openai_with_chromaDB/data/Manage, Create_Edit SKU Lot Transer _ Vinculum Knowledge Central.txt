@@ -1,0 +1,57 @@
+**Title: Manage, Create/Edit SKU Lot Transfer**
+
+**Modified on:** Tue, 5 Jul, 2022 at 1:11 PM
+
+# Manage, Create/Edit SKU Lot Transfer
+
+**what is SKU Lot Transfer?**
+
+The SKU lot transfer management system serves as a search window for SKU lot transfers, enabling users to retrieve and review details associated with any SKU by specifying the SKU code. This functionality allows users to ensure accuracy and maintain up-to-date information regarding SKU lot transfers. for more details you can refer this artilce [Manage, Create/Edit SKU Lot Transfer](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216914-manage-create-edit-sku-lot-transer).
+
+**Navigation to  Manage, Create/Edit SKU Lot Transfer:** WMS >> Inventory >> Manage SKU Lot Transfer
+
+**Search Criteria:**
+
+- **From SKU Code:** Input field to specify the SKU code for fetching details.
+- **From SKU Description:** Displays the name of the SKU.
+- **From Date:** Displays the date from which the details were updated.
+- **To Date:** Displays the date up to which the details were updated.
+- **Lottable 1-7:** Display additional information maintained in lot tables, such as MRP, lot number, expiry date, manufacture date, etc.
+
+**SKU Lot Transfer Create/Edit:**
+
+The SKU to SKU transfer, or transferring SKUs in lots, facilitates the movement of physical inventory between two products. Users are required to input SKUs, quantities, and sending/receiving warehouse details.
+
+**Navigation:** WMS >> Inventory >> SKU Lot Transfer Create/Edit
+
+**Use Case:**
+The SKU Lot Transfer screen is primarily used to review and correct any inaccuracies in SKU-related information, such as SKU code, expiry date, manufacturing date, etc.
+
+**From SKU:**
+
+- **From SKU Code:** Input field for specifying the SKU code to be corrected.
+- **From SKU Description:** Displays the name of the SKU.
+- **From Bin:** Indicates the bin where the SKU is located.
+- **From ID:** Input field for LPN of SKU. Dropdown options appear if the selected bin and LPN combination is available.
+- **Lot:** Displays the lot number of the SKU.
+- **Available Qty:** Displays the available quantity of the SKU in the bin.
+- **Transfer Qty:** Input field for specifying the quantity to be transferred.
+- **Lottable 1-7:** Display additional information captured in lot tables, such as MRP, lot number, expiry date, manufacture date, etc.
+
+**Next Step:** Click on the plus tab to access the "To SKU Lot" tab for correcting SKU information.
+
+**To SKU:**
+
+- **To SKU Code:** Displays the SKU code.
+- **To SKU Description:** Displays the name of the SKU.
+- **To Bin:** Input field for specifying the bin where the SKU will be transferred.
+- **To ID:** Input field for LPN of SKU.
+- **Lot:** Displays the lot number of the SKU.
+- **Transfer Qty:** Displays the quantity transferred.
+- **Lottable 1-7:** Display additional information captured in lot tables, such as MRP, lot number, expiry date, manufacture date, etc.
+
+---
+
+This comprehensive guide covers all aspects of managing and creating/editing SKU lot transfers, ensuring accurate inventory management and data integrity.
+
+For more detailed information, please refer to the [Manage, Create/Edit SKU Lot Transfer](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216914-manage-create-edit-sku-lot-transer).

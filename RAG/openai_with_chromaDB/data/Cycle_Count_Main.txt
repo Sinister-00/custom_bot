@@ -1,0 +1,43 @@
+Cycle Count
+
+**About Cycle Count:**
+Cycle count is a crucial process in warehouse management that involves verifying the actual existence of SKUs in specific bins compared to the system count. This process ensures the accuracy of inventory records by reconciling physical quantities with system records.
+
+**Cycle Count Section:**
+1. **Cycle Count Enquiry:** This screen allows users to view details of past and ongoing cycle count processes, including cycle ID, type, status, updated date, bin, LPN, scanned stock, etc.
+   - Navigation: WMS > Inventory > Cycle Count
+   - Fields Description:
+     - Cycle ID: Unique identification for each cycle count process.
+     - Type: Type of cycle count enquiry (e.g., Bin, LPN).
+     - Status: Status of the cycle count process (e.g., Confirmed, WIP, Closed).
+     - Updated Date: Date of the last update for the cycle count.
+     - Bin, LPN, User: Filters to search for specific cycle counts.
+
+2. **Cycle Count Create/Edit:** This section allows users to initiate cycle counts for bins or LPNs.
+   - Steps to Initiate Cycle Count:
+     - Select type (Bin or LPN).
+     - Enter bin/LPN ID and confirm.
+     - Scan SKUs present in the bin/LPN.
+     - Confirm the count.
+
+**Errors & Their Meanings:**
+- Insufficient Quantity: Scanned quantity is less than committed quantity.
+- Invalid Data in Lottable or Lot No.: Lot details entered are not defined in the system.
+- Adjusted Quantity Should Not Be Greater Than Free Stock: Scanned quantity is greater than free stock after excluding blocked quantity.
+
+**Auto Posting and Manual Posting:**
+- Posting can be done automatically or manually based on system configuration.
+- Auto-posting adjusts stock automatically after confirmation.
+- Manual posting requires user intervention to post adjustments.
+
+**Cycle Count via Mobile App:**
+1. Login to the mobile app and navigate to the Inventory section.
+2. Click on "Cycle Count" and select type (Bin or LPN).
+3. Scan the bin code or LPN ID and proceed.
+4. Scan SKUs present in the bin/LPN and confirm/cancel the count.
+
+For detailed instructions and screenshots, refer to the [Cycle Count documentation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000210526).
+
+[Last Modified: Thu, 14 Apr, 2022 at 4:40 PM]
+
+[Cycle Count Documentation](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000210526)

@@ -1,0 +1,70 @@
+Title: Order Validation Rules
+
+Modified on: Fri, 16 Feb, 2024 at 11:13 AM
+
+# Order Validation Rules
+
+Vin eRetail provides users with the functionality to validate orders upon receipt in the system. This validation process can be configured using OMS (Order Management System) Rules.
+
+## what is OMS Rules?:
+
+OMS rules are business rules that sellers can apply to automate logic, perform calculations, or enforce processes. These rules can set default values for delivery or shipment, add offers or discounts, or constrain processes to meet delivery requirements. for more details you can refer to this article [Order Validation Rules](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202287-order-validation-rules).
+
+### Types of OMS Rules:
+- Order Validation Rules
+- Order Routing/Split Rules
+- Seller Panel Order Rules
+- Shipping Rules
+- Allocation Rules
+
+In this document, we will focus on Order Validation Rules within OMS, which use order information to automatically trigger actions, regardless of the order's source.
+
+## Order Validation
+
+### Navigation to Order Validation Rule :
+Sales > OMS Rules > Order Validation Rule
+
+Order validation allows users to create validation rules for orders based on various logics necessary for order management. The Order Validation Rule screen displays existing rules, their active/inactive status, preferences, and options to remove rules.
+
+- **Rule Name**: Unique name given to the rule.
+- **Status**: Indicates whether the rule is active or inactive.
+- **Priority**: Users can prioritize rules using up and down arrow keys.
+- **Actions**: Users can set various actions based on rule conditions.
+
+### Actions that can be set:
+- Set on Hold Status
+- Determine B2B Order
+- Set Delivery Slot
+- Set Expected Delivery Date
+- Set Order Tag
+- Set Order Priority
+- Add a comment
+
+These actions are automatically triggered when an order meets specified conditions configured in the order validation rules.
+
+## How to Add a New Order Validation Rule?
+
+1. Click on "Add New Rules" to create a new Order Validation Rule.
+2. Fill in the required details such as Rule Name, Channel Type, Location, Events, Conditions, and Actions.
+3. Users can specify whether the rule applies to self-owned locations or third-party sales channels.
+4. Conditions can be set based on specific events like order creation or allocation.
+5. Actions define the automatic actions to be performed when rule conditions are met.
+
+## Demo Example of Setting up an Order Validation Rule:
+
+An example rule:
+- If order amount > 0 and SKU count > 0 and (customer email = test@test1.com OR customer mobile = 9999999999), then:
+  - Set Order Tag to Normal Order
+  - Set on Hold Status to Y
+  - Set Delivery Slot to 01:00 AM to 03:00 AM
+
+## Checking Order Validation Rule:
+
+Upon creating an order that matches the specified conditions, automatic actions will take place:
+- On Hold Status will be set to Y
+- Order Tag will be set to Normal Order
+- Delivery Slot will be set to 01:00 AM – 03:00 AM
+
+This document provides a comprehensive overview of Order Validation Rules in Vin eRetail.
+
+For more detailed information, please refer to the [Order Validation Rules](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202287-order-validation-rules).

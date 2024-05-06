@@ -1,0 +1,69 @@
+Title: Ship from Store
+
+Modified on: Tue, 8 Jun, 2021 at 3:04 PM
+
+# what is Ship from Store
+
+Ship from Store is a fulfillment operation that enables retailers to fulfill orders using inventory from their store locations, rather than distant distribution centers. This approach allows orders to be fulfilled directly from retail stores, providing customers with faster delivery. for more details please refer to the [Ship from Store](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203004-ship-from-store).
+
+## Overview:
+
+- **Fulfillment Process**: Orders are fulfilled at retail stores and shipped directly to customers, bypassing central warehouses.
+- **Order Management System (OMS)**: Manages the complete order lifecycle, from placement to delivery, efficiently across multiple channels.
+- **Order Validation**: Orders received at the store undergo validation rules. If accepted, orders are routed to the optimal warehouse based on various factors like location, inventory, cost, and priority. Rejected orders follow predefined hopping rules to the next fulfillment location.
+- **Special Packaging**: Since orders are fulfilled from retail stores, retailers can offer special packaging features like tissue paper, gift wrapping, or personalized greeting cards, enhancing the customer experience.
+
+## Navigation:
+
+- **WMS > Order Processing > Delivery Shipping**
+
+## Delivery Shipping Screen:
+
+### what is Delivery Shipping Screen:
+
+The Delivery Shipping screen in vin-eRetail provides a comprehensive view of all orders and their processing stages. Users can perform various order processing tasks directly from this screen.
+
+### Tabs:
+
+1. **New**: Displays new orders awaiting processing.
+2. **Pick list Created**: Shows orders with created pick lists.
+3. **Pick-Pack**: Lists orders picked but not shipped yet.
+4. **MP label Re-fetch**: Displays orders needing label re-fetch.
+5. **Manifested**: Shows orders with generated manifests.
+6. **Shipped**: Lists shipped orders.
+7. **Download Marketplace Manifest**: Enables requesting manifests from marketplaces.
+8. **All**: Displays all orders and delivery shipments.
+
+### Fields in Delivery Shipping Screen:
+
+- **Delivery Info**: Outbound delivery numbers assigned to orders.
+- **Order Number**: System-generated unique identifiers for orders.
+- **External Order Number**: Order numbers from external sales channels.
+- **Channel**: Channel details for each order.
+- **Order Type**: Types of orders (COD, prepaid, consignment, etc.).
+- **Order Status**: Allocated or unallocated orders.
+- **Transporter**: Integrated transporters or external transporter names.
+- **Tracking Number**: Assigned tracking numbers for orders.
+- **Dates**: Order, pick, pack, and ship dates.
+- **Order Tags**: User-assigned order tags.
+- **Dispatch Location**: Location for dispatch.
+- **Customer**: Search by customer details.
+- **Transporter Info**: Information provided by the transporter.
+- **Error Description**: Details of order processing errors.
+
+### Action Buttons:
+
+- **Search**: Retrieves orders based on filters.
+- **Reset**: Resets filters to default settings.
+- **Advance Search**: Enables search based on external PO number or channel name.
+- **Export**: Downloads filtered results in CSV format.
+- **Generate Pick list**: Generates pick lists for multiple orders.
+- **Pack Order**: Initiates bulk order packing.
+- **Print the Picklist**: Prints pick lists in bulk.
+- Additional actions available based on the processing stage of orders.
+
+### Conclusion:
+
+Ship from Store optimizes order fulfillment by leveraging inventory from retail stores, enhancing speed, and reducing delivery times. The delivery shipping screen in vin-eRetail streamlines order processing, ensuring efficient management and fulfillment.
+
+For more detailed information, please refer to the [Ship from Store](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203004-ship-from-store).

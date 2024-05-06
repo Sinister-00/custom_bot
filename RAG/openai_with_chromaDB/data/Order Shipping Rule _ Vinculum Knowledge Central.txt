@@ -1,0 +1,73 @@
+Title: Order Shipping Rule
+
+Modified on: Fri, 16 Feb, 2024 at 12:04 PM
+
+# Order Shipping Rule
+
+Once an order is routed to the warehouse for processing in vin-eRetail, it undergoes picking, packing, and is then assigned to a delivery partner using the Order Shipping functionality.
+
+## what is Order Shipping Rule ?
+
+Order Shipping Rules streamline the process of assigning transporters to orders, making it more efficient in terms of time, effort, and cost. These rules allow users to create conditions that automatically select the best logistic partner for shipping, based on various factors such as service type, payment type, or specific transporters. for more details you can refer this article  [Order Shipping Rule](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202739-order-shipping-rule).
+
+## Transporter Assignment
+
+Transporters can be assigned to orders in three ways:
+
+1. **Order with the Transporter**: Manually selecting a transporter before packing the order either via an external system or by the user in the Outbound Delivery section.
+   
+2. **Shipping Rule in OMS**: Automatically assigning a transporter based on predefined shipping rules set up by the user.
+   
+3. **Custom Preference with Shipping Rule**: Using custom preferences to assign transporters based on specific conditions and parameters.
+
+## Shipping Rules Setup
+
+Shipping Rules are configured to automatically assign transporters to orders upon packing. These rules are executed based on conditions specified by the user.
+
+### Criteria Definition:
+
+- **All Condition [and logic]**: Rule executes only when all conditions are met.
+  
+- **Any Condition [or logic]**: Rule executes if any of the conditions are met.
+
+### Rule Execution:
+
+- Rules execute sequentially, with the first matching rule being applied.
+  
+- Existing rules can be updated or deleted as needed.
+
+### Actions:
+
+- **Set**: Assigns the selected transporter upon order packing.
+  
+- **Not Set**: Does not assign the selected transporter upon order packing.
+
+### Demo Example for Creating Shipping Rule:
+
+An order from specific sites with prepaid payment type will automatically assign a predefined transporter.
+
+## Custom Preference with Shipping Rule
+
+Custom preferences can be used to assign transporters based on specific parameters and conditions. This method involves selecting "Custom Pref" under the action section and requires proper mapping of transporters, pin codes, courier types, and order types.
+
+### Demo Example:
+
+An order with a specific pin code will be automatically assigned a designated transporter based on custom preferences.
+
+## Custom Preference without Shipping Rule
+
+Transporters can also be assigned based on custom preferences without the use of shipping rules. This method relies solely on mappings defined in the Manage Service Pin Code and Transporter Preference screens.
+
+### Demo Example:
+
+An order with a specific pin code will automatically assign a transporter based on predefined mappings.
+
+## Notification Rules
+
+Order-related notifications can be sent to users via SMS/email. To activate this functionality, users should contact their Account Manager.
+
+---
+
+This document provides an overview of Order Shipping Rules, including transporter assignment methods, shipping rules setup, and examples of usage.
+
+For further details, please refer to the [Order Shipping Rule](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000202739-order-shipping-rule).

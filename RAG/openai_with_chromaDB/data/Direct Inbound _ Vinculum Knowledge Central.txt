@@ -1,0 +1,59 @@
+Here's the detailed document covering all the provided information about Direct Inbound:
+
+---
+
+# Direct Inbound
+
+**Modified on:** Tue, 5 Jul, 2022 at 1:43 PM
+
+## what is Direct Inbound?
+
+Direct Inbound refers to a scenario where inbound is conducted without a purchase order (PO), meaning products are directly received into the warehouse. This process requires the Vendor code for inbound operations. for more details you can refer this artilce [Direct Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216917-direct-inbound)
+
+## Navigation to Direct Inbound
+
+- **Location**: WMS > Inbound > Inbound Real-Time
+
+## Process Details
+
+1. **Select Vendor**: 
+   - Click on the three dots (…) to choose the Vendor from the list saved in the system.
+   - Click "OK" to proceed. This action opens the inbound create/edit screen.
+
+2. **Enter Details**:
+   - Provide necessary details such as Transport code, Invoice no., Invoice date, Invoice amount, gross weight, TCS, other charges, and discounts based on the receipt submitted by the delivery person.
+   - Click on "More" to enter additional details like No. of boxes, Material received date, Challan No., Challan Date, Ext Inbound No., EwayBill, and Purchase Type.
+
+3. **Scan SKU or Enter Manually**:
+   - Scan the SKU or manually enter the SKU code.
+   - If "Scan SKU" is selected, options related to scanning like each piece scan or bulk scan, bin location, LPN, etc., are provided.
+   - Upon entering the SKU Code, bin details along with Cost, UOM code, SKU image, SKU description will be filled automatically.
+
+4. **Confirmation**:
+   - Click on "Add" to add the SKU.
+   - Click on "Confirm" to confirm the inbound or choose other actions from the dropdown box.
+
+## Additional Actions
+
+- **Print GRN**: Generate Goods Receipt Note (GRN) against the inbound.
+- **Generate Labels**: Print product labels for the SKUs present in the inbound.
+- **Generate Putaway**: Move to the putaway screen to generate putaway against this inbound.
+- **Edit Invoice**: Edit invoice details of inbound even after confirming it.
+
+## Confirmation and Status
+
+- Upon clicking "Confirm," a notification will be received.
+- The status of Inbound will reflect as "Confirmed," viewable in the Inbound enquiry screen.
+
+## Bulk Direct Inbound
+
+- For Bulk Import, navigate to the "Import" tab and choose "Direct Inbound."
+- Download the template.
+- Mandatory fields highlighted in yellow should be filled.
+- Upload the filled template in the required format.
+
+---
+
+This document provides comprehensive guidance on conducting Direct Inbound operations, covering navigation, process details, additional actions, confirmation, status, and bulk import procedures.
+
+For more detailed information, please refer to the [Direct Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216917-direct-inbound).

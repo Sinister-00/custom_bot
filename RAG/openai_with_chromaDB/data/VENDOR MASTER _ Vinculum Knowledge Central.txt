@@ -1,0 +1,96 @@
+Title: Vendor Master
+
+Modified on: Wed, 31 Jan, 2024 at 5:34 PM
+
+# what is Vendor Master
+
+The Vendor Master module allows sellers to manage information related to all vendors efficiently from a single screen. This setup is crucial as it lays the foundation for transactions within the system. Through the Vendor Master, vendors are configured and managed using the Vendor Create/Edit screen. for more details please refer to the [Vendor Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000212657-vendor-master).
+
+## Vendor Enquiry Screen
+
+- **Navigation**: WMS > Trading Partners > Vendor Master
+- **Functionality**: Enables users to search for existing vendors and their details using various filters.
+- **Buttons**:
+  - **Search**: View details of desired vendors based on applied filters.
+  - **Reset**: Clear all search filters.
+  - **Import**: Configure multiple vendors simultaneously using an Excel template.
+  - **Export**: Download filtered or searched results.
+  - **Add New**: Add a new vendor to the database.
+
+## Vendor Create/Edit Screen
+
+### Field Name Description
+
+- **Vendor Code**: Unique identifier assigned by the system to each vendor.
+- **Vendor Name**: User-assigned name for the vendor.
+- **Vendor Short Name**: An alternative name for the vendor.
+- **CST Regi. No**: Central Sales Tax registration number of the vendor (optional).
+- **VAT Regi No**: Value Added Tax registration number of the vendor (optional).
+- **TIN No**: Taxpayer Identification Number of the vendor (optional).
+- **Credit Days**: Number of days allowed by the vendor for payment.
+- **Tax Zone**: State/city/county under which the vendor is registered.
+- **Status**: Indicates the status of the vendor (Pending Confirmation/Confirmed/Deactivated).
+- **Return**: Checkbox indicating if the vendor supports product returns.
+- **GL Code**: General ledger code used by the business for financial transactions.
+- **Currency Code**: Preferred currency for trading with the vendor.
+- **Parent Vendor**: Mapping of multiple addresses for one vendor.
+- **PAN/IT Number**: Permanent Account Number of the vendor (optional).
+- **GST No**: Goods and Services Tax Number of the vendor (optional).
+- **Min Order Value**: Minimum order amount that can be placed with the vendor.
+- **Lead Time (In Days)**: Expected number of days for the vendor to fulfill purchase orders.
+- **Vendor Type**: Categorization of vendors into Outright, JIT, Marketplace, and B2S2.
+- **SOR Days**: Sale or Return transaction period.
+- **IsCostbasedonMargin**: Checkbox indicating if SKU cost and margin can be set based on vendor link.
+- **Vendor is tax exempted**: Checkbox to indicate tax exemption for the vendor.
+- **Bypass SKU Vendor Link**: Enables/disables PO creation only against mapped SKUs.
+- **PO Additional Charge Type**: Type of additional charges for purchase orders.
+- **Cost Derivative**: Vendor cost derivative.
+- **License No**: Vendor license number (optional).
+
+### Vendor Types:
+
+- **Outright Vendor**: Normal purchase cycle where a purchase order is raised to replenish stock.
+- **Just in Time (JIT) Vendor**: POs raised only when orders come in; no inventory is maintained.
+- **Marketplace Vendor**: Seller listed on a marketplace; orders forwarded to the seller.
+- **B2S2 (Bill to Ship to)**: Combination of JIT and marketplace models.
+
+### Bank Details:
+
+- Bank Name
+- Account No
+- Branch Name
+- Branch Address
+- IFSC Code
+- Swift Code
+- MICR Code
+
+### Address:
+
+- Shipping and Billing Address Details
+- User-Defined Fields: Custom fields for capturing additional information.
+- Attached Documents: Attach important documents/contracts for the vendor.
+- Terms and Conditions: Define terms and conditions for vendor transactions.
+- Seller Details: Record seller details for Marketplace vendors.
+- Default Delivery Mode: Select default transportation mode.
+- Invoice By: Choose between MP and Self invoice number.
+- Delivery Mode Updation Allowed: Checkbox to allow vendor to change default delivery mode.
+- Fulfillment Charges: Charges for fulfillment services.
+- Payment Charges: Prepaid/COD charges.
+- Courier Charges: Delivery charges.
+- Return Acceptance Charges: Charges for accepting returns.
+- Return Location Type, Address, Digital Sign URL, SLA (In Hours), Digital Sign Image.
+
+### Action Buttons:
+
+- **Add New**: Configure a new vendor.
+- **Save**: Update vendor information or create a new vendor.
+- **Link To Store**: Map vendor to warehouses or store locations.
+- **Confirm**: Confirm vendor configuration for transactions.
+- **Deactivate**: Deactivate a vendor to discontinue transactions.
+- **Audit**: View audit information related to the vendor.
+
+---
+
+This document provides a detailed overview of the Vendor Master module, covering functionalities, fields, types, bank details, addresses, and action buttons.
+
+For more detailed information, please refer to the [Vendor Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000212657-vendor-master).

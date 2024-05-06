@@ -1,0 +1,69 @@
+Title: Vin eRetail | Transfers - A Comprehensive Guide
+
+## what is Transfer in eRetail
+
+The Transfer section of the Vin eRetail app facilitates the transfer of stock or inventories from one warehouse to another for users with multiple locations or warehouses. This process is crucial for maintaining optimal inventory levels and fulfilling orders efficiently. for more details please refer to the [Vin eRetail | Transfers - A Comprehensive Guide](https://docs.vineretail.com/vin-eretail-transfers/).
+
+### Utility
+
+Users can create Stock Transfer Orders (STOs) to transfer stock between warehouses. STO orders function similarly to normal order processing, ensuring seamless stock movement and accurate record-keeping. Once the inventory reaches the destination warehouse, its direct inbound is processed, streamlining the inventory management process.
+
+## Listing and Description
+
+### 1. Stock Transfer Enquiry
+
+#### Utility
+
+The Stock Transfer Enquiry section enables users to search for existing STOs and access their details. It offers advanced filtering options for precise searches and allows users to download/export all data present in the enquiry screen for further analysis or documentation.
+
+#### Fields for Searching STOs
+
+- **STO Number**: The unique identifier assigned to each STO by the system.
+- **Date**: The date on which the STO was created.
+- **Type**: Indicates the type of STO, such as NORMAL STO or RETURN.
+- **Ship & Delivered Date**: Dates on which the STO was shipped and delivered, respectively.
+- **Origin & Destination Site**: Warehouse locations involved in the transfer.
+- **Status**: Reflects the current status of the STO, indicating its progress through the processing cycle.
+
+### 2. STO Create/Edit
+
+#### Utility
+
+Users can create new STOs or edit/update existing ones using the STO Create/Edit functionality. This feature allows users to input various STO-related information and customize the transfer process according to their specific requirements.
+
+## STO Order Detail
+
+From the STO Order Detail section, users can enter comprehensive details for creating an STO and add SKUs for transfer. Key fields include:
+
+- **External STO No.**: An optional number provided by the user or the order number from the sales channel/platform.
+- **STO Type**: Indicates whether the STO is a NORMAL STO or RETURN.
+- **From Site**: The warehouse location from which the SKU will be picked up.
+- **To Site**: The destination warehouse location.
+- **Reason**: The purpose or justification for the stock transfer.
+- **Priority**: Allows users to set the priority level for the STO, facilitating efficient handling.
+- **On Hold Status**: Enables users to put the STO on hold if necessary.
+- **Remarks**: Additional comments or instructions related to the STO.
+
+### UDF (User Defined Fields)
+
+These custom fields allow users to capture any extra information required for specific STOs, enhancing data capture and analysis capabilities.
+
+### Outbound Delivery
+
+This section displays details of the outbound delivery, including warehouse and shipping details. Users can also change the transporter for the order if needed.
+
+### STO Order Tag
+
+Users can enter order tags, which act as searchable keywords and provide important information about the STO order.
+
+### Action Buttons
+
+1. **Add New**: Adds a new STO to the database.
+2. **Save**: Saves the created STO.
+3. **Confirm**: Confirms the created STO, marking it as ready for processing.
+
+---
+
+This comprehensive guide covers the functionalities and features of the Transfer section in Vin eRetail, providing users with detailed instructions on managing stock transfers between warehouses. By leveraging these tools effectively, users can optimize their inventory management processes and ensure timely fulfillment of orders.
+
+For more detailed information and instructions, please refer to the [Vin eRetail | Transfers - A Comprehensive Guide](https://docs.vineretail.com/vin-eretail-transfers/).

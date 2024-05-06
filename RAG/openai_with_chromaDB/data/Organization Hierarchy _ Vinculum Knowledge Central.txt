@@ -1,0 +1,44 @@
+# Organization Hierarchy
+
+**what is Organization Hierarchy?:**
+Organization Hierarchy management is crucial for structuring businesses effectively. This system allows users to define and manage organizational structures efficiently. for more details you can refer to the following article [Organization Hierarchy](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214577-organization-hierarchy).
+
+**Navigation to Organization Hierarchy:**
+To access the Organization Hierarchy feature, navigate through the following path:
+Master >> Organization Management >> Organization Hierarchy
+
+**Organization Hierarchy Screen:**
+Upon navigation, users are presented with a screen divided into two parts:
+
+**Left Part:**
+Displays a hierarchical list of organizations previously created.
+
+**Right Part:**
+Displays fields required to create a new organization. Users need to input information into these fields to define and save new organization details.
+
+**Fields:**
+- **Hierarchy Type:** Specifies the type of organization (e.g., Company).
+- **Hierarchy Code:** User-defined code to uniquely identify and log into the organization.
+- **Hierarchy Name:** Name of the organization.
+- **Description:** Description of the organization, typically the full name.
+- **Parent Hierarchy Code:** Code of the parent organization (if applicable).
+- **Parent Hierarchy Desc:** Description of the parent organization (if applicable).
+- **Parent Org. Type:** Type of the parent organization.
+- **Org Country:** Country in which the organization is established.
+- **Base Currency:** Currency used in financial transactions within the organization.
+- **Base Language:** Preferred language of communication for the organization.
+- **Time Zone:** Time zone used by the organization.
+- **Org. Weight Unit:** Standard unit of measurement for weight (e.g., gm, kg, oz, lbs).
+- **Org. Dimension Unit:** Standard unit of measurement for dimensions (e.g., mm, cm, mtr, inch).
+- **Financial Start Date:** Start date of the financial year.
+- **Locale:** Locale ID for language preference.
+
+**Action Buttons:**
+- **Save:** Saves the entered details to create a new organization.
+- **Reset:** Refreshes all fields, enabling the initiation of the addition of a new organization.
+
+---
+
+This detailed overview provides a comprehensive understanding of the Organization Hierarchy system, its components, and functionalities.
+
+For further assistance, refer to the [Organization Hierarchy](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214577-organization-hierarchy).

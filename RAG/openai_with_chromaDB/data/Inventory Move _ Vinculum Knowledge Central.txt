@@ -1,0 +1,77 @@
+Title: Inventory Move - Overview
+
+Modified on: Fri, 17 Dec, 2021 at 3:02 PM
+
+# what is Inventory Move?
+
+The Inventory Move feature enables users to track the movement history of inventory within the warehouse. It provides a detailed history of events when inventory is moved from one zone to another or from one BIN to another. Additionally, users can view various transactions made during inventory movements. for more details you can refer this article [Inventory Move](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000209131-inventory-move).
+
+## Accessing Inventory Move
+
+Navigation: WMS >> Inventory >> Inventory Move History
+
+### Action Buttons
+
+- **Search**: Displays details of previously performed movement transactions.
+- **Reset**: Clears filter data.
+- **Advance Search**: Allows searching with additional filters, such as style code.
+- **Export**: Enables exporting details visible on the screen to an Excel template.
+- **Add New**: Used to create a new movement in the system.
+
+## Inventory Move History
+
+### Fields Description
+
+- **SKU Code**: Displays SKU codes.
+- **SKU Desc**: Shows SKU names.
+- **Move Date**: Indicates the date and time of inventory movement.
+- **Site Location**: Warehouse name.
+- **Move Qty**: Quantity of inventory moved.
+- **From Zone and To Zone**: Origin and destination zones of the inventory movement.
+- **From Bin and To Bin**: Origin and destination bins of the inventory movement.
+- **User**: User ID details.
+- **Putaway No**: Displays the Putaway ID if the movement happened against it.
+- **Unique No**: Unique identifier for each SKU.
+- **Remarks**: Any additional remarks.
+
+## Creating Inventory Movement
+
+When the user clicks on the **Add New** option, the Inventory Move by Scan window opens.
+
+### Auto-populated Details
+
+- **SKU Code**: Displays SKU codes.
+- **SKU Desc**: Shows SKU names.
+- **UOM**: Unit of measurement.
+- **Quantity**: Number of quantities to be moved.
+- **EA Qty**: Number of quantities scanned.
+- **From Bin and To Bin**: Origin and destination bins of the inventory movement.
+
+### Movement Process
+
+- Available or free quantity can be moved. Committed quantities cannot be moved.
+- The left side of the window shows the items moved, while the right side displays current inventory availability.
+- Users can move inventory from LPN (need to update settings first).
+  Navigation: Admin >> Setting >> Inventory Configuration
+  - Enable LPN Setting
+- LPN Move window appears, allowing users to add LPN/Pallet ID and To Bin for scanning.
+
+## Mobile App Access
+
+- Access through V in WMS App.
+- Navigate to Inventory option, then select Inventory View.
+- Movement can be done by SKU/USN or By SKU Bin.
+- Fetch inventory movement details via the Inventory Move option in the WMS app.
+
+### Fields Description in WMS App
+
+- **Bulk**: Manually scan SKU and enter quantity to be moved.
+- **Each**: Scan each piece/SKU.
+- **LPN/Pallet**: Scan LPN/Pallet.
+- **Task**: Perform Let down movement task.
+
+---
+
+This document provides a detailed overview of the inventory move feature, including access, history, creation process, and mobile app usage.
+
+For more detailed information, please refer to the [Inventory Move](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000209131-inventory-move).
