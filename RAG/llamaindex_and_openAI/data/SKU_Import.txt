@@ -1,0 +1,31 @@
+SKU Import
+
+Modiﬁed on: Wed, 23 Mar, 2022 at 8:08 PM
+
+# SKU Import
+## Introduction
+The SKU import module in Vin eRetail enables the user to import SKUs to the system in bulk using the CSV template file. It also allows to download the uploaded CSV file.  
+Navigation:  Master >> SKU Management >> SKU Import
+
+**SKU Import Module:**  
+1. Import: Allows to Import the SKUs in Bulk via CSV template file.
+    1. Import Type:
+        1. Create/ Update: To Create or update the SKUs in bulk
+        2. Cost Price Update: To update the price of the SKU in bulk
+        3. BOM Link: To import BOM SKUs in bulk
+
+2. Attribute Set: User will select the attribute set for SKU import from here.
+
+3. Upload Template: User will select the appropriate CSV file to be imported, using the ‘Choose File’ option
+**Download:** This section allows the user to search and download the uploaded CSV file of SKU import by searching them based on File Status.
+
+**Action Buttons:**  
+1. Import Section:
+    1. Import: Attribute Set and Uploading the correct file, the user needs to click on the yellow coloured “Import” button to start the import process.
+    2. Reset: Reset all selection made.
+2. Download Section:
+    1. Search: Used to display the list of uploads.
+    2. Reset: Reset all filters selected.
+
+For more instructions and Screenshots, Refer the given link below:  
+[SKU Import](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213260-sku-import)

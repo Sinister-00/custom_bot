@@ -1,0 +1,339 @@
+# TITLE: Warehouse Management Software
+
+## Introduction
+A Warehouse Management System (WMS) extends beyond just tracking inventory and stock levels. It provides an end-to-end solution for efficient and smooth warehouse operations. Vinculum offers a comprehensive WMS that is unified, mobile-native, and cloud-based, catering to both basic and large-scale automated warehouse operations. It supports omnichannel commerce and fulfillment on a single platform, with robust features in logistics, Distributed Order Management, store operations, and high-volume eCommerce fulfillment. Additionally, Vinculum’s Android mobile-ready operations enable paperless management of inbound, outbound, and inventory processes, including receiving, quality checks, put-away, order picking, batch picking, manifesting, cycle counting, inventory management, and returns inventory management.
+
+## WMS Software Supporting Various Use Cases:
+- Sell Anywhere and Buy Anywhere
+- Manage Complete B2B and B2C Warehousing for Brands & Retailers
+- Omnichannel Enablement
+- Manage Full Marketplace Stock
+- Hyperlocal Fulfillment
+
+
+## Snapshot of Multiple Warehousing Inventory Management Channels:
+The Vin eRetail Warehouse Management Software from Vinculum supports both B2B and B2C fulfillment, catering to retail and eCommerce needs. It also helps traditional brands connect directly with consumers (D2C) through Vinculum’s global hyperlocal logistic partner network.
+
+## Vin eRetail is a comprehensive Warehouse Management Software trusted by market leaders, featuring:
+- **Complete Transaction Management:** Configurable rules for smooth inbound/outbound operations, batch and wave picking for accuracy and productivity, and error-free cycle counts.
+- **Maximum Flexibility:** Accurate barcode scanning without third-party software and automated logistics operations with shipping rules.
+- **Detailed Management:** Multi-client, multi-company, and multi-location management with standardized workflows and real-time inventory management, along with billing and contract management.
+- **Analytics:** Standard and customizable reports for every module.
+
+## Vinculum's Warehouse Management System offers extended features for enhanced functionality:
+- **Repacking:** Manage customer-specific repacking needs, including changing box sizes.
+- **Grading:** Sort and categorize bulk-purchased items into SKUs.
+- **Reverse Logistics:** Handle both vendor and customer returns to mitigate returns effectively.
+- **Order & Shipment Management:** Integrate with Distributed Order Management, Transport Management System, and Supply Chain Planning for comprehensive order and shipment management.
+
+## Unique Selling Points(USPs):
+
+- **Unique Product Functionality:** High-level configurable business rules for tailored operations.
+- **Future Ready Design:** Supports omnichannel commerce for seamless integration.
+- **Quick Implementation:** Rapid deployment for immediate benefits.
+- **Scalability:** Microservices-based platform allows easy extensions and scalability.
+- **Innovations:**
+  - **PayPerUse:** Flexible payment model based on business needs and seasonal usage, facilitating scalable operations with limited resources.
+
+## Market Integrations
+
+- **Ready Integrations:** REST APIs for all events and operations.
+- **Pre-integrated with:** Wide range of third-party marketplaces, 3PLs, frontend platforms, and partner ecosystems (including POS, ERP, and financial solutions).
+
+## Service, Support, and Consulting
+
+- **24/7 Helpdesk Support:** With defined SLAs.
+- **Regional Support:** Local language support provided.
+
+## Ideal For
+- **Brands/Retailers:** Handling fulfillment of online webstore/marketplace orders.
+- **Direct to Consumer Brands:** Making inventory available across channels for online order fulfillment.
+- **Omnichannel Brands/Retailers:** Implementing a fully omnichannel approach.
+- **Marketplace Setups:** Brands or retailers setting up their own marketplaces.
+- **Brand Distributors:** Engaged in multichannel retailing.
+- **Quick Commerce:** Brands enabling fast, efficient commerce (Q Commerce).
+
+## Categories We Are Serving
+- Home Appliances
+- Fashion & LifeStyle
+- Baby Products
+- Logistics
+- Industrial B2B
+- Health & Beauty
+- FMCG
+- Fitness
+- Electronics
+- Quick Commerce
+
+
+
+We have created a special toolkit to help you scale your brand and get Direct-to-Consumer. The tool kit comprises a set of solutions from Vinculum and its ecosystem partners which will cater to your end to end requirements so that you can focus on your core business.
+
+## D2C Brands That Have Trusted US
+- aegte
+- clovia
+- loveEarth
+- bewakoof
+- the-souled-store
+- plume
+- sleepyhead
+
+## What is Direct-to-Consumer (D2C)?
+Direct-to-Consumer (D2C) is an e-commerce sales strategy where businesses sell directly to customers without intermediaries. Unlike the traditional B2B model, which involves vendors, resellers, and retailers, D2C allows wholesalers or producers to sell directly to end consumers via e-commerce websites. This model eliminates lengthy negotiations in the supply chain, speeding up product launch, delivery, and feedback by leveraging cloud technology.
+
+## How Direct-to-Consumer (D2C) Works
+Direct-to-Consumer (D2C) operates on the principle that if a company can make a product, it can also sell it directly to consumers. The process involves:
+
+1. **Production:** The company manufactures the product.
+2. **Online Presence:** A new website is built to showcase and sell the product.
+3. **Marketing:** The product is marketed directly to consumers.
+4. **Sales:** Consumers purchase the product online.
+5. **Brand Building:** With effective execution, the product becomes a brand, potentially worth millions.
+
+Traditionally, consumer products were sold primarily through physical stores, focusing heavily on supply chain management involving suppliers, manufacturers, wholesalers, retailers, and distributors. In contrast, D2C companies manage the entire process themselves, taking orders online and making the process more independent and marketing-focused. This direct approach allows producers to control every aspect of the consumer journey, ensuring an excellent customer experience.
+
+Adopting a D2C model requires attention to various aspects, including real-time inventory and warehouse management, payment reconciliation, cross-border solutions, instant delivery, omnichannel presence, and more.
+
+
+## Direct-to-Consumer (D2C) - Key Takeaways
+- **Online Community:** Engaging consumers through blogs, testimonials, and product photos fosters a stronger connection and brand loyalty.
+- **User Generated Content:** Utilizing user-generated content boosts engagement, improves SEO, generates backlinks, and provides free marketing.
+- **Subscriptions:** Offering subscription plans ensures regular payments and customer retention by providing products at discounted rates.
+- **Loyalty:** Rewarding customers enhances brand affinity, encourages repeat purchases, and demonstrates customer appreciation, making your brand the preferred choice.
+
+## FAQS
+- **What Does Direct-to-Consumer Mean?**
+  Direct-to-Consumer refers to the eCommerce strategy of reaching consumers directly, eliminating intermediaries and representing the brand directly to consumers.
+
+- **What is Direct-to-Consumer Sales?**
+  Direct-to-Consumer sales involve selling products directly to consumers, enhancing the customer experience by removing intermediaries.
+
+- **Who Sells Directly to Consumers?**
+  Brands or sellers aiming for direct contact with consumers prefer to sell directly to consumers, often referred to as Direct-to-Consumer brands. This can include internet-first brands or legacy brands.
+
+- **What is a Direct-to-Consumer Brand?**
+  A Direct-to-Consumer brand reaches consumers directly through its own channels without relying on traditional intermediaries.
+
+- **How to Launch a Direct-to-Consumer Brand?**
+  To launch a Direct-to-Consumer brand, eliminating the middleman is essential. These brands are proactive in customer response and data acquisition to inform key business decisions. Vinculum provides a comprehensive Direct-to-Consumer toolkit to facilitate this transition.
+For further information kindly refer to the article, [Direct To Customer](https://www.vinculumgroup.com/direct-to-customer-d2c/)
+
+
+## Quick Commerce
+**Quick Commerce** refers to the delivery of goods and services within a very short time frame, typically within 10 - 30 minutes. It focuses on convenience over discounts and caters to consumers seeking immediate gratification.
+
+**Popularity Reasons:**
+- **Changing Consumer Expectations:** Consumers now expect fast and convenient delivery due to the rise of e-commerce and on-demand services.
+- **Technological Advancements:** Automation and AI have enabled companies to streamline operations and accelerate delivery times.
+- **Urbanization:** Quick-commerce services are primarily available in urban areas where there's a higher demand for fast delivery due to denser populations and time constraints.
+- **COVID-19 Pandemic:** The pandemic has accelerated the adoption of e-commerce and on-demand services as people rely more on delivery for their daily needs.
+- **Rise of On-Demand Delivery:** Food delivery and concierge services expanded to deliver essentials during the pandemic, driving the rise of on-demand delivery business models.
+
+**How Quick Commerce Works:**
+- Customers place orders through websites or mobile apps.
+- Orders are transmitted to local fulfillment centers (Dark Stores) closest to the customer.
+- Fulfillment centers prepare and dispatch orders to a fast delivery fleet.
+- Delivery is made directly to the customer's doorstep.
+
+**Vinculum's Quick Commerce Solution:**
+- **Order Flow Challenges:** Vinculum's solution addresses challenges in each step of the order flow to increase efficiency manifold.
+
+For further information kindly refer to this article, [Quick Commerce](https://www.vinculumgroup.com/quick-commerce/)
+
+# Challenges of Quick commerce and The Solutions by Vinculum's Vin eRetail  
+**Challenge: Logistics and Transportation**  
+To deliver products within an hour or less, Quick Commerce companies must have a well-coordinated logistics and transportation system.  
+Solution:
+1. Automation of end-to-end operations
+2. Tracking every order from the stage of order received from customer to its doorstep delivery
+3. 360 deg visibility of business critical data 
+
+**Challenge: Inventory Management**  
+Quick delivery requires that the companies have products readily available to deliver as soon as the orders come in.  
+Solution:  
+1. Delivery of planned releases/updates twice a month for forecasting and business critical data for analytics.
+2. Automation of SKU counts & Order status with zero manual intervention.
+3. Syncing Order and Inventory across warehouses as per customer demand.  
+
+**Challenge: Workforce Management**  
+To ensure quick delivery, Quick Commerce companies need to have a large workforce, which can be challenging to manage.
+Solution:  
+Automation of end-to-end operations reduces labor costs and increases efficiency.  
+
+**Challenge: Sudden High Demands**  
+Many hours in a day turns out to be receiving higher demands than the estimated.  
+Solution:  
+24x7 support to handle demands.  
+
+# About Vinculum: Who We Are  
+Vinculum is a SaaS product company enabling Omni Channel retailing for brands and providing a tech-stack to set up online marketplaces.  
+Our products have been instrumental in helping brands to scale 4-20X year on year, across diverse industries including Fashion, Health, Beauty and Cosmetics, Home Improvement, Electronics, FMCG, Sports, Jewellery, and more.  
+
+# Vinculum's Partner Program  
+Vinculum's Partner Program follows a customer-first approach, wherein we partner with regional and global players in the Retail domain whose products & services can add value to our customers’ needs.This resonates with our business vision of Enabling High Growth Brands to Scale Faster.  
+Our aim is therefore to create & leverage a network of partners who can work with us jointly to take best-of-breed solutions to the market. So if you have a product or service that resonates with this vision, join hands with us.  
+
+# About the Partnership Models  
+**Technology Alliance:** Partner having a complementing product that gets integrated with Vinculum product stack and is sold as a combo product and enhances the overall value proposition for Vinculum customers.  
+**Channel Partner:** Think of a channel partner as an extension of the sales team. They refer, resell, manage, and/or deliver products, helping you (the company or vendor) go to market faster.  
+**System Implementer(SI):** 
+Experienced partner immersed in industry trends, offering technical expertise in POS, ERP, eCommerce, etc.  
+**Ecosystem Partners:** 
+Partners offering digital marketing, content management, etc., complementing the ecosystem, potentially integrating with Vinculum platform.  
+
+# Global Ecosystem Partners:  
+1. shiplite
+2. cosmico
+3. Shiprocket
+4. Avalara
+5. DHL
+6. Sales-Force
+7. AWS
+8. India-post
+9. Shadow-Fox
+10. ClickPost
+11. eshipz
+12. Wonder-Soft  
+
+# FAQ's  
+
+**How I can become a partner?**  
+Visit www.vinculumgroup.com/partners/ ↓ Click on “Join Us Now” ↓ Fill in all the details ↓ Submit ↓ We shall connect back in 24 hours.  
+
+**How does the partner program work?**  
+Partnership agreements cover trade terms & commercials, varying based on partnership type. A dedicated partner manager then plans joint Go-To-Market strategies  
+
+**What kind of industry segments can I target?**   
+Industry segments include Fashion & Lifestyle, Grocery & FMCG, Beauty & Cosmetics, Healthcare, Home & Furniture, Mother & Child Care, Electronics, Tools & Equipment, and more.  
+
+**What geographies can I target?**  
+Our market readiness is predominantly in India, across Southeast Asia, Middle East Asia & the USA.  
+
+**How do I decide the nature of partnerships?**  
+Partnership nature is determined by product offerings, customer profiles, and target geography. Options include referral/reseller, technology alliance for integration, or comprehensive solutions partnership. See "Partnership Models" for details.  
+Prefer the below link given for more Instructions and information.  
+[Customer](https://www.vinculumgroup.com/ourcustomers/)  
+
+## Vinculum Customers
+1. Household/Highstreet Brands
+2. Anita Dongre
+3. Apparel Group
+4. Asics
+5. Bata
+6. Bodyshop
+7. Decathlon
+8. Fossil
+9. Godrej Interio
+10. H&M
+11. Inc 5
+12. ITC Limited
+13. Jockey
+14. Metro Brands
+15. Orient Electric
+16. P&G
+17. Pepe Jeans
+18. Radicura Pharmaceuticals Private Limited
+19. Skechers
+20. Titan
+21. Trident Group
+22. TTK Prestige
+23. Under Armour
+24. WildCraft
+  
+**Internet First brands**  
+- Araku Coffee
+- Atomberg
+- B’Infinite
+- BIOAYURVEDA
+- BlueStone
+- Bombay Shaving Company
+- Bstories
+- Clik2Buy
+- Clovia
+- COBB Apparels
+- De Moza
+- Kay Beauty
+- Metmill Footwear
+- R&B Fashion
+- Shrus
+- SQUATWOLF
+- The Souled Store
+- Ultrahuman  
+
+## Ecosystem Players  
+### 3PLs
+- DHL
+- DTDC
+- Inditrade
+- Shadowfax
+- Yusen Logistics  
+ 
+## Ecosystem Players
+### Large Retailers
+- Al Shamsi
+- Jumbo Electronics
+- Landmark Group
+- WESTSIDE  
+
+## Ecosystem Players
+### Marketplaces
+- Hyugalife
+- NirogStreet
+- Nykaa
+- Open Secret
+- Smytten
+- Tradeling  
+
+## Ecosystem Players
+### Quick Commerce:
+- Swiggy Instamart
+- Zepto
+# FAQ's:  
+
+**I have just registered for Vin eRetail. How should I proceed with the master data set up?**  
+When you have registered with the product, Create master data in following order:
+1. Create Vendor
+2. Create items
+3. Create channel
+4. Now you can start processing orders using Vin eRetail.   
+
+**I am a seller on a marketplace with two different accounts. How can I manage both the accounts from one Vin eRetail Account?**  
+Vin eRetail allows you to register on the same channel multiple times. You can configure both of your accounts with the same instance.
+  
+**I am selling more than 1000 items. It is very difficult to create 1000 items one by one. What alternatives do I have?**  
+Express comes with easy bulk item creation feature. You can use our simple item import feature where you can upload multiple items through a single excel file. Just fill in the columns which are highlighted with yellow. Your item creation will be completed.  
+
+**How do I reconcile my COD orders?**  
+Express comes with a COD orders reconciliation report so that you don’t miss out on any payments. You can use this report to check the payment status of COD orders.  
+
+**I want to ship multiple orders together. I don’t want to scan each item individually for each order. How to go about it?**  
+You can use our simple pack order process. Go to order processing -> Click on pack orders Tab, and just type order no and click add. Assign packing and transporter details and confirm. Your order is ready for shipping. Print invoice and shipping label and you can ship the order.  
+
+**I want to track my inventory at the item level. Is there any support for tracking inventory at the item level?**  
+We support item level tracking. Go to Manage SKUs, if you want to do this with an existing item, click on SKU Code, On SKU Creation click on advanced and check ‘Is Serialised’ box and click on save. If you want the same with a new item then in Manage SKUs screen, Click on add new and click on advanced tab and check Is Serialised box. Now whenever you perform inventory movement operations, System will ask you for the serial no of the item. This serial no. will be unique for each piece of an item. Hence you can track inventory at item level.  
+
+**I forgot the password for my Login Id. What should I do?**  
+You can use our change password link. This link is available at the right upper corner. Just click on forget password button and you can change your password.  
+
+**How do I change password for my account?**  
+In this case you can use Forget Password link in your login screen. You will receive your new password through mail ID which is registered with us.  
+
+**I am selling on multiple market places. How can I check orders form a particular channel?**  
+To check orders from a specific channel, Go to orders > Manage Orders. You can select the channel you wish to from filter Channel. The system will display the orders from the channel you had selected.  
+
+**How can I change the selling price of a product?**  
+To change the selling price of a product go to Master > Manage SKU. Click on SKU where you want to change the selling price. SKU create/ edit will be opened and you can change the Selling Price of the item.  
+
+**I want to discontinue selling an item. How to go about it?**  
+If you want discontinue an item, you need to change the status of the item to discontinued. To do so, go to Master > Manage SKU. Click on SKU where you want to discontinue. SKU create/ edit will be opened and you can change the status of the item to discontinued.  
+
+
+
+
+
+
+
+
+
+
+

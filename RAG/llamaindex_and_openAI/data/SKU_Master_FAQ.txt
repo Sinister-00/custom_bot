@@ -1,0 +1,77 @@
+SKU Master FAQ's
+
+# <u> SKU Master FAQ's</u>
+
+**1. Want to add new SKU's/ items please asssist?**  
+New SKU can be added in the system by adding SKU one by one through SKU master screen, Uploading SKU through Excel in bulk from SKU import and through API
+For more details refer:
+[Sku Master](https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000213659)
+
+**2. How can we update the SKU details like SKU Name, Price, Description in Bulk?**  
+SKU update can be through the SKU import sheet by using Mode
+as Update on excel file.Refer the Link given below for more details:    
+[Update](https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000213260)
+
+**3. Getting Error as Color not available while uploading item master?**  
+While uploading/ Creating SKUs all the other masters should already present in the system.  
+Navigation: Masters << Miscellaneous << Other Masters << Color << Add New
+
+**4. Getting Error as UOM not available while uploading item master?**
+While uploading/ Creating SKUs all the other masters should already present in the system.
+Navigation: Masters << Miscellaneous << Other Masters << UOM << Add New
+
+**5. Getting Error as size not available while uploading item master?**  
+While uploading/ Creating SKUs all the other masters should already present in the system.  
+Navigation: Masters << Miscellaneous << Other Masters << Size << Add New
+
+**6. Getting Error as Hierarchy not available while uploading item master?**  
+While uploading/ Creating SKUs Hierarchy should already be present in the system.  
+Refer the Link for more details:  
+[Hierarchy](https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000214574)
+
+**7. Getting Error as HSN Code not available while uploading item master?**  
+HSN code you have entered must not be created in the system please add the respective HSN master through Other Masters.  
+Navigation: Masters << Miscellaneous << Other Masters << Subscribe HSN code << Add New
+
+**8. Getting Error as Brand not available while uploading item master?**  
+While uploading/ Creating SKUs all the other masters should already present in the system.  
+Navigation: Masters << Miscellaneous << Other Masters << Brands<< Add New
+
+**9. Getting Error as Upload SKU within assigned limit**  
+Limit to upload SKU master in one go is 5000, so please check the template and make sure to upload only 5000 items in one file.
+
+**10.  Getting error as “Excel Cell [D9] must not exceed the length above 50 characters” while uploading the SKU master**  
+Character length assigned for SKU code is 50 characters whereas you must be using the sku code length as more than 50 characters and hence you are getting this error,please upload the master having sku code less that the defined limit
+
+**11. Getting error as “Excel Cell [G9] must not exceed the length above 200 characters” while uploading the SKU master**  
+Character length assigned for SKU Name is 200 characters whereas you must be using the sku Name length with more than 50 characters and hence you are getting this error, please upload the master having sku Name less that the defined limit.If you want to put more details than you can put it in the description column.
+
+**12. Getting Invalid Template Error**  
+Please use a valid template file downloading it from SKU import screen, also please don't change the column name or delete any column of Sample template.
+
+**13. Getting error as Duplicate SKU code while uploading item master**  
+Need to use different SKU code which is not available in the system. You can get the export of available SKU from SKU master export
+
+**14. Error due to wrong format**  
+ Format of column should always be in Text to avoid any error
+
+**15. Server Encountered Error while uploading the File**  
+Need to check if all the mandatory fields are filled and if still the problem is their need to raise a ticket to support to check with the logs.
+
+**16. File uploaded successfully but showing under processing**  
+This error comes up when multiple files are uploaded before compilation of the process of the earlier file. Please wait after uploading one file till it gets processed.
+
+**17. Want to upload SKU Barcode / EAN code in the system against uploaded SKU’s**  
+SKU Barcode can be uploaded through the SKU barcode tab individually as well as in bulk.  
+Navigation: Masters –> SKU Management –> SKU Barcode.
+You can also refer to the documents below for more details.  
+[Upload Barcode](https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000214575)
+
+**18. Facing Error as EAN/barcode no is already mapped with SKU while uploading the SKU master**  
+SKU barcode should always be unique and we can’t map one barcode to multiple SKU’s. So please use different barcode as the one you are trying to upload is associated with some other SKU
+
+**19. Getting an error as “This SKU is not a valid Sku” while uploading the SKU barcode**  
+SKU code you have entered is not created in the system. You can upload the SKU barcode for the SKU’s already available in the system. Firstly create SKU and then only can upload the barcode.
+
+For more Instructions and Screenshots, Refer the following Document:  
+[SKU MASTER FAQ's](https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000214575)

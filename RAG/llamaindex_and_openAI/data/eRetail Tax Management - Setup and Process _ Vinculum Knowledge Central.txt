@@ -1,0 +1,56 @@
+# Title : eRetail Tax Management
+
+## Introduction to Tax:
+Tax is a mandatory financial charge imposed by governments to fund public expenditures, with non-payment punishable by law. Its purpose includes revenue generation for government functions like infrastructure, military, education, and healthcare, and can also influence demand through price alterations.
+
+## Types of Taxes:
+1. **Direct Tax**: Direct taxes are levied directly on individuals or entities by the government, with the Central Board of Direct Taxes (CBDT) overseeing their administration through various acts.
+2. **Indirect Tax**: Indirect taxes, unlike direct taxes, are imposed on goods and services rather than individuals, collected by intermediaries such as sellers. Examples include Sales Tax, taxes on imports, and Value Added Tax (VAT), ultimately affecting product prices.
+
+## GST
+GST, or Goods and Services Tax, is an indirect tax in India that replaced various previous taxes like excise duty and VAT. Implemented on July 1, 2017, it applies to the supply of goods and services, following a multi-stage, destination-based taxation system, covering all value additions. It's a unified domestic tax law, with Central GST and State GST applied for intra-state sales and Integrated GST for inter-state transactions.
+ 
+## Objectives:
+GST aims to achieve 'One Nation, One Tax' ideology, consolidate numerous indirect taxes, eliminate tax cascading, curb evasion, broaden taxpayer base, facilitate online procedures for business, enhance logistics, promote competitive pricing, and boost consumption.
+
+## Advantages of GST
+GST eliminates the cascading effect on goods and services, reducing their costs by eliminating tax-on-tax. It's technologically driven, requiring online processes for registration, return filing, refund applications, and notices on the GST portal, streamlining operations.
+
+## Components of GST include:
+- **CGST**: Tax collected by the Central Government on intra-state sales.
+- **SGST**: Tax collected by the state government on intra-state sales.
+- **IGST**: Tax collected by the Central Government for inter-state sales.
+
+## eRetail VAT/GST Tax Setup(outside India)
+Value-added tax (VAT) is a consumption tax levied at each stage of the supply chain where value is added, calculated based on the product's cost minus previously taxed materials. Setting up VAT/GST in a country involves configuring Tax Category, Tax Groups, Tax Zones, and Tax Application as per requirements.
+
+## eRetail GST Tax Setup(India)
+In order to apply taxes over the sales and purchase transactions, taxes needs be configured in eRetail.
+**Tax Codes**: (Master Tax> Managemen> Tax Code)
+**Tax Group**: (Master Tax> Management> Tax Group)
+**Tax Level In Tax Group**:
+Multi-Level Tax allows setting different tax levels within a tax group. Level 1 tax applies directly to the order line amount, while subsequent levels apply to the taxes of the previous level.
+**Tax Category**:(Master Tax> Management> Tax Cxategory)
+**Tax Zone**:Tax Zone is an area under which uniform taxation is applicable.
+**Tax Application**: (Master Tax> Management> Tax Application)
+
+
+## Tax Flow
+- Reverse Tax Flow: Unit price is inclusive of taxes
+- Forward Tax Flow: Unit price is always exclusive of taxes
+
+## Tax calculation
+Happens by 2 means: SKU Level Tax or Tax Category(Tax Application).
+In retail the flow can be reverse and forward.
+
+## Customer Type:
+- Tax Exempt: Tax isnt calculated in the system
+- TCS(Tax Collected at Source): Tax payable by a seller which he collects from the buyer at the time of sale
+
+## Vendor Type:
+- Tax Exempt: Tax wont be calculated 
+- Shipping charge config: Theres a setting to define what tax rate should be applied on the shipping or service charge.
+- International Transactions: Exports from India are zero-rated (no GST). However, GST registration is mandatory if your service export turnover exceeds 20 lakhs. This registration helps claim tax refunds and benefits for exporters.
+
+
+For further assistance, kindly refer to this article [eRetail Tax Management](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000211159-eretail-tax-management-setup-and-process)
