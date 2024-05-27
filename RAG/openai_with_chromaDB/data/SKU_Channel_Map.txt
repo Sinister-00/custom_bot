@@ -1,0 +1,61 @@
+SKU Channel Mapping
+
+Modiﬁed on: Fri, 16 Apr, 2021 at 2:53 PM
+
+# SKU Channel Mapping
+## About SKU channel Link:
+SKU Channel link in V in-eRetail allows the user to map the Marketplace listings with V in-eRetail SKU Listing.
+
+**Operations**
+1. Create channel linking between marketplace SKU/W ebshop SKU with V in-eretail SKU.
+2. Update channel product Id.
+3. Update channel price.
+4. Update Buffer stock at SKU Channel mapping.
+5. Update Status of the SKU Channel Mapping.
+6. Delete a SKU Channel Mapping.
+7. Update Picking Instruction of that SKU.
+
+# SKU Channel Mappings using SKU Pull
+Vin-eretail have the provision of SKU Pull using which the SKUs created on Webshops/Marketplaces will be pulled in Vin-eretail automatically.  
+Navigation: Sales > Manage Channels >Channel Create/Edit >Channel SKU
+* Create: All the SKU will be pulled from that channel and created on the Vin-eretail using some predefined SKUs create configuration.  
+* Moderate: Only the channel SKU, channel product Id's of that channel will get pulled and then mapped with the Vin-eretail's SKU Id's.
+
+# SKU Channnel link Create/Update for Individual SKU
+ **Action Buttons:**  
+ * Add New: To add the new SKU to channel link
+ * Search: Populate the list of sales channel
+ * Advanced Search: Search all the SKUs in active/inactive status.
+ * Reset: Refresh to default settings
+ * Export: Download and export results in form of CSV
+
+**Update Existing SKU Channel Mapping Individually:**  
+Enables users to update an alreadt created SKU channel link or mark a record.  
+**<u> Process</u>**  
+Navigation: Sales> SKU Channel Listing
+**Tab 1: SKU/Link Search Channel**  
+This section will display search results of the SKU mapping on different marketplaces.  
+* Channel– It is a dropdown box which shows a combination of Channel Code and Channel Name.
+    1. Channel Code- Channel code is the auto generated unique code by the system for each channel at thetime of channel configuration.
+    2. Channel Name- Channel name is the name given by the user to the channel while creating the channel atthe time of channel configuration.
+* Vin-eRetail SKU– SKU Code of the Brand/Brand Distributor/Seller.
+* SKU Description – Description assigned by the user basis the product info.
+* Channel SKU – SKU Information input by the user that can have different prefix or suffix to differential the SKUfrom one channel to another.
+* Channel Product ID– Product ID assigned by the user.
+* Channel Price – Price assigned by the user on the channel.
+* Picking Instructions – Picking Instructions by the user.
+* Status – Active or Inactive.
+* Backorder Inventory – If the SKU is a Backorder Inventory
+* Upd Date – The date on which the SKU linking is updated.
+* Upd Button – Update Button to save the updated mappings.
+
+**SKU Channel link Create/Update in Bulk:**  
+**Demo Examples:**  
+**Example 1:** If user wants to search unmapped SKUs from the SKU Name, he can put “cream” and the all theunmapped “cream” record will be displayed.  
+**Example 2:** If user wants to search the unmapped SKUs from the channel name, he can put the "Channel Name" and all the unmapped records will be displayed. User can click "Link" button ans link the records with Vin-eRetail SKU created in the SKU Master.  
+**Example 3:** If user wants to search the specific unmapped SKU from the Seller SKU ID, he can also put the specific details in the fields. After that, user can click the “Link” button and link the item with the V in-eRetail SKU.  
+**Example 4:** If user wants to search the specific unmapped SKU from the Seller SKU ID, he can also put the specific details in the fields. After that, user can click the “Link” button and link the item with the V in-eRetail SKU.  
+**Example 5:** User can click on “Export” action tab and take out the details of the SKUs in the excel sheet. User can then copy these details to the “SKU Channel/Link Import” excel sheet and provide the Vin-eRetail SKU data.When user upload the sheet in the tab, the SKU records will be mapped in bulk.
+
+For detailed Instruction and Screenshots, follow:  
+[SKU Channel Mapping](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000200046)

@@ -1,0 +1,60 @@
+Types of Zones & Zone Setup
+
+Modiﬁed on: Fri, 6 Aug, 2021 at 12:58 PM
+
+# Types of Zones  
+Zone is a logical or physical grouping of locations within a warehouse. Zones are the divisions in which any
+warehouse is divided for the Stock keeping based on various attributes for one or multiple locations.   Zone
+enables defining the constraints for put away and picking of SKUs in the warehouse. Inventory Move, Stock
+Adjustment, Stock Take, Inbound and Returns take place with respect to the Zone.
+Each warehouse has its own setup of zones basis the SKU requirements, storage capacity , inventory type,warehouse processing workflow , stock limits etc.
+
+**Classification of Zone basis**  
+* **Normal Zones –** The zones where normal process work flow takes place like receiving zone, staging zone etc.  
+* **Sortation Zones–** A zone where SKUs are sorted order wise and customer-wise after picking e.g.Sortation zone
+* **Physical Zones –** The zones where  normal process workflow takes place like Saleable zone, Returned zone etc.
+* **Virtual Zones –** These may or may not be physical zones, but they are created in the setup to perform certain actions in the warehouse that includes checking, sorting, or assembling like Kitting zone, Let down zone etc.
+
+**Warehouse Setup and Functioning:**  
+* **Saleable Zone:** A zone that has SKUs/Articles authorized for sale to the final customers.
+* **Staging Zone:** A zone where the SKUs/Articles are pulled from inventory to fulfil an order .
+* **Receiving Zone:** A zone where the SKUs/Articles or Case packs are received.
+* **Damaged Zone:** A zone where the damaged SKUs/Articles are kept.
+* **Returned Zone:** A zone where the returned SKUs/Articles are kept.
+* **QC Zone:** A zone where the SKUs/Articles Quality check is done.
+* **Packing Zone:** A zone where SKU/Articles are packed before it is ready to be shipped.
+* **Kitting zone:** A zone where SKUs/Articles kitting is done as per the order .
+* **Let Down Zone:** A zone where the inventory is picked and kept before it is moved to its respective zone.
+*  **Storage Zone:** A zone where the bulk reserve is stored for Articles/SKUs as per the requirement.
+
+# How to do Zone Setup in eRetail?  
+* **Zone Code:** Zone code is the User defined name/code given to the zone. This is a mandatory field while creating a zone.
+* **Description:** User can describe the zone by providing the description here.
+* **Pick to Bin:** User will choose the bin from here in which the product will get picked and allotted for the Zone.
+* **Kit to Bin:** User will choose the bin from here in which the product will get picked for kitting for the zone
+* **QC Bin:** QC bin refers to the quality check bin which will be chosen from here by the user for the zone.
+* **Status:**User can mark the Zone while creation as Active or Inactive. Inactive Zones cannot be used for the inbounds and further process.
+* **Zone Type:** User will have to choose the zone type from the drop down whether the zone user is creating is a normal zone or a sortation zone.
+* **Sortation Zone:** A sortation zone is the Zone where SKUs are sorted order wise and customer-wise
+after picking. 
+* **Let down Bin:** Let down bin refers the auto replenishment bin which will be chosen from here by the user for the zone.
+* **Actions(Edit/Audit icons):** User can choose to Edit and Audit the Zones from the Action section.
+
+**Action Buttons:**  
+* **Search:**  Clicking on the search button without entering any filter criterion will populate the list of all the
+ZONES based on default filter setting. User can further narrow down the search by using filter options to get any specific information
+* **Reset:**  Reset button will refresh the filter fields  to default settings, i.e., to an initial state to start fresh search.
+* **Add New:**  To add a new Zone to the database.
+
+**How to Create new Zone?**  
+To add a new zone to the database, user can click to the action button “Add New” and update the field details as per the description mentioned above.  
+
+**How to edit a zone?**  
+User can edit a zone by clicking on the “edit” icon available on the right most corner of Zone. 
+
+**How can I Know who has created/modified a Zone?**  
+User can click on the “Audit” icon available on the right most corner of Zone.
+
+
+For more Instructions and Screenshots, follow the document:  
+[Types of Zones](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000205130)

@@ -1,0 +1,14 @@
+{
+  "question": "what was the last question i asked",
+  "chat_history": [
+    { "content": "how can i setup auto label printing" },
+    {
+      "content": "To set up auto label printing with a Zebra printer, you can follow these steps:\n\n1. **Hardware Setup**:\n   - Plugin the Zebra Printer USB Cable: Connect the Zebra printer to your machine using a USB cable.\n\n2. **Software Setup**:\n   - Install QZ Tray: Run the installation file downloaded in the previous step. Ensure that Java SE Development Kit is installed on your machine.\n   - Start QZ Tray: After successful installation, navigate to Start > All Programs > QZ Tray.\n   - Automatic Startup: Right-click on the QZ Tray icon and ensure that the \"Automatically Start\" option is enabled.\n\n3. **Label Printing**:\n   - Test Print: Once all setup steps are completed, attempt to print the label from the panel.\n\nFor more detailed instructions, you can refer to the [Zebra Printer Settings for Auto Printing](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000210122-zebra-printer-settings-for-auto-printing)."
+    },
+    { "content": "what was the last question i asked" },
+    {
+      "content": "I don't have the ability to remember or track the previous questions asked. If there's anything specific you would like to know or discuss, feel free to ask!"
+    }
+  ],
+  "answer": "I don't have the ability to remember or track the previous questions asked. If there's anything specific you would like to know or discuss, feel free to ask!"
+}

@@ -1,0 +1,33 @@
+SKU Barcode 
+
+Modiﬁed on: Wed, 6 Mar, 2024 at 11:49 AM
+
+# SKU Barcode
+The SKU Barcode feature allows users to input or upload a list of barcodes to be associated with specific SKUs (Stock Keeping Units). These barcodes serve as unique identifiers and enable the tracking and storage of information about SKUs, whether it's for individual items or large quantities stored in warehouses and managed through order systems. By utilizing SKU barcoding, businesses can effectively monitor the movement of SKUs into and out of their warehouses, facilitating inventory management and order fulfillment processes.
+
+Navigation: Masters -> SKU Management -> SKU Barcode.
+
+**Action Button:**
+* Search: To View or Search existing Barcode.
+* Reset: To reset Current filter.
+* Download: Export the data. 
+* Add new: To add or map the barcode.  
+**SKU BARCODE CREATE/EDIT**  
+* Action: User can see the Audit by clicking on “i” icon and  can modify the existing one.
+* SKU Code: This is SKU Code which is derive from SKU Master.
+* SKU Name: SKU Name.
+* Barcode: EAN code which maps with SKU.
+* UOM: Can be assign different UOM with different BarCode of SKU
+**Barcode Type**   
+* Is Active: It shows the barcode is InActive or Active.
+* Is Default: One Barcode can be set as default for any SKU.
+* Case Size: It shows the Case Size of that particular Barcode.
+* Sale Price: Saleable price can be different of SKU based on its Bar Code.
+* Is Saleable: If is Saleable checked means, that Bar Code can be order.
+**<u>SKU Barcode Import</u>**
+* User can import the Barcodes in bulk by uploading the CSV
+
+**<u>Import Template</u>**
+
+For detailed instructions and screenshots, refer to the:
+[SKU Barcode](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000214575-sku-barcode)

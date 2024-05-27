@@ -1,0 +1,42 @@
+# <u>Trading Partner FAQ's:</u>
+## <u>Vendor Master</u>
+
+**1. Need assistance in creating New Vendor?**  
+New Vendor can be added in the system by adding Vendor one by one through the Vendor master screen, Uploading Vendor through Excel in bulk from Common import screen and through API.
+You can refer to the documents below for more details[New]:  
+https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000212657  
+Navigation to upload vendors in bulk is below:
+Admin << Imports << Common Imports << Select Vendor Import from Dropdown <<Import file  
+To create vendors through API Please refer below API[Create]  
+https://erp.vineretail.com/swagger/#/Vendors
+
+**2. Getting Error as “Vendor code is Mandatory” while uploading Vendor master**  
+While uploading Vendor Master please make sure to fill all mandatory fields. You are not entering Vendor code and hence getting this error. Please retry after putting vendor code
+
+**3. Getting Error as “Vendor Name is Mandatory” while uploading Vendor master**  
+While uploading Vendor Master please make sure to fill all mandatory fields. You are not entering Vendor Name and hence getting this error. Please retry after putting the vendor Name
+
+**4. Getting Error as “Tax Zone is Mandatory” while uploading Vendor master**  
+Tax zone is mandatory field which gives information of Zone (State) from which client belongs to which state so please select valid Tax Zone.
+
+**5. Getting Error as “Currency Code is Mandatory” while uploading Vendor master**  
+Please select valid currency code applicable for the Vendor, this field is mandatory so that invoice can be created as per respective currency.
+
+**6. Facing Error as “Vendor type Mandatory Error”**  
+Please select valid Ventory type, ie. outright or Marketplace. This field defines the type of Vendor 
+
+## Customer Master:  
+**1. Want to add Customer master Please assist?**  
+Customer Master can be added from the Master screen one by one. You can Navigate to the customer master as below:  
+Navigation: Masters > Trading Partners > Customer Master  
+For More details Please refer below document:    
+[Add Customer](https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000212663)
+
+**2. Getting error as Customer type is Mandatory, how can this be eliminated?**  
+Customer type field is a mandatory field used to define whether a customer is B2B or B2C, so please retry after selecting the respective customer type.
+
+**3. Why am I getting an error as GST no is mandatory while adding customer master?**  
+You must have selected customer type as B2B, for B2B customer GSTin number is mandatory to add, so either change the customer type as B2C or if it is B2B then proceed with adding relevant GST no.  
+
+For More instruction and screenshots, Refer the following Document:  
+[Trading Partners FAQ's](https://vinculumhelpdesk.freshdesk.com/a/solutions/articles/9000212663)

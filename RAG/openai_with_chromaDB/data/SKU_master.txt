@@ -1,0 +1,118 @@
+SKU Master
+
+Modiﬁed on: Tue, 19 Mar, 2024 at 5:12 PM
+
+# SKU Master
+## Introduction  
+This text provides a concise explanation of what a Stock Keeping Unit (SKU) is and its significance in inventory management:
+A Stock Keeping Unit (SKU) is a unique identifier assigned to a specific type of item, allowing it to be purchased, sold, or tracked. This identifier typically consists of an alphanumeric code or scannable barcode printed on the item or its packaging. The SKU encapsulates various attributes associated with the item, such as manufacturer name, material, color, size, warranty, etc., which differentiate it from other item types. 
+The term "SKU" is widely used across different sectors including stores, e-commerce platforms, warehouses, product fulfillment centers, and any other businesses involved in inventory management. 
+In a system, the SKU Master serves as a comprehensive collection of all SKUs and their corresponding details. Users can easily search and retrieve information about any SKU stored in the system using the SKU Master data, facilitating efficient inventory management and tracking processes.
+**SKU Master in Vin eRetail**  
+**Add/Import new SKU:**
+1. Through SKU Import screen for bulk import.
+2. Through Add New button on the SKU Master screen.
+3. Through Eretail API's  
+* Navigation: Master >> SKU Management >> SKU Master  
+
+**SKU Enquiry Screen**  
+* SKU Code: SKU code is the User defined code given to the SKU.
+* Style: It is used to identify ‘Style’  SKU from a ‘V ariant’  SKU.
+* SKU Name: SKU name is the User defined name given to the SKU.
+* Classification: This is used to classify a SKU. Ex: ‘Normal’, ‘BOM’, etc.
+* Size/Color: This field gives details about the size and color of the SKU.
+* MRP: This field reflects the MRP  of the SKU
+* Base Cost: This field reflects the cost of the SKU which is the amount at which it was procured.
+* Sale Price: This reflects the price of the SKU which is the amount at which it will be listed for sale.
+* SKU Mfg Code: It is the V endor SKU Code i.e. the code used by the vendor to identify the SKU.
+* Primary Vendor: This is the primary vendor from whom the SKU is procured.
+* Brand Code: This is the name of the brand of the SKU.
+* Hierarchy Code: This reflects the hierarchy to which the SKU belong.
+* Attribute Set: This is a user defined classification and can be added through the Manage Attribute section of eRetail.
+* Status: It reflects the status of the SKU as ‘Active’, ‘Inactive’  or ‘Deleted’
+* Created By: This reflects the name of the user that created the SKU.
+* Created Date: This reflects the date on which the SKU was created.
+* Back Order: This is a Yes/No dropdown to identify the SKU if it is eligible for Back Orders.
+* Tax Category: This gives details about the tax applicable on the sale of the SKU (HSN code)
+**Action Buttons:**  
+* Search: Retrieve picklists/orders based on specified criteria.
+* Reset: Refreshs to the default settings
+* Advance Search: additional filters are ‘Site Location’, ‘Approved Status’, ‘V endor Type’ and ‘SKU Source’.
+* Export: Export the details
+* MetaData Export: Allows the user to take the export of Metadata in an excel template.
+* Add new: To create a new SKU.
+**SKU Classification:**  
+* Gradable: This includes SKU that can be graded. Mostly used for Grocery .
+* Normal: This includes general physical SKU. It does not have any other attribute and classified feature added to it.
+* Style(and V ariant): This includes SKUs that are available in various size and color. It is mostly used for Footwear and Apparels. The same SKU in dif ferent size or color are then auto-classified as ‘V ariants’  of that Style.
+* BOM: BOM SKU are those in which dif ferent SKUs that are already created in the system
+are bundled up together in a defined ratio form a new single SKU.
+**SKU DETAILS:**  
+1. Product Detail
+2. Pricing Detail
+3. Dimension Detail
+4. SKU Image
+5. Product Detail  
+
+**Back Order & Back Order Quantity:**  
+* Pricing Detail: 
+    1. MSRP/MRP
+    2. Sale Price
+    3. Base Cost
+    4. Std Margin %
+    5. Tax Category
+    6. SKU Level Tax  
+
+* Dimension Detail: All the below given dimension criterion will be filled in with respect to each SKU as this information is further required for the Shipping purpose.
+    1. Height (CM)
+    2. Length (CM)
+    3. Width (CM)
+    4. Cube
+    5. Weight (KG)  
+
+* Sku Image:  Images of the SKU can be entered in dif ferent format through this section.
+    1. Image URL
+    2. Product Page URL
+    3. Image files
+**OTHER DETAILS:**  
+**Detail 1:**  
+* **Shelf Life:** This is used to enable and track shelf life for the SKU. 
+* **Shelf Life Type:** User needs to select what type of date is to be tracked for the SKU (Expiry date or Mfg. date)
+* **Total Shelf Life:** This field is used to enter the no. of days for which the SKU can be stored before it becomes unsafe to use. (Expiry Date)
+* **Shelf Life on Receiving:** This reflects the min. no. of days left for Expiry at inbound. If the shelf life of SKU is
+less than this no. then the system will not allow to Inbound it.
+* **Shelf Life on Picking:** This reflects the min. no. of days left for Expiry at the time of Picking. If the shelf life
+of SKU is less than this no. then the system will not allow to pick it.
+* **Serial Tracking:** When this is enabled, the system will track the SKU based on its serial no.
+* **Stackable:** When this is enabled, the SKUs can be stacked together .
+* **Hazardous:** This is used to mark the SKU as Hazardous.
+* **Poisonous:**This is used to mark the SKU as Poisonous.
+* **Is Purchasable:** User can purchase/raise a PO for the SKU only when this field is enabled.
+* **Is Saleable:** The SKU is made available for selling only when this field is enabled.
+* **Is Stocked:** When this is enabled, the SKU should be stocked.  
+**Detail 2:**  
+* **Lottable Validation:** This is used to define the Lottable Validation, applicable for the SKU.
+* **SKU Rotation:** This is used to select the SKU allocation strategy , which can be FEFO(First Expire First Out), FIFO(First In First Out) or LIFO(Last In First Out). Ex: for FEFO the SKU with min. shelf life will be allocated first .  
+* **Rotate By:** It is used to select the attribute based on which the SKU will be allocated.
+* **Recv . Validation Code:** This is used to define the validations applicable at the time of Inbound.
+* **Picking Instructions:** This is used to select the standard instructions that need to be followed while picking the SKU.
+* **Shipping Instructions:** This is used to select the standard instructions that need to be followed while shipping the SKU.
+* **Threshold Alert Required:** This is enabled to set an alert when the SKU qty falls below the threshold.
+* **Threshold Qty:** The user can enter the threshold qty to set up the threshold alert.
+* **Fullfilment Type:** This is used to select the Fullfilment Type for procuring the SKU.
+* **Shipping Charges:** This reflects the charges required for shipping the SKU.
+* **Handling Charges:** This reflects the charges required for handling the SKU.
+* **Def Source WH:** This is used to define the warehouse from where the SKU will be sourced/procured.
+* **Is Uniquebarcode:** When this is enabled, the system will maintain the USN for the SKU.
+* **Is IpcAllowed:** This is enabled for cross border fullfilment.
+* **Is Repack Allowed:** This is enabled for SKUs that need to be unpacked and then repacked into smaller packs. Ex: grocery
+* **Minimum Transfer Qty:** This reflects the min. qty of the SKU which is required to perform ST O.
+* **Transfer Unit Factor:** The qty for which ST O is to be created should be in the multiples of transfer unit factor . Ex: if it is 5 then ST O qty can only be 5,10,15,20,25,etc  
+**ARS DET AILS:** Auto Replenishment System or ARS is used for automatic purchase order creation and auto-delivery of products.  
+**VARIANTS:** This section is accessible only for “Style” classification of SKU. In this section user can add and fill
+details of dif ferent variant SKUs to the main Style SKU.  
+**BUNDLED ARTICLE:** This section is accessible only for “BOM” classification of SKU. In this section the user can
+add multiple SKUs to create a new Bundled SKU.
+**Edit Existing SKU:**To edit the already existing SKU in the system, the user needs to navigate to the SKU Enquiry screen and click on the ‘Blue’  colored SKU code.  
+
+For more detailed Instructions and Screenshots, Refer to the [SKU Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000213659)

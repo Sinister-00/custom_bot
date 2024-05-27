@@ -1,67 +1,19 @@
-Title: Inbound Real Time & Business Use Cases
+# Title: Inbound Real-Time Screen at eRetail
 
-Modified on: Tue, 5 Jul, 2022 at 1:51 PM
+Navigation : **WMS>Inbound>Inbound RealTime**
 
-# Inbound Real Time & Business Use Cases
-
-## Inbound Real-Time Screen at eRetail
-
-Inbound in eRetail can be managed using the Inbound Real-Time screen for more deatils refer to this article  [Inbound Real Time & Business Use Cases](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216919-inbound-real-time-business-use-cases).
-
-### Navigation:
-WMS > Inbound > Inbound Real-Time
-
-- **Manual Creation**: Users can create or edit inbound details manually.
-- **Import**: Details can also be imported using the provided import template.
-
-### Import Template Details:
-- **Mandatory**: Fields marked in yellow are mandatory; green fields are required for lottable validation.
-  
 ## Business Use Cases:
+The eRetail system offers various features for inbound logistics:
 
-### IMEI Tracking:
-- Unique tracking number provided by manufacturers for electronics items.
-- IMEI enabled inventory requires enabling 'Serial tracking' in SKU settings.
+* **IMEI tracking:** For electronics, enable "Serial tracking" to capture unique IMEI numbers during inbound.
+* **Batch/Expiry/Multi-MRP:** Manage shelf life by creating "Lottable validation" (e.g., expiry date) and selecting it for the SKU. The system captures this data and generates lot numbers during inbound.
+* **PO vs Vendor Invoice:** Update purchase order pricing based on formulas to handle price changes. Capture vendor invoice details in "Manage Vendor Invoice" for financial settlement.
+* **System Suggested Put-away:** Create putaway rules to assign specific bins to SKUs. Use "System Suggested Put-away" during inbound for automatic bin suggestions based on these rules.
+* **SKU Barcode:** Generate barcodes during inbound for inventory tracking. The system can design barcode formats and print them based on user needs.
+* **Item Level Barcode/USN:** Enable "Unique Serial No (USN)" for SKUs to track each item. The system generates unique serial numbers during inbound.
+* **Multiple Inbound per Purchase Order:** Allow multiple inbound receipts for a single purchase order (status remains "Partially received").
+* **Warehouse App:** Facilitate real-time receiving and putaway using the warehouse app.
+* **LPN/Unit Tracking:** Track inbound using either LPN (License Plate Number) or SKU.
+* **Currency Conversion:** Manage currency conversion for vendors with different currencies by setting conversion rates in "Other Masters."
 
-### Batch/Expiry/Multi-MRP:
-- Maintain shelf life for SKUs.
-- Setup lottable validation for expiry date during SKU creation/edit.
-
-### PO vs Vendor Invoice:
-- Capture price differences between purchase order (PO) and vendor invoice.
-- Update vendor invoice details in 'Manage Vendor Invoice' module for financial sync.
-
-### Actual Landed Cost:
-- Edit cost at line level to show actual landed cost.
-- Vendor invoices directly sent to the finance team for settlement.
-
-### System Suggested Putaway:
-- Create putaway rules for mapping SKUs to storage bins.
-- Use 'System Suggested Putaway' method for automatic bin suggestion during inbound.
-
-### SKU Barcode:
-- Track and store SKU information using barcodes.
-- Generate barcodes from inbound screen or SKU label print screen.
-
-### Item Level Barcode/USN:
-- Track each piece of SKU with Unique Serial Number (USN).
-- System generates USN during inbound for each piece.
-
-### Multiple Inbound against One Purchase Order:
-- Inbound multiple times against a single purchase order.
-
-### Warehouse App:
-- Real-time receiving and putaway in WMS using the warehouse app.
-
-### LPN/Unit:
-- Track inbound using LPN or SKU.
-
-### Currency Conversion:
-- Maintain conversion rates between vendor currency and base currency.
-- Unit cost converted into base currency if setting is turned on during PO creation/direct inbound.
-
----
-
-This document provides an overview of inbound processes and business use cases within eRetail, covering both manual and import methods and various scenarios like IMEI tracking, batch management, pricing, putaway rules, barcode management, and currency conversion.
-
-For further details, please refer to the [Inbound Real Time & Business Use Cases](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216919-inbound-real-time-business-use-cases).
+for further assistance, please refer to this article [Inbound Real Time & Business use case](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216919-inbound-real-time-business-use-cases)

@@ -1,0 +1,107 @@
+VENDOR MASTER
+
+Modiﬁed on: Wed, 31 Jan, 2024 at 5:34 PM
+
+# Vendor Master
+**Vendor Master**  
+Through Vendor Master , seller can manage the information of all the vendors from one screen. Master Data setup is the initial configuration process where all the primary setup steps are performed on the basis of which the transactions will take place. A Vendor needs to be configured to the system using the Vendor Create/Edit screen
+
+**Vendor Master**  
+Navigate: WMS > T rading Partners> V endor Master . This section will enable user to enquire and search an already existing vendor and vendor details. User can refine the search further by using filters as per requirements.  
+**Vendor Create:**  
+* **Vendor code:** Vendor Code is the unique code provided by the system to each vendor . It cannot be edited once saved.
+* **Vendor  Name:** User given name to the Vendor with which he is registering in the system. Vendor Names can be identical and hence we require the vendor codes to differentiate.
+* **Vendor  Short Name:** It is another name used for the vendor
+* **CST  Regi. No:** To capture Vendor ’s Central Sales Tax registration number. This is not a mandatory field.
+* **Vat Regi No:** To capture Vendor ’s Value added Tax registration number . This is not a mandatory field.
+* **Tin No:** To capture Vendor ’s Taxpayer Identification Number. This is not a mandatory field.
+* **Credit Days:** This is the number of days or time limit each vendor provides to the company to pay off his/her dues.
+* **Tax Zone:** State/city/county under which a particular vendor is registered.  
+* **Status:** When a new vendor is created and saved but not confirmed, the status of that vendor is ‘Pending Confirmation’. All the vendors that are currently active in system are in
+‘Confirmed’  Status. A vendor in ‘Deactivated’  status can no longer be used for any transactions.
+* **Return:** Select this checkbox if the vendor supports the return of products, else leave it blank.
+* **GL Code:** The general ledger code is a code used by a business used for each of its accounts to keep track of its financial transactions and to prepare financial reports.
+* **Currency Code:** Select the code from the list of currencies supported in the area. Mention the Vendor ’s
+preferred currency to trade in.
+* **Parent Vendor:** Multiple addresses can be mapped for one vendor . Separate vendor codes are registered for each location and mapped to the master/parent vendor . If logged in with the parent vendor , orders from all locations can be viewed and managed.
+* **PAN/IT Number:** To capture Vendor ’s Permanent Account Number . This is not a mandatory field.
+* **GST No.:** To capture Vendor ’s Goods and Services Tax Number . This is not a mandatory field.
+* **Min Order Value:** It is the minimum amount of order that can be placed with the vendor.
+* **Lead Time (In Days):** It is the expected number of days in which the Vendor will fulfil the PO In skuvendorlink table we have lead time.
+expected delivery date = PO create date + lead time
+* **Vendor Type:** There are 4 types of Vendors: Outright, JIT , Marketplace and B2S2. 
+* **SOR Days:** Sale or Return is type of transaction in which the vendor allows the seller to keep inventory without paying for it. The seller pays the retail price of the goods that get sold and returns the rest to the vendor after a certain number of days that can be defined here.
+* **IsCostbasedon Margin:** If checked, SKU cost and mar gin can be set in skuvendorlink table, based on which the cost will be calculated.
+* **Vendor  is tax exempted:** Check this box if no tax has to be levied from the Vendor. 
+* **Bypass SKU Vendor Link:** If Bypass SKU vendor link is disabled, then it means PO can be created only against this
+vendor for the SKU which is mapped with this vendor .
+* **PO Additional Charge Type:** Select any char ge type from the dropdown. Char ge types can be defined through:
+Procurement>Setup>Purchase Char ge Masters
+* **Cost Derivative:** Select the Vendor Cost Derivative from the dropdown menu.
+* **License No:** Enter the vendor license No.
+1. Outright Vendor : It involves a normal purchase cycle in which a purchase order is raised to the vendor in order to replenish the stock in the inventory
+2. Just in Time (JIT) Vendor : Sellers don’ t keep inventory in this model. POs are raised to vendors only when orders come in.
+3. Marketplace Vendor:  Listed seller . Marketplace will take the order and forward the same to the seller.The billing and shipping party are the vendor . There are no purchase cycles involved.
+4. B2S2(Bill to Ship to) : It is a combination of JIT  and marketplace model. MP  will take the order and provide the invoice. Vendor will not be char ged on the basis of orders, instead, POs will be raised to the vendor.The billing party is MP , and the shipping party is vendor.
+
+**Bank Details**  
+* Bank Name
+* Account No
+* Branch Name
+* Branch Address
+* IFSC Code
+* Swift Code
+* MICR Code
+
+**Address**  
+* Address 1
+* Address 2
+* Address 3
+* Contact Person*
+* Phone*
+* Email*
+* Latitude
+* Longitude
+* Country*
+* State*
+* City
+* Pin Code*
+* Copy to Billing checkbox
+
+**User  Defined Fields:**  These are the custom fields which can be used to capture any additional information as per requirement.
+
+**Attached Documents :** Attached document section lets user to attach any important document/contract for the vendor .
+
+**Terms and conditions :** Users define the terms and conditions for the transactions and processes through this screen, for all the vendors to abide by .
+
+**Seller  Details:**  It is used to record details of the seller when Vendor Type is Marketplace in Vendor Master
+tab. In this case, the MP  is the WMs user , and the seller is the vendor .  
+**Default Delivery Mode :** The default mode of delivery or transportation for this particular vendor .
+1. Cross Dock: It is the practise of unloading goods from one truck and loading them into another at
+a docking station, without storing them in the warehouse. Hence, cross docking helps in reducing
+the storage space and the total time taken to fulfil the orders
+2. Vendor self-ship: The vendors can choose their own transporters in this mode
+3. Dropship: In this mode, the seller does not keep any stock on hand. The fulfilment will be done
+directly by the vendor , who will be allowed to choose their delivery partner
+4. Seller on Inventory: Sellers manage their own inventory 
+**Invoice By*:**  The seller can choose between MP  and Self invoice number
+**Delivery Mode Updation Allowed :** This checkbox will decide whether the vendor will be allowed to change the Default Delivery Mode. Sellers can change the delivery mode from the seller panel if this box is check marked.
+**Fulfilment Charges :** Fulfilment Centre char ges in case when MP  maintains the inventory and fulfils the orders for sellers
+**Payment charges :** Prepaid/COD char ges
+**Courier  Charges:** Delivery Char ges
+**Return Acceptance Charges**
+**Return Location Type**
+**Return Location**
+**Return Location Address**
+**Digital Sign URL**
+
+**Actions Buttons:**  
+* Save: To make changes in vendor information and update in vendor master or to create a new vendor.
+* Confirm: To confirm vendor configuration. Once confirmed, the vendor can be used for transactions across eRetail.
+* Link To Store: To map vendor to warehouses or store locations. Users will be able to make transactions against the vendor only when they login from the location they are linked to.
+* Deactivate : Users can deactivate a vendor if they no longer want to procure goods from these vendors.No transactions can be processed for a Deactivated vendor .
+* Add New : To add a new vendor to the database.
+* Audit : A dialog box will open showing the following information on the screen:
+
+For More details and instructionsl, refer to the link given below:
+[Vendor Master](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000212657-vendor-master)

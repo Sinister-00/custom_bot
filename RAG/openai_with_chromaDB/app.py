@@ -26,6 +26,7 @@ def create_chunks():
 
 def create_embeddings():
     global persist_directory
+    print(f"Persist directory: {persist_directory}")
     embedding = OpenAIEmbeddings()
     vectordb = Chroma.from_documents(
         documents=create_chunks(),
@@ -87,20 +88,6 @@ def qa_chain_with_template(vectordb,question):
     return result["result"]
 
 
-# memory = ConversationBufferMemory(
-#     memory_key="chat_history",
-#     return_messages=True
-# )
-
-# qa = ConversationalRetrievalChain.from_llm(
-#     llm,
-#     retriever=vectordb.as_retriever(),
-#     memory=memory
-# )
-# question = "how can i setup auto label printing"
-# result = qa.invoke({"question": question})
-# print(result['answer'])
-
 
 def create_chat_memory(vectordb):
     llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
@@ -119,3 +106,20 @@ def ask_query_with_chat_memory(qa, question):
     result = qa.invoke({"question": question})
     print(f"Question: {question} \n Answer: {result['answer']} \n")
     return result['answer']
+
+# Function to create or load embeddings
+def get_or_create_embeddings():
+    global persist_directory
+    try:
+        vectordb = load_embeddings_from_local()
+        print("Embeddings loaded from local.")
+    except FileNotFoundError:
+        print("Embeddings not found, creating new...")
+        embedding = OpenAIEmbeddings()
+        vectordb = Chroma.from_documents(
+            documents=create_chunks(),
+            embedding=embedding,
+            persist_directory=persist_directory
+        )
+        vectordb.persist()
+    return vectordb

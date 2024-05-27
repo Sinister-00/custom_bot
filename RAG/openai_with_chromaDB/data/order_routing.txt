@@ -1,0 +1,103 @@
+Order Routing, Splitting & Hopping
+
+Modiﬁed on: Tue, 8 Jun, 2021 at 5:27 PM
+
+# How to route order in vin-retail?
+
+Vin-eRetail provides the functionality to route an order to an optimal warehouse in terms of nearest location,
+maximum inventory , lowest delivery cost, city , region, priority , etc
+
+**Setting Rules:**  
+To setup follow the OMS rules:
+1. Order Routing Rules
+2. Order splitting Rules
+3. Order Hopping Rules
+
+**Order Splitting:**  
+Practice of dividing a large order into a series of smaller ones.
+
+**Order Hopping:**  
+Process of hopping or transferring the order to the next priority fulfillment location.
+
+# 1. <u> Order Routing</u>  
+Navigation:  Sales > OMS Rule > Order Routing/Split rule.
+Orders gets routed automatically on the order allocation as per the Order Routing rules.  
+**Automatic Action includes:**  
+* Set Source WH: This action is used to set the source WH automatically at the SKU level.  
+* Not Set Source WH: This action is used not to set a WH that meets the All and Any conditions.  
+**Methods to route order:**
+* Max Inventory: To apply the Max Inventory rule to route an order, the user needs to create a route rule and needs to select “MaxInventory” under the action section.
+* Custom Pref: Custom Pref is one of another way to route the order to WH. To apply the CUSTOM PREF rule to route an order,the user needs to create a routing rule and needs to select “Set Source WH” and “CUSTOM PREF” under theaction section. 
+* Same City: This rule allows the user to route the orders to the store/WH locations present in the delivery address city.
+* Same Region: This rule allows the user to allocate the orders to the stores/WHs present in the delivery address Region
+* Setting specific location: To select a particular WH which meets a particular set of conditions.
+* Nearest Location: To set the Source WH or can route an order based on the nearest location
+
+# Seller Panel Order
+Seller Panel Order is another functionality of the OMS Rules. Seller Panel Orders are those orders in which theorder is placed in the marketplace and is fulfilled by the sellers
+In Seller Panel Orders, the order is not fulfilled by the customer . Whenever an order is pushed to eRetail via
+integration and the vendor type of the line items of the order is either Marketplace or B2S2, then those orders are
+treated as Seller panel Orders.  
+Navigation: Sales > OMS Rules > Seller Panel Order Rules
+**Rules for routing the seller**  
+* Nearest Location
+* Max Inventory
+* Primary Seller
+* Fixed(Seller name)
+
+# 3. Order Hopping 
+Order hopping is an order routing OMS rule in vin-eRetail that helps the user in routing the orders to next location(s) if t gets rejected at previous locations(s).
+Order hopping refers to the process of transferring the order from one fulfillment center to the next fulfillmentcenter in case the previous location is unable to fulfill the order and rejects it.
+**Benefits:**
+* Increase fulfilment rate and sales
+* Reduce operating cost by provinding opportunity to stores 
+* Seamless omnichannel experience to the user
+
+**Order Hopping OMS rule**
+* To achieve order hopping functionality
+* Can add multiple OMS rules for order routing  
+Navigation: Sales > OMS rules > Order Routing/Split rules  
+**Steps for Order Hopping OMS:**  
+**Step 1:**  
+- Click on the “Add new Rules” button on the top right and create a new Hopping rule.  
+**Step 2:**  
+- If the Source WH or Channel Name of the order is “Head Office” and the Order Type is “Prepaid,” thenthe Order should get routed to the “JX Karawaci” site. The Priority of this rule is set to 1.   
+**Step 3:**  
+- If the Source WH or Channel Name of the item is “Head Office” and the Order Type is “Prepaid,” then theOrder should get routed to the “DWH- Delhi site.” The Priority of this rule is set to 2.  
+**Step 4:**  
+- Now, a prepaid order is created with the channel name – “Head office.  
+**Step 5:**  
+- As we confirm the order, the order will automatically be allocated to “JX Kawaraci” location as per theHopping Rules set 1.  
+**Step 6:**  
+- And if the order is rejected from “JX Kawaraci” warehouse then it will be routed to the “DWH Delhi”warehouse location as per Hopping Rule 2.
+
+# <u> Order Hopping Vin-eRetail Deskstop app </u>
+* Download the Vineretail Desktop App for Order Hopping
+* Login into the app after installing.  
+**Details required:**  
+* API URL: API URL refers to the URL of the Vin-eRetail portal URL.  
+* API Owner: API Owner refers to the owner of the organization.
+* API Key: It refers to the API key generated under the Manage API screen of the vin-eRetailportal.
+* Organization Code: It refers to the org code like USPL, SWGY, etc.
+* Location Code: It is the dropdown and will show all the location upon clicking on the load icon.
+* Zip code: It refers to the Pin code of the location on which the user wants to login.  
+**To Generate API Key:**  
+* Order No.: It shows the Ext. Order No of the order placed in the eRetail portal.
+* Line No.: It shows the no of line items of an order.
+* Channel Name: It shows the site location.
+* Order Amount:  It shows the total order amount.
+* COD/ Prepaid  It shows whether the order type is Pre.
+* SKU Code: It shows the SKU code of the ordered SKU.
+* SKU Name: It shows the SKU Name.
+* Qty: It shows the quantity of the line items.
+* Image: It shows the image of the line items.
+* Click to View address: It shows the ship to address of the customer.
+* Username: It shows the name of the user.
+
+**Action Buttons:**
+* Acknowledge: Used to accept or acknowledge any order.
+* Reject: Used to reject any order.
+* Refresh: Used to refresh or repull the orders.
+* Checkbox: Used to select the Order(s).
+
+For detailed instructions and screenshots, refer to the:  [Order Routing, Splitting & Hopping](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000203007-order-routing-splitting-hopping)
