@@ -1,68 +1,54 @@
-# Title: Customer Return & Return Inbound
+Title: Customer Return & Return Inbound
 
+Modified on: Tue, 28 Nov, 2023 at 6:46 PM
 
-## Customer Return
-Customer Return enables user to manage sales order returns. This module supports two types returns: Deliveredreturns and Non-delivered returns efficiently.
-Navigation: **Returns & Transfers>>Return Enquiry**
+# Customer Return & Return Inbound
 
-## Customer Return fields
-* **Return No.**: Obtained after Return
-* **External Order No.**: Any external no received upon inbound
-* **Order No**: Order No saved in the system
-* **Order Type:** Prepaid or COD
-* **Order Channel:** Combination of Channel code and channel name
-* **Status:** Standard options (Cancelled, Closed, Confirmed) or custom options
-* **Return Type:** Type of return 
-* **Return Category:** Refund or Replacement
-* **Return Date:** Today, Yesterday, Last 7/30 days, This/Last Month, or custom range
-* **Created User:** Filter records based on created user
-* **Confirmed Date:** Filter search by setting confirm date.
-* **Return Close Date:** Filter search by setting return close date
-* **Delivery No.:** Specific delivery number
-* **External Invoice No.:** Invoice number from marketplaces or webshops
-* **Delivery Type:** Delivery, No Pick Up, or Pick Up
-* **External Return No.:** Return number provided by marketplaces
-* **External Return Status:** Status provided by marketplaces
+## what is Customer Return?
 
+Customer Return enables users to manage sales order returns efficiently, supporting two types: Delivered returns and Non-delivered returns. for more details you can refer this [Customer Return & Return Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218277-customer-return-return-inbound).
 
-## Action Buttons
-* **Search**: User can search details 
-* **Reset**: Reset the details
-* **Advance Research**: Used to fetch results on basis of various filters
-* **Export**: Results in an excel template
-* **Detail Export**: Fetch information in detail
-* **Import**: Creating returns manually or in bulk
-* **ADD NEW**: Create new return from Screen
+### Customer Return Navigation to Return Enquiry:
+Returns & Transfers >> Return Enquiry
 
+### Return Enquiry Screen:
 
-**Request Type:**
-    * **Request:** Creates a confirmed return with details fetched (return inbound pending). Ideal for marketplace/webshop returns.
-    * **Request & Inbound:** Creates a closed return with details and inbound captured (fully processed return).
+- **Description**: Displays all sales order return requests.
+- **Search**: Narrow down results using various search fields and advanced search options.
+- **Fields Description**: Includes Return No., External Order No., Order No., Order Type, Order Channel, Status, Return Type, Return Category, Return Date, Created User, Confirmed Date, Return Close Date, Delivery No., External Invoice No., Order date, Amount, Reverse Tracking No., Transporter Name, Delivery Type, External Return No., External Return Status.
+- **Action Buttons**: Search, Reset, Advance Search, Export, Detail Export, Import, Add New.
 
-**Extern Order No.**: Mention order number  
-**Return Details:**
-* **Delivery Location:** Pre-populated location.
-* **Return Type:** Delivered or RTO (non-delivered).
-* **Category:** Refund or Replacement.
-* **Delivery Type:** Pickup, No Pickup, or Delivered.
-* **Reverse AWB No.:** Generated for confirmed delivered returns.
-* **Ext Reference No.:** Add an external reference number.
-* **Remarks:** Add any comments about the return.
-* **Reason:** Select the reason for the return.
-* **Ext Return No.:** Marketplace return number (automatically synced).
-* **Ext Invoice No. :** Marketplace invoice number (automatically synced).
-* **Reset Return Qty:** Allows modifying the return quantity (if enabled).
-* **Ext Return Status (read-only):** Marketplace return status (automatically synced).
+### Add New Return:
+
+- **Request Type**: Options include Request (Confirmed status) or Request & Inbound (Closed status).
+- **Fields Description**: Includes External Order No., Return Type, Category, Delivery Type, Reverse AWB No., Ext Reference No., Remarks, Reason, Ext Return No., Ext Invoice No., Reset Return Qty, Ext Return Status.
 
 ## Return Inbound
-Return Inbound is an activity is performed for in-warding the goods coming as a return product coming from themarketplaces or web shops.
 
-Navigation- **WMS >> Inbound >> Return Inbound create/edit.**
-Following are the three sections: 
+Return Inbound manages the inwarding of goods returned from marketplaces or web shops.
 
-* Section 1- Return Inbound Create/Edit
-* Section 2- Inbound RTO(bulk)
-* Section 3- Inbound Del Ret(bulk)
+### Navigation for Return Inbound create/edit:
+WMS >> Inbound >> Return Inbound create/edit
 
+### Return Inbound Screen:
 
-For further information, kindly refer to the article [Customer Return & Return Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218277-customer-return-return-inbound)
+- **Selection**: Choose Customer Return number/Order No.
+- **Actions**: Manage Picking (for completed inbound), Create Inbound (for pending inbound).
+- **Fields Description**: Customer Return No., Transporter Code, Tracking No., Remarks, Vehicle No., Gross Weight, No. Of Boxes, Material Receive Date, Status, External Reference No., Inbound Location.
+- **Save & Confirm**: Mark inbound as Confirmed after setting return qty and bin location.
+
+### Section 2 - Inbound R TO (bulk):
+
+- **Action**: Create Inbound R TO bulk.
+- **Process**: Provide R TO Batch ID, select rows, and click Close tab.
+
+### Section 3 - Inbound Del Ret (Bulk):
+
+- **Action**: Select Inbound Del Ret (Bulk).
+- **Process**: Fill relevant details or select Batch ID, and click Close Batch.
+
+---
+
+This document provides detailed instructions for managing customer returns and return inbound processes in the warehouse management system.
+
+For more detailed information, please refer to the [Customer Return & Return Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000218277-customer-return-return-inbound).

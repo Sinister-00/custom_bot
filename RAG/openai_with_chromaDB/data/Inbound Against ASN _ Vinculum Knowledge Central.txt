@@ -1,57 +1,72 @@
-# Title: Inbound Against ASN
+Title: Inbound Against ASN
 
-## Introduction
-This process involves receiving products into your warehouse based on an Advance Shipment Notification (ASN) from the supplier. The ASN provides details about the incoming shipment
+Modified on: Tue, 5 Jul, 2022 at 1:45 PM
 
-Navigation: **WMS>>Inbound>>Inbound Real Time**
+# what is Inbound Against ASN
 
-## **Steps:**
+Inbound with ASN (Advance Shipping Note) occurs when goods arrive earlier than expected, necessitating inbound processing. Instead of using a Purchase Order (PO) number, the ASN number is required to initiate the inbound process. for more details refer to this article [Inbound Against ASN](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216918-inbound-against-asn).
 
-1. **Fill Initial Details:**
-    * Transporter Code 
-    * Invoice Number 
-    * Invoice Date 
-    * Remark 
-    * Invoice Tax 
-    * Gross Weight 
-    * TCS (Tax Collected at Source)
-    * Other Charges 
-    * Discount 
+## Navigation to Inbound Real Time
 
-2. **Add Additional Details (click "More"):** 
-    * Number of Boxes
-    * Material Received Date
-    * Challan Number
-    * Challan Date
-    * External ASN Number
-    * Eway Bill
+Navigate to: WMS >> Inbound >> Inbound Real Time
 
-3. **Scan SKUs:**
-    * **Scanning Mode**: Choose "Each Piece Scan" for single quantity per SKU or "Bulk Scan" for multiple quantities.
-    * **LPN**: LPN number stored
-    * **SKU code**:Mention SKU code
-    * **SKU Image**: System syncs SKU image
-    * **SKU Desc**:System syncs SKU name
-    * **Scanned qty**: scanning quantity mention
-    * **UOM Code**: UOM mentioned
-    * **EA Qty**: shows quantity scan against SKU
-    * **LPN Qty**: SHows quantities scan against LPN
-    * **Expiry Date**: Expirty date of SKU
-    * Click "Add" to include the SKU.
+Once the "Inbound Real Time" option is selected, the following window will open:
 
-4. **Confirmation & Actions:**
-    * Click "Confirm" to finalize the inbound process.
-    * Use the dropdown menu (next to "Confirm") for actions like printing documents or generating putaway tasks.
+- Select the option "With ASN" and enter the ASN number.
 
-    Additional Options
-    * **Print GRN (Goods Received Note):** Generates a report documenting the received items.
-    * **Generate Labels:** Creates barcode labels for the received SKUs (Stock Keeping Units).
-    * **Generate Putaway:** Initiates the putaway process, which involves assigning locations within the warehouse for the received inventory.
+## Fill Details Accordingly:
 
-5. Click Save Invoice
+### Basic Details
 
+- **Transporter Code**: Displays the transporter code.
+- **Invoice No.**: Shows the invoice number.
+- **Invoice Date**: Indicates the date of the invoice.
+- **Remark**: Allows the user to add remarks.
+- **Invoice Tax**: Displays taxes on the invoice.
+- **Gross Weight**: Shows the weight of the received inventory.
+- **TCS**: Displays any tax received from the vendor.
+- **Other Charges**: Shows any extra charges.
+- **Discount**: Displays any discount amount.
 
-For further information, kindly refer to this article [Inbound against ASN](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216918-inbound-against-asn)
+### More Details
 
+Click on "MORE" to add more details:
 
+- **No. of Boxes**: Enter the number of boxes received.
+- **Material Rec Date**: Input the receiving date.
+- **Challan No.**: Enter the challan number.
+- **Challan Date**: Specify the challan date.
+- **ExtASN No.**: Optionally enter an external ASN number.
+- **Eway Bill**: Mention the Eway Bill.
 
+## Scanning SKU
+
+After filling the relevant details, click on "Scan SKU". Depending on the scanning mode selected, the system will prompt for the following:
+
+- **Scanning Mode**: Choose between "Each Piece Scan" or "Bulk Scan".
+- **LPN**: Store the LPN number.
+- **SKU Code**: Enter the SKU code.
+- **SKU Image**: System syncs the SKU image.
+- **SKU Desc**: System syncs the SKU name.
+- **Scanned Qty**: For "Each Piece Scan", the scanned quantity is automatically set to 1. For "Bulk Scan", enter the quantity.
+- **UOM Code**: Specify the unit of measurement.
+- **EA Qty**: Display the quantities scanned against the SKU.
+- **LPN Qty**: Show the quantities scanned against the LPN.
+- **Expiry Date**: Capture the expiry date of the SKU.
+
+After filling all details, click on "ADD". The SKU line will be added.
+
+## Confirmation and Further Actions
+
+- Click on "Confirm" to create the inbound against ASN in the system.
+- Under the "Confirmed" tab, additional options are available:
+  - **Print GRN**: Print the Goods Received Note.
+  - **Generate Labels**: Print product-level labels for the SKUs.
+  - **Generate Putaway**: Move to the putaway screen to generate putaway against this inbound.
+  - **Edit Invoice**: Edit invoice details even after confirmation.
+
+---
+
+This document provides a detailed overview of the inbound against ASN process, covering navigation, filling details, scanning SKUs, confirmation, and further actions.
+
+For more detailed information, please refer to the [Inbound Against ASN](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216918-inbound-against-asn).

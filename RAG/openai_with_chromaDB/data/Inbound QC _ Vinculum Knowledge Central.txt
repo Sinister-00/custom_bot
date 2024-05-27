@@ -1,40 +1,55 @@
-# Title: Inbound QC
+Title: Inbound QC - Quality Control Process for Incoming Shipments
 
-## Introduction
-Quality checks are crucial throughout the supply chain, but inspecting incoming goods from suppliers is especially important. It ensures products meet specifications before entering production, preventing issues and safeguarding overall finished good quality. 
+Modified on: Mon, 20 Jun, 2022 at 4:57 PM
 
-Navigation: **WMS>>Inbound>>Inbound QC**
+# Inbound QC - Quality Control Process for Incoming Shipments
 
-## Steps
+Quality control is a crucial aspect of the supply chain, ensuring that products meet specified standards at every stage, including inspection upon arrival from suppliers. The Inbound QC process plays a vital role in ensuring that products entering the facility meet quality specifications before further processing or distribution. for more details refer to this article [Inbound QC ](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216456-inbound-qc).
 
-**Search Inbound:**
+## Navigation to Inbound QC : 
+Navigate to **WMS >> Inbound >> Inbound QC**
 
-1. Enter the Inbound Number, GRN Number, GRN date,QC status
-2. Click "Search" to view the GRN summary.
-3. Reset button used to reset info
+### Inbound QC Screen:
 
-**QC Confirmation (no rejections):**
+Upon accessing the Inbound QC section, the following fields are available:
 
-* If no SKUs need rejection, simply click "Confirm" to finalize QC.
+- **Inbound Number**: Input field for mentioning the inbound number for QC.
+- **GRN Number**: Field to capture the Goods Receipt Note (GRN) number associated with the inbound.
+- **GRN Date**: Capture the date of the GRN.
+- **QC Status**: Indicates whether QC is pending or confirmed.
+- **Search**: Button to search for information related to the selected inbound/GRN.
+- **Reset**: Button to reset the information fetched.
 
-**QC with Rejected/Hold SKUs:**
+### Performing QC:
 
-1. Click "Scan Type" (for previously rejected/holded inventory).
-2. Enter the SKU code,SKU desc,quantity,To LPN.
-3. Enter the reason
-4. Add a remark (optional).
-5. Click "Add" to include the SKU.
-6. Click "Confirm."
-7. Choose to confirm QC:
-    * Exclude Hold SKUs
-    * Include Hold SKUs
-8. 
-* QC Hold:user can mention Bin where to the Hold SKU will be moved automatically
-after confirming the QC.
-* QC Rejected: user can mention Bin where to the rejected SKU will be moved
-automatically after confirming the QC.
+1. Input the necessary details like inbound number and GRN number.
+2. Click on the **Search** button to fetch information into the GRN summary.
+3. If no SKUs require rejection during QC, click on the **Confirm** button to confirm QC.
+4. If there are SKUs to be rejected or put on hold, fill in details in the following tabs:
 
-9. Click "OK" to finalize QC (status changes to "Done").
+#### Rejected SKU Details:
+- **Scan Type**: Use the scan option only to pass inventory put on hold or rejected earlier.
+- **SKU Code**: Input the SKU code to be rejected or put on hold.
+- **SKU Desc**: Display the name of the selected SKU.
+- **Quantity**: Mention the quantity of the SKU.
+- **To LPN**: Specify the License Plate Number (LPN) against the SKU.
+- **Reason**: Choose the reason from a configurable dropdown or check sheet.
+- **Remark**: Optional field for additional comments.
 
+5. Click on **ADD** after inputting all details. The added details will appear in the Rejected SKU Details section.
+6. If needed, delete a row by clicking on the respective option.
 
-For further assistance, kindly refer to this article [Inbound QC](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216456-inbound-qc)
+7. After inputting all details, click on the **Confirm** button. A dialogue box will appear allowing the user to choose whether to confirm QC excluding Hold SKUs or including them.
+
+#### Confirming QC:
+
+- **QC Hold**: Specify the bin where Hold SKUs will be moved automatically after confirming QC.
+- **QC Rejected**: Mention the bin where rejected SKUs will be moved after confirming QC.
+
+8. After specifying these details, click on **OK**. The QC status will change to "Done."
+
+---
+
+This document outlines the step-by-step process of conducting Inbound QC, ensuring that incoming shipments meet quality standards before further processing or distribution.
+
+For more detailed information, please refer to the [Inbound QC - Quality Control Process for Incoming Shipments](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216456-inbound-qc).

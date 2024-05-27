@@ -1,25 +1,70 @@
-# Title: Inbound Process Overview
+Title: Inbound Process Overview & Types of Inbound
 
-## What is inbound?
-The inbound process begins when items arrive at the warehouse location, originating from external sources or other company locations. The responsible user releases the source document (e.g., Purchase Order or inbound transfer order), enabling warehouse workers to proceed with tasks like putting away received items.
+Modified on: Tue, 5 Jul, 2022 at 1:48 PM
 
-## Inbound Process
-1. **Recording & Receipts:** Accurate info drives the process (items, quantities, lot numbers, etc.).
-2. **Load Arrival:** Pre-loaded info in WMS minimizes errors (docks, staging, unloading).
-3. **Receiving:** Barcoded receipts & real-time reporting (one-step or two-step).
-4. **LPN Tracking:** Monitors product movement during receiving.
-5. **Put-Away & Close:** Operator or system-directed put-away based on WMS configuration.
+# Inbound Process Overview & Types of Inbound
 
-## 3 Types of Inbound
-* Receipt from V endor (ASN, PO, ARS, Backorder , Direct)
-* Receipt from another W arehouse or Store (ST O)
-* Receipt of Customer Return Order (Return)
+## Inbound Process Overview
 
-## Types of inbound
-* **Direct Inbound/Without PO:** Receive products directly from a supplier without a purchase order.
-* **with PO:** Receive products based on a previously created purchase order.
-* **with ASN:** Receive products that arrive earlier than expected based on an Advance Shipment Notification (ASN).
-* **STO Inbound:** Transfer stock from one warehouse to another using a Stock Transfer Order.
-* **Return Inbound:** Receive customer returns or undelivered orders back into the warehouse.
+**What is inbound?**
+The inbound process initiates when items arrive at the warehouse location, originating from external sources or other company locations. It involves the receipt of items, releasing source documents like purchase orders (POs) or inbound transfer orders to warehouse workers for further operations, such as put away of received items. for more details refer this article [Inbound Process](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216454-inbound-process-overview-types-of-inbound).
 
-For further assistance, kindly refer to this article [Inbound Process Overview & Types of Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216454-inbound-process-overview-types-of-inbound)
+### Inbound Cycle
+
+#### 1. Recording and Receipts
+- **Definition**: Recording and receipts are fundamental to the inbound process, ensuring accuracy and communication at each step.
+- **Elements Tracked**: Lot numbers, manufacturing dates, expiration dates, serial numbers, PO tracking, inventory receipt statuses, etc.
+- **Benefits**: Automation, real-time receiving, reduction of errors, and cost minimization.
+
+#### 2. Load Arrival
+- **Process**: Receiving starts immediately after pre-receipts are loaded into the WMS system.
+- **Efficiency**: Pre-receipts allow for advance appointments, dock reservations, and staging area allocation.
+- **Minimized Error**: Receipt/load information is entered with minimal human error, facilitating smooth processing.
+
+#### 3. Receiving Real-Time Information
+- **Handover**: Receipts are bar-coded with specific instructions for associates to begin receiving activities and real-time reporting.
+- **Types of Receiving**:
+  - One-Step Receiving: Products sent directly to storage.
+  - Two-Step Receiving: Receipt/load needs staging before storage.
+
+#### 4. License Plate Tracking (LPN)
+- **Importance**: LPNs are used to track moving products during the receiving process.
+
+#### 5. Put-Away and Receipt Close
+- **System Configuration**: WMS system allows for operator-dictated or system-directed put-away methods based on customer settings.
+
+## Types of Inbound
+
+Inbound processes involve receiving, checking, recording, and put away of products into the system upon physical receipt. There are three main types of inbound:
+
+1. **Receipt from Vendor (ASN, PO, ARS, Backorder, Direct)**
+2. **Receipt from Another Warehouse or Store (STO)**
+3. **Receipt of Customer Return Order (Return)**
+
+### Detailed Types:
+
+1. **Direct Inbound/ Without PO**
+   - **Definition**: Inbound without a PO, directly inward of received products.
+   - **Requirement**: Vendor code is necessary for inbound processing.
+
+2. **With PO**
+   - **Process**: Inbound is done when a PO is raised.
+   - **Requirement**: PO number is essential for inbound processing.
+
+3. **With ASN (Advance Shipping Note)**
+   - **Scenario**: Goods arrive earlier than expected.
+   - **Requirement**: ASN number replaces the PO number for inbound processing.
+
+4. **STO Inbound (Stock Transfer Order)**
+   - **Process**: Transfer stock from one warehouse to another.
+   - **Usage**: User with multiple locations or warehouses.
+
+5. **Return Inbound**
+   - **Scenario**: Customer returns or delivery failure.
+   - **Purpose**: Reallocate bins and zones for returned orders.
+
+---
+
+This document provides an in-depth overview of the inbound process and its types, covering each step and type comprehensively.
+
+For further details, please refer to the [Inbound Process Overview & Types of Inbound](https://vinculumhelpdesk.freshdesk.com/support/solutions/articles/9000216454-inbound-process-overview-types-of-inbound).
