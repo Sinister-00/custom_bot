@@ -337,7 +337,7 @@ if st.session_state.logged_in:
                 # response = execute_query(prompt, st.session_state.query_engine)
                 # response=run_memory_chain(prompt,st.session_state.memory_chain)
                 chain=st.session_state.memory_chain.invoke({"question": prompt})
-                print(chain)
+                # print(chain)
                 response=chain["answer"]
                 
             st.session_state.messages["RAG"].append({"role":"assistant","content":response})
