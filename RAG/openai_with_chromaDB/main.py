@@ -20,13 +20,14 @@ from streamlit_oauth import OAuth2Component
 import os
 import pytz
 import time
-import streamlit as st
 from datetime import datetime
 import bcrypt
 from dotenv import load_dotenv
 load_dotenv()
 os.environ["OPENAI_API_KEY"]=os.getenv("OPENAI_API_KEY")
 assist_id=os.getenv('ASSISTANT_ID_OMNIBOT')
+# print("Current working directory:", os.getcwd())
+# print(assist_id)
 CLIENT_ID = os.environ.get("GOOGLE_CLIENT_ID")
 CLIENT_SECRET = os.environ.get("GOOGLE_CLIENT_SECRET")
 REDIRECT_URI = os.environ.get("REDIRECT_URI")
@@ -81,6 +82,10 @@ if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "memory_chain" not in st.session_state:
     st.session_state.memory_chain = None
+if "thread_id" not in st.session_state:
+    st.session_state.thread_id = None
+# if "query_engine" not in st.session_state:
+#     st.session_state.query_engine = "Not yet loaded"
 
 
 DATA_DIR = "./data/"
@@ -205,16 +210,20 @@ if not st.session_state.logged_in:
                                 TOKEN_ENDPOINT,
                                   TOKEN_ENDPOINT,
                                     REVOKE_ENDPOINT)
-        result = oauth2.authorize_button(
-            name="Continue with Google",
-            icon="https://www.google.com.tw/favicon.ico",
-            redirect_uri=REDIRECT_URI,
-            scope="openid email profile",
-            key="google",
-            extras_params={"prompt": "consent", "access_type": "offline"},
-            use_container_width=True,
-            pkce='S256',
-            )
+        try:
+            result = oauth2.authorize_button(
+                name="Continue with Google",
+                icon="https://www.google.com.tw/favicon.ico",
+                redirect_uri=REDIRECT_URI,
+                scope="openid email profile",
+                key="google",
+                extras_params={"prompt": "consent", "access_type": "offline"},
+                use_container_width=True,
+                pkce='S256',
+                )
+        except Exception as e:
+            print(f"Error: {e}")
+            result = None
         # print(result)
         if result:
             st.empty()
@@ -260,19 +269,26 @@ if st.session_state.logged_in:
     
     # if 'memory_chain' not in st.session_state:
     if st.session_state.logged_in and st.session_state.memory_chain is None:
-        st.session_state.vectorDB = Chroma(
-            persist_directory=PERSIST_DIR,
-            embedding_function=OpenAIEmbeddings()
-        )
-        st.session_state.llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
-        st.session_state.memory_chain = ConversationalRetrievalChain.from_llm(
-            st.session_state.llm,
-            retriever=st.session_state.vectorDB.as_retriever(),
-            memory=ConversationBufferMemory(
-                memory_key="chat_history",
-                return_messages=True
+        try:
+            st.session_state.vectorDB = Chroma(
+                persist_directory=PERSIST_DIR,
+                embedding_function=OpenAIEmbeddings()
             )
-        )
+            st.session_state.llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
+            st.session_state.memory_chain = ConversationalRetrievalChain.from_llm(
+                st.session_state.llm,
+                retriever=st.session_state.vectorDB.as_retriever(),
+                memory=ConversationBufferMemory(
+                    memory_key="chat_history",
+                    return_messages=True
+                )
+            )
+            
+
+
+        except Exception as e:
+            st.error(f"Error: {e}")
+            # st.stop()
 
     st.header("Chat with VinAi using RAG & Open AI Assistant 💁")
 
@@ -306,9 +322,9 @@ if st.session_state.logged_in:
     st.session_state.assistant = st.sidebar.radio("Choose the Assistant", ("RAG", "OpenAI Assistant"),)
 
 
-    if st.session_state.memory_chain == "Not yet loaded":
-        st.error("Please load or update the vector store first.")
-    elif st.session_state.assistant == "RAG" and st.session_state.memory_chain != "Not yet loaded":
+    if st.session_state.memory_chain is None and st.session_state.assistant == "RAG":
+        st.error("Unable to load the memory chain. Please try again later.")
+    elif st.session_state.assistant == "RAG" and st.session_state.memory_chain is not None:
         rag_messages, assistant_messages = retrieve_messages(st.session_state.user_mail)
         
 
@@ -352,32 +368,30 @@ if st.session_state.logged_in:
                 "timestamp": format_timestamp(time.time())  # Add a timestamp if needed
             })
 
-    elif st.session_state.assistant == "OpenAI Assistant" and st.session_state.query_engine != "Not yet loaded":
-
+    # elif st.session_state.assistant == "OpenAI Assistant":
+    elif st.session_state.assistant == "OpenAI Assistant":  
+        if "thread_id" not in st.session_state or not st.session_state.thread_id:
+            client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+            chat_thread = client.beta.threads.create()
+            st.session_state.thread_id = chat_thread.id
+            # st.sidebar.write("Chat thread id:", chat_thread.id)
+        
         rag_messages, assistant_messages = retrieve_messages(st.session_state.user_mail)
 
         for message in assistant_messages:
             st.session_state.messages["OpenAI"].append({"role": "user", "content": message["message_content"]})
             st.session_state.messages["OpenAI"].append({"role": "assistant", "content": message["response_content"]})
 
-
-        if "OpenAI" not in st.session_state.messages:
-            st.session_state.messages["OpenAI"] = []
-
         for message in st.session_state.messages["OpenAI"]:
             with st.chat_message(message["role"]):
                 st.markdown(message["content"])
 
-        client =openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
-        chat_thread=client.beta.threads.create()
-        st.session_state.thread_id=chat_thread.id
-        st.sidebar.write("Chat thread id:",chat_thread.id)
-        if "opneai_model"  not in st.session_state:
-            st.session_state.openai_model="gpt-3.5-turbo-1106"
+        client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
+        if "openai_model" not in st.session_state:
+            st.session_state.openai_model = "gpt-3.5-turbo-1106"
 
-        if prompt:=st.chat_input("Ask you query here"):
-            # st.session_state.messages["OpenAI"].append({"role":"user","content":prompt})
+        if prompt := st.chat_input("Ask your query here"):
             with st.chat_message("user"):
                 st.markdown(prompt)
             client.beta.threads.messages.create(
@@ -385,35 +399,33 @@ if st.session_state.logged_in:
                 role="user",
                 content=prompt
             )
-            run=client.beta.threads.runs.create(
+            run = client.beta.threads.runs.create(
                 thread_id=st.session_state.thread_id,
                 assistant_id=assist_id,
                 instructions="""
-                Please address the user as "Vinner" and ask the user if he/she has any queries related to vinculum solutions. only respond if you know the context do not try to generate on your own.
+                Please address the user as "Vinner" and ask the user if he/she has any queries related to vinculum solutions. Only respond if you know the context; do not try to generate on your own.
                 """
             )
             with st.spinner("Wait... Generating response..."):
                 while run.status != "completed":
                     time.sleep(1)
-                    run=client.beta.threads.runs.retrieve(thread_id=st.session_state.thread_id,run_id=run.id)
-                    messages=client.beta.threads.messages.list(thread_id=st.session_state.thread_id)
-                    assistant_message_for_run=[
-                        message for message in messages if message.run_id==run.id and message.role == "assistant"
+                    run = client.beta.threads.runs.retrieve(thread_id=st.session_state.thread_id, run_id=run.id)
+                    messages = client.beta.threads.messages.list(thread_id=st.session_state.thread_id)
+                    assistant_message_for_run = [
+                        message for message in messages if message.run_id == run.id and message.role == "assistant"
                     ]
-
                 for message in assistant_message_for_run:
-                    full_response=message.content[0].text.value
-                    st.session_state.messages["OpenAI"].append(
-                        {"role": "assistant", "content": full_response}
-                    )
+                    full_response = message.content[0].text.value
+                    st.session_state.messages["OpenAI"].append({"role": "assistant", "content": full_response})
                     with st.chat_message("assistant"):
                         st.markdown(full_response, unsafe_allow_html=True)
 
-            assistant_messages_collection.insert_one({
-                "user_email": st.session_state.user_mail,
-                "message_content": prompt,
-                "response_content": full_response,
-                "timestamp": format_timestamp(time.time())  # Add a timestamp if needed
-            })
+                assistant_messages_collection.insert_one({
+                    "user_email": st.session_state.user_mail,
+                    "message_content": prompt,
+                    "response_content": full_response,
+                    "timestamp": format_timestamp(time.time())
+                })
 
-    
+    if st.session_state.thread_id:
+        st.sidebar.write("Chat thread ID:", st.session_state.thread_id)
